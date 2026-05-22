@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>精益知识有奖问答</title>
+<script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js">
+</script>
+<style>
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --success: #059669;
+  --danger: #dc2626;
+  --warning: #d97706;
+  --bg: #f1f5f9;
+  --card: #ffffff;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --border: #e2e8f0;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,0.1);
+  --radius: 14px;
+  --radius-sm: 10px;
+  --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--text);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px;
+  -webkit-tap-highlight-color:transparent;
+}
+.app{
+  width:100%;
+  max-width:480px;
+  min-height:90vh;
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow-lg);
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  position:relative;
+}
+/* Header */
+.header{
+  background:linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #1e40af 100%);
+  color:#fff;
+  padding:18px 20px;
+  text-align:center;
+  flex-shrink:0;
+}
+.header .icon{font-size:36px;display:block;margin-bottom:2px;line-height:1}
+.header h1{font-size:19px;font-weight:700;letter-spacing:0.5px}
+.header .sub{font-size:12px;opacity:0.8;margin-top:2px;letter-spacing:1px}
+/* Body */
+.body{
+  flex:1;
+  padding:16px;
+  overflow-y:auto;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+/* Cards */
+.card{
+  background:#f8fafc;
+  border-radius:var(--radius-sm);
+  padding:14px;
+  border:1px solid var(--border);
+}
+.card-info{background:#fffbeb;border-color:#fde68a}
+.card-ok{background:#f0fdf4;border-color:#bbf7d0}
+.card-err{background:#fef2f2;border-color:#fecaca}
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  padding:13px 24px;border-radius:24px;font-size:15px;font-weight:600;
+  border:none;cursor:pointer;letter-spacing:0.5px;transition:var(--transition);
+  touch-action:manipulation;font-family:var(--font);
+}
+.btn:active{transform:scale(0.96)}
+.btn-pri{background:var(--primary);color:#fff;box-shadow:0 4px 12px rgba(37,99,235,0.3)}
+.btn-pri:hover{background:var(--primary-dark)}
+.btn-ok{background:var(--success);color:#fff}
+.btn-out{background:#fff;color:var(--primary);border:2px solid var(--primary)}
+.btn-err{background:var(--danger);color:#fff}
+.btn-sm{padding:9px 16px;font-size:13px;border-radius:20px}
+.btn-block{width:100%}
+.btn:disabled{opacity:0.45;pointer-events:none}
+/* Form */
+.form-group{margin-bottom:12px}
+.form-group label{display:block;font-size:13px;font-weight:600;margin-bottom:4px;color:var(--text)}
+.form-group input{
+  width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:10px;
+  font-size:15px;font-family:var(--font);transition:var(--transition);background:#fff;
+  -webkit-appearance:none;outline:none;color:var(--text);
+}
+.form-group input:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(37,99,235,0.1)}
+.form-group .hint{font-size:11px;color:var(--text-light);margin-top:3px}
+/* Progress */
+.progress-wrap{background:#e2e8f0;border-radius:8px;height:6px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,#2563eb,#60a5fa);border-radius:8px;transition:width 0.35s}
+.progress-txt{font-size:11px;color:var(--text-light);text-align:right;margin-top:3px}
+/* Question */
+.q-card{
+  background:#fff;border-radius:var(--radius-sm);padding:16px;
+  border:1.5px solid var(--border);box-shadow:var(--shadow);
+  animation:fadeIn 0.3s ease;
+}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.q-badge{
+  display:inline-block;font-size:10px;font-weight:700;padding:3px 10px;
+  border-radius:12px;letter-spacing:0.5px;margin-bottom:8px;
+}
+.badge-a{background:#eff6ff;color:#2563eb}
+.badge-b{background:#fffbeb;color:#d97706}
+.badge-c{background:#f0fdf4;color:#059669}
+.q-text{font-size:15px;font-weight:600;line-height:1.65;margin-bottom:12px;color:#0f172a}
+.opt-list{display:flex;flex-direction:column;gap:8px}
+.opt{
+  display:flex;align-items:center;gap:10px;padding:11px 13px;border-radius:10px;
+  border:1.5px solid #e2e8f0;cursor:pointer;transition:var(--transition);
+  background:#fafbfc;font-size:14px;user-select:none;
+}
+.opt:active{background:#eff6ff;border-color:#93c5fd}
+.opt.sel{background:#eff6ff;border-color:#2563eb;font-weight:500}
+.opt-radio{
+  width:20px;height:20px;border-radius:50%;border:2px solid #cbd5e1;
+  flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:var(--transition);
+}
+.opt.sel .opt-radio{border-color:#2563eb;background:#2563eb}
+.opt.sel .opt-radio::after{content:'';width:7px;height:7px;border-radius:50%;background:#fff}
+.opt-check{
+  width:20px;height:20px;border-radius:5px;border:2px solid #cbd5e1;
+  flex-shrink:0;display:flex;align-items:center;justify-content:center;
+  transition:var(--transition);font-size:11px;color:transparent;
+}
+.opt.sel .opt-check{border-color:#d97706;background:#d97706;color:#fff}
+.opt-letter{font-weight:700;color:#94a3b8;min-width:20px;font-size:13px}
+.opt.sel .opt-letter{color:#2563eb}
+.opt-text{flex:1;line-height:1.4}
+/* Nav */
+.nav-row{display:flex;gap:10px;justify-content:space-between;align-items:center}
+.nav-row .btn{flex:1}
+/* Result */
+.r-score{font-size:64px;font-weight:800;text-align:center;line-height:1;margin:8px 0}
+.r-score.good{color:#059669}
+.r-score.bad{color:#dc2626}
+.r-icon{font-size:56px;text-align:center;display:block}
+.r-detail{text-align:center;font-size:14px;color:var(--text-light);line-height:1.7}
+/* Admin */
+.admin-box{
+  background:#fffbeb;border:2px dashed #e2d8a0;border-radius:var(--radius-sm);
+  padding:14px;margin-top:6px;
+}
+.admin-box h3{font-size:15px;margin-bottom:8px;color:#92400e}
+.tbl-wrap{overflow-x:auto;max-height:260px;overflow-y:auto;margin:8px 0}
+.tbl{width:100%;border-collapse:collapse;font-size:11px;min-width:520px}
+.tbl th,.tbl td{border:1px solid #e2e8f0;padding:5px 7px;text-align:center;white-space:nowrap}
+.tbl th{background:#f1f5f9;font-weight:700;font-size:10px}
+.tbl .row-good{background:#f0fdf4}
+.tbl .row-bad{background:#fef2f2}
+/* Toast */
+.toast{
+  position:fixed;top:16px;left:50%;transform:translateX(-50%);
+  background:#1e293b;color:#fff;padding:10px 22px;border-radius:20px;
+  font-size:13px;z-index:999;opacity:0;pointer-events:none;
+  transition:opacity 0.3s;font-family:var(--font);box-shadow:0 6px 20px rgba(0,0,0,0.2);
+}
+.toast.on{opacity:1}
+.toast.warn{background:#dc2626}
+.toast.ok{background:#059669}
+/* Admin entry */
+.adm-entry{
+  position:absolute;bottom:2px;right:6px;font-size:9px;color:#cbd5e1;
+  cursor:pointer;opacity:0.35;z-index:10;padding:4px;user-select:none;
+}
+.adm-entry:active{opacity:0.7}
+/* Rules */
+.rules{font-size:13px;color:var(--text-light);text-align:left;padding-left:16px;line-height:1.9}
+.rules b{color:var(--text)}
+/* Detail table */
+.dtbl-wrap{overflow-x:auto;max-height:200px;border:1px solid #e2e8f0;border-radius:8px}
+.dtbl{width:100%;border-collapse:collapse;font-size:11px;min-width:360px}
+.dtbl th,.dtbl td{border:1px solid #e2e8f0;padding:5px 7px;text-align:center}
+.dtbl th{background:#f1f5f9;font-weight:700;font-size:10px}
+/* Utils */
+.text-center{text-align:center}
+.text-sm{font-size:12px}
+.text-xs{font-size:11px}
+.text-muted{color:var(--text-light)}
+.mt-2{margin-top:8px}
+.mt-3{margin-top:12px}
+.gap-8{display:flex;gap:8px;flex-wrap:wrap}
+@media(max-width:380px){
+  .header h1{font-size:17px}
+  .q-text{font-size:14px}
+  .opt{font-size:13px;padding:10px 11px}
+  .btn{font-size:14px;padding:11px 18px}
+  .r-score{font-size:52px}
+}
+</style>
+</head>
+<body>
+<div class="app" id="app">
+  <div class="header">
+    <span class="icon">🏭</span>
+    <h1>精益知识有奖问答</h1>
+    <div class="sub">学精益 · 懂精益 · 用精益</div>
+  </div>
+  <div class="body" id="body"></div>
+  <span class="adm-entry" id="admBtn" title="管理">⚙</span>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+// ========== CONFIG ==========
+var C = {
+  ADMIN_PW: 'admin888',
+  PASS_SCORE: 80,
+  SK_COMPLETED: 'lean2_done',
+  SK_RECORDS: 'lean2_records',
+  SK_FP: 'lean2_fp',
+  SK_USER: 'lean2_user',
+  S_CNT: 4, M_CNT: 2, J_CNT: 4
+};
+
+// ========== 题库 (250题) ==========
+var SINGLE = [
+  {id:'s1',q:'精益生产的核心思想是（）',o:['提高产量','消除浪费、持续改善','扩大产能','增加设备'],a:'B'},
+  {id:'s2',q:'精益生产起源于（）',o:['美国福特','日本丰田','德国大众','中国海尔'],a:'B'},
+  {id:'s3',q:'精益生产中"七大浪费"之首是（）',o:['等待浪费','搬运浪费','过量生产浪费','库存浪费'],a:'C'},
+  {id:'s4',q:'公司推行精益提案改善的目的是（）',o:['降本增效','增加成本','浪费资源','增加不良品'],a:'A'},
+  {id:'s5',q:'5S管理的第一步是（）',o:['整顿','整理','清扫','清洁'],a:'B'},
+  {id:'s6',q:'5S中"整顿"的目的是（）',o:['清除垃圾','定点定容定量，快速取放','保持干净','养成习惯'],a:'B'},
+  {id:'s7',q:'自働化（Jidoka）的核心是（）',o:['设备自动运行','异常自动停机，防止不良流出','无人化生产','提高速度'],a:'B'},
+  {id:'s8',q:'TPM的中文含义是（）',o:['全面生产维护','全面质量管理','全员改善','安全管理'],a:'A'},
+  {id:'s9',q:'生产节拍（Takt Time）依据（）计算',o:['设备速度','客户需求时间','员工数量','生产计划'],a:'B'},
+  {id:'s10',q:'拉动式生产的指令来自（）',o:['前工序','后工序','生产计划','仓库'],a:'B'},
+  {id:'s11',q:'库存浪费被称为（）',o:['必要储备','万恶之源','流动资金','安全保障'],a:'B'},
+  {id:'s12',q:'SMED是指（）',o:['快速换模','快速搬运','快速检验','快速维修'],a:'A'},
+  {id:'s13',q:'快速换模将换模作业分为（）',o:['人工与自动','内部与外部','白天与夜间','维修与操作'],a:'B'},
+  {id:'s14',q:'防错装置（Poka-Yoke）的作用是（）',o:['提高效率','防止人为失误','降低成本','简化操作'],a:'B'},
+  {id:'s15',q:'PDCA循环中"C"是（）',o:['计划','执行','检查','处理'],a:'C'},
+  {id:'s16',q:'价值流图的主要作用是（）',o:['统计产量','识别浪费','安排人员','核算成本'],a:'B'},
+  {id:'s17',q:'产线平衡的目标是消除（）',o:['不良品','工位等待与瓶颈','设备故障','物料短缺'],a:'B'},
+  {id:'s18',q:'以下属于"动作浪费"的是（）',o:['等料','多余弯腰、转身','重复搬运','库存积压'],a:'B'},
+  {id:'s19',q:'以下属于"等待浪费"的是（）',o:['设备故障停机待修','物料搬运距离远','过度加工','多余动作'],a:'A'},
+  {id:'s20',q:'加工过剩浪费是指（）',o:['工艺要求过高','生产过多','搬运过多','等待过久'],a:'A'},
+  {id:'s21',q:'目视化管理的目的是（）',o:['美观','异常一眼可见','应付检查','提高士气'],a:'B'},
+  {id:'s22',q:'看板管理的作用是（）',o:['宣传','传递生产/取料指令','记录数据','标识区域'],a:'B'},
+  {id:'s23',q:'全员改善的主体是（）',o:['管理人员','全体员工','技术人员','质检人员'],a:'B'},
+  {id:'s24',q:'精益生产追求的是（）',o:['批量生产','单件流/小批量流','库存最大化','设备最大化'],a:'B'},
+  {id:'s25',q:'以下不属于5S的是（）',o:['整理','整顿','节约','素养'],a:'C'},
+  {id:'s26',q:'清洁是指（）',o:['打扫卫生','维持整理、整顿、清扫成果','分类物品','培训员工'],a:'B'},
+  {id:'s27',q:'素养是指（）',o:['打扫干净','遵守规则，养成习惯','物品定置','清除不要物'],a:'B'},
+  {id:'s28',q:'TPM自主保养的执行者是（）',o:['维修工','操作工','管理员','质检员'],a:'B'},
+  {id:'s29',q:'5Why分析法的目的是（）',o:['找责任人','找根本原因','找借口','找方法'],a:'B'},
+  {id:'s30',q:'均衡化生产的目的是（）',o:['消除波动','提高速度','增加库存','扩大批量'],a:'A'},
+  {id:'s31',q:'过量生产会造成（）',o:['效率提升','掩盖问题、库存积压','交期缩短','成本下降'],a:'B'},
+  {id:'s32',q:'不良品浪费不包括（）',o:['返修','报废','检验','多余搬运'],a:'D'},
+  {id:'s33',q:'搬运浪费的改善方向是（）',o:['增加搬运工具','优化布局、缩短距离','增加人员','增加库存'],a:'B'},
+  {id:'s34',q:'精益中"价值"由（）定义',o:['企业','客户','员工','管理者'],a:'B'},
+  {id:'s35',q:'不增值的活动称为（）',o:['浪费','必要作业','核心作业','辅助作业'],a:'A'},
+  {id:'s36',q:'单件流的优势是（）',o:['减少在制品、快速发现不良','提高批量','增加库存','简化管理'],a:'A'},
+  {id:'s37',q:'以下属于推动式生产特点的是（）',o:['后工序取料','前工序强制送料','小批量','低库存'],a:'B'},
+  {id:'s38',q:'设备点检属于（）',o:['TPM','5S','看板','SMED'],a:'A'},
+  {id:'s39',q:'换模中"外部作业"是指（）',o:['设备停机才能做','设备运转可提前做','员工休息做','维修人员做'],a:'B'},
+  {id:'s40',q:'现场区域划线属于（）',o:['目视化','5S整理','清扫','清洁'],a:'A'},
+  {id:'s41',q:'生产现场"三定"不包括（）',o:['定点','定容','定量','定价'],a:'D'},
+  {id:'s42',q:'改善的基本原则是（）',o:['先花钱后改善','先现场后流程','先局部后整体','先易后难'],a:'D'},
+  {id:'s43',q:'精益生产最终追求（）',o:['利润最大化','零浪费、零缺陷、零故障','产量最大化','人员最少化'],a:'B'},
+  {id:'s44',q:'以下哪项不是JIT的条件（）',o:['稳定设备','稳定品质','大批量生产','标准作业'],a:'C'},
+  {id:'s45',q:'标准作业三要素不包括（）',o:['节拍时间','作业顺序','在制品标准量','设备数量'],a:'D'},
+  {id:'s46',q:'产线瓶颈工位（）',o:['产出最慢，限制整条线','产出最快','人员最多','设备最好'],a:'A'},
+  {id:'s47',q:'物料先进先出（FIFO）用于改善（）',o:['搬运浪费','库存/过期浪费','动作浪费','等待浪费'],a:'B'},
+  {id:'s48',q:'红牌作战属于5S的（）',o:['整理','整顿','清扫','素养'],a:'A'},
+  {id:'s49',q:'员工培训、遵守制度属于5S的（）',o:['清扫','清洁','素养','整顿'],a:'C'},
+  {id:'s50',q:'全面质量管理强调（）',o:['事后检验','事前预防','增加检验员','返工返修'],a:'B'},
+  {id:'s51',q:'精益生产中"人"强调（）',o:['多技能、多能工','单一技能','加班为主','替换为主'],a:'A'},
+  {id:'s52',q:'多能工培养目的是（）',o:['产线调配、平衡作业','减少人员','提高工资','简化管理'],a:'A'},
+  {id:'s53',q:'现场异常处理原则是（）',o:['先处理、后分析、再预防','先追责、后处理','先上报、后等待','先停产、后开会'],a:'A'},
+  {id:'s54',q:'以下不属于浪费的是（）',o:['客户愿意付费的加工','等待','搬运','库存'],a:'A'},
+  {id:'s55',q:'生产现场"三不原则"不包括（）',o:['不接受不良','不制造不良','不流出不良','不返修不良'],a:'D'},
+  {id:'s56',q:'鱼骨图主要用于（）',o:['分析原因','统计数据','制定计划','核算效率'],a:'A'},
+  {id:'s57',q:'二八定律指（）',o:['80%问题来自20%原因','80%人员干20%工作','80%时间生产20%产品','80%成本来自20%浪费'],a:'A'},
+  {id:'s58',q:'精益改善以（）为中心',o:['设备','现场/流程/人','产量','成本'],a:'B'},
+  {id:'s59',q:'小批量多品种生产适合（）',o:['推动式','拉动式/JIT','大批量生产','库存生产'],a:'B'},
+  {id:'s60',q:'设备零故障是（）的目标',o:['5S','TPM','SMED','Poka-Yoke'],a:'B'},
+  {id:'s61',q:'换模时间越短，越有利于（）',o:['增加库存','小批量生产','延长交期','减少人员'],a:'B'},
+  {id:'s62',q:'现场物品未标识，会造成（）',o:['动作/寻找浪费','加工浪费','不良浪费','等待浪费'],a:'A'},
+  {id:'s63',q:'过量生产是因为（）',o:['担心缺料、设备故障、盲目排产','客户需求大','设备效率高','人员充足'],a:'A'},
+  {id:'s64',q:'精益生产推行从（）开始',o:['5S','TPM','JIT','看板'],a:'A'},
+  {id:'s65',q:'标准作业的目的是（）',o:['稳定品质、提高效率、减少波动','限制员工','简化管理','统一工装'],a:'A'},
+  {id:'s66',q:'以下属于目视化工具的是（）',o:['指示灯、标识、标线','报表、台账','制度文件','培训教材'],a:'A'},
+  {id:'s67',q:'仓库积压、成品过期属于（）',o:['等待浪费','库存浪费','动作浪费','加工浪费'],a:'B'},
+  {id:'s68',q:'员工重复取放工具属于（）',o:['动作浪费','搬运浪费','等待浪费','不良浪费'],a:'A'},
+  {id:'s69',q:'设备空转、人员待机属于（）',o:['等待浪费','加工浪费','搬运浪费','不良浪费'],a:'A'},
+  {id:'s70',q:'工艺过度打磨、多余工序属于（）',o:['加工过剩','动作浪费','搬运浪费','等待浪费'],a:'A'},
+  {id:'s71',q:'两次搬运、交叉搬运属于（）',o:['搬运浪费','库存浪费','不良浪费','加工浪费'],a:'A'},
+  {id:'s72',q:'返修、重工、报废属于（）',o:['不良品浪费','等待浪费','动作浪费','库存浪费'],a:'A'},
+  {id:'s73',q:'推行JIT的基础是（）',o:['5S与稳定现场','大量库存','高速设备','加班生产'],a:'A'},
+  {id:'s74',q:'拉动生产的载体是（）',o:['计划单','看板','报表','会议'],a:'B'},
+  {id:'s75',q:'自主保养七步法不包括（）',o:['初期清扫','困难点改善','点检标准','设备更换'],a:'D'},
+  {id:'s76',q:'快速换模改善优先（）',o:['内部转外部','外部转内部','增加人员','更换设备'],a:'A'},
+  {id:'s77',q:'防错装置优先（）',o:['接触式、定数式、动作式','人工提醒','罚款制度','加强培训'],a:'A'},
+  {id:'s78',q:'价值流图分为（）',o:['现状图与未来图','计划图与实际图','人员图与设备图','物流图与信息流图'],a:'A'},
+  {id:'s79',q:'产线平衡率越高说明（）',o:['浪费越少、效率越高','人员越多','设备越好','库存越低'],a:'A'},
+  {id:'s80',q:'持续改善（Kaizen）强调（）',o:['小步快跑、全员参与','一次性大改造','只靠专家','只靠领导'],a:'A'},
+  {id:'s81',q:'精益生产反对（）',o:['小批量','单件流','大批量库存','拉动'],a:'C'},
+  {id:'s82',q:'现场改善优先遵循（）',o:['ECRS原则','增加投入原则','扩大规模原则','增加人员原则'],a:'A'},
+  {id:'s83',q:'ECRS中"E"是（）',o:['取消','合并','重排','简化'],a:'A'},
+  {id:'s84',q:'ECRS中"C"是（）',o:['取消','合并','重排','简化'],a:'B'},
+  {id:'s85',q:'ECRS中"R"是（）',o:['取消','合并','重排','简化'],a:'C'},
+  {id:'s86',q:'ECRS中"S"是（）',o:['取消','合并','重排','简化'],a:'D'},
+  {id:'s87',q:'安全在精益生产中（）',o:['优先于一切','可以让步效率','次要地位','可忽略'],a:'A'},
+  {id:'s88',q:'班组管理中"班前会"不包括（）',o:['任务安排','安全提醒','改善要点','核算工资'],a:'D'},
+  {id:'s89',q:'数据化管理强调（）',o:['凭感觉','用数据说话','凭经验','凭印象'],a:'B'},
+  {id:'s90',q:'以下最能体现精益思想的是（）',o:['以量取胜','以质取胜、以效取胜','以库存储备取胜','以设备投入取胜'],a:'B'},
+  {id:'s91',q:'生产计划不合理最容易造成（）',o:['等待与过量生产','动作浪费','加工浪费','不良浪费'],a:'A'},
+  {id:'s92',q:'供应商交付不及时会造成（）',o:['等待浪费','搬运浪费','动作浪费','加工浪费'],a:'A'},
+  {id:'s93',q:'工装夹具不合理会造成（）',o:['动作浪费与不良','库存浪费','等待浪费','搬运浪费'],a:'A'},
+  {id:'s94',q:'现场5S差最直接影响（）',o:['效率、品质、安全','产量提升','成本下降','士气提升'],a:'A'},
+  {id:'s95',q:'精益生产关注（）',o:['流动速度','设备速度','人员速度','搬运速度'],a:'A'},
+  {id:'s96',q:'零切换是（）追求目标',o:['SMED','TPM','5S','看板'],a:'A'},
+  {id:'s97',q:'零不良是（）追求目标',o:['自働化+防错','增加检验','增加返工','增加人员'],a:'A'},
+  {id:'s98',q:'零停滞是（）追求目标',o:['JIT拉动','推动生产','库存生产','批量生产'],a:'A'},
+  {id:'s99',q:'企业推行精益成功关键是（）',o:['领导重视+全员参与+持续坚持','请专家一次性改造','买新设备','加人加班'],a:'A'},
+  {id:'s100',q:'精益生产最终为（）创造价值',o:['客户与企业','供应商','员工','管理者'],a:'A'}
+];
+
+var MULTI = [
+  {id:'m1',q:'精益生产的两大支柱是（）',o:['JIT准时化','自働化','TPM','5S'],a:'AB'},
+  {id:'m2',q:'精益七大浪费包括（）',o:['过量生产','等待','搬运','库存','加工过剩','动作','不良品'],a:'ABCDEFG'},
+  {id:'m3',q:'5S管理包括（）',o:['整理','整顿','清扫','清洁','素养','安全'],a:'ABCDE'},
+  {id:'m4',q:'JIT准时化生产的条件（）',o:['均衡化','小批量','看板拉动','标准作业','稳定设备品质'],a:'ABCDE'},
+  {id:'m5',q:'TPM八大支柱包括（）',o:['自主保养','专业保全','个别改善','品质保全','人才培养','安全环境'],a:'ABCDEF'},
+  {id:'m6',q:'目视化管理的形式有（）',o:['颜色管理','标识标牌','区域划线','警示灯','仪表刻度'],a:'ABCDE'},
+  {id:'m7',q:'快速换模SMED改善要点（）',o:['内部转外部','标准化','工具治具化','并行作业'],a:'ABCD'},
+  {id:'m8',q:'防错装置类型包括（）',o:['接触式','定数式','动作式','报警式'],a:'ABCD'},
+  {id:'m9',q:'PDCA循环包括（）',o:['计划','执行','检查','处理'],a:'ABCD'},
+  {id:'m10',q:'标准作业三要素（）',o:['节拍时间','作业顺序','标准在制品','设备数量'],a:'ABC'},
+  {id:'m11',q:'现场改善ECRS原则（）',o:['取消','合并','重排','简化'],a:'ABCD'},
+  {id:'m12',q:'价值流图包含（）',o:['物流','信息流','工序','时间','人员设备'],a:'ABCDE'},
+  {id:'m13',q:'拉动式生产特点（）',o:['后工序取料','小批量','低库存','按需生产'],a:'ABCD'},
+  {id:'m14',q:'推动式生产缺点（）',o:['高库存','高在制品','掩盖问题','不按需求'],a:'ABCD'},
+  {id:'m15',q:'整理的内容包括（）',o:['要与不要物区分','清除不要物','红牌作战','物品定置'],a:'ABC'},
+  {id:'m16',q:'整顿的"三定"是（）',o:['定点','定容','定量','定人'],a:'ABC'},
+  {id:'m17',q:'清扫的要点（）',o:['彻底打扫','点检设备','发现污染源','责任区明确'],a:'ABCD'},
+  {id:'m18',q:'清洁的要点（）',o:['制度化','标准化','常态化','检查评比'],a:'ABCD'},
+  {id:'m19',q:'素养的要点（）',o:['遵守规则','文明作业','培训教育','习惯养成'],a:'ABCD'},
+  {id:'m20',q:'库存浪费的危害（）',o:['占用资金','掩盖问题','过期变质','增加搬运'],a:'ABCD'},
+  {id:'m21',q:'等待浪费的原因（）',o:['缺料','设备故障','换模久','前工序延迟'],a:'ABCD'},
+  {id:'m22',q:'动作浪费改善方向（）',o:['取消多余动作','工具就近','工装优化','人机工程'],a:'ABCD'},
+  {id:'m23',q:'搬运浪费改善（）',o:['优化布局U型线','缩短距离','减少中转','物流器具标准化'],a:'ABCD'},
+  {id:'m24',q:'加工过剩改善（）',o:['优化工艺','降低多余要求','合并工序','专用工装'],a:'ABCD'},
+  {id:'m25',q:'不良品浪费改善（）',o:['防错','自働化','标准作业','源头管理'],a:'ABCD'},
+  {id:'m26',q:'多能工作用（）',o:['产线平衡','人员调配','应对缺勤','提高效率'],a:'ABCD'},
+  {id:'m27',q:'产线平衡改善方法（）',o:['拆分瓶颈工序','合并工序','人员调配','工装自动化'],a:'ABCD'},
+  {id:'m28',q:'看板作用（）',o:['生产指令','取料指令','防止过量生产','目视化管理'],a:'ABCD'},
+  {id:'m29',q:'精益改善常用工具（）',o:['5Why','鱼骨图','5S','价值流图'],a:'ABCD'},
+  {id:'m30',q:'TPM目标（）',o:['零故障','零灾害','零不良','零损失'],a:'ABCD'},
+  {id:'m31',q:'公司推行提案改善项目的作用是（）',o:['消除七大浪费','提升生产效率','降低生产成本','保障安全生产','优化现场5S管理','激发员工参与意识'],a:'ABCDEF'},
+  {id:'m32',q:'均衡化生产好处（）',o:['负荷平稳','减少库存','减少等待','交期稳定'],a:'ABCD'},
+  {id:'m33',q:'单件流好处（）',o:['少在制品','快速发现不良','缩短周期','少空间'],a:'ABCD'},
+  {id:'m34',q:'现场异常处理"三现"是（）',o:['现场','现物','现实','现钱'],a:'ABC'},
+  {id:'m35',q:'精益生产追求"四零"是（）',o:['零浪费','零不良','零故障','零停滞'],a:'ABCD'},
+  {id:'m36',q:'属于不增值活动的是（）',o:['等待','搬运','检验','库存'],a:'ABCD'},
+  {id:'m37',q:'属于增值活动的是（）',o:['组装','焊接','加工','包装（客户需要）'],a:'ABCD'},
+  {id:'m38',q:'精益对人的要求（）',o:['多能工','主动改善','遵守标准','团队协作'],a:'ABCD'},
+  {id:'m39',q:'快速换模步骤（）',o:['现状测量','区分内外','内部转外部','标准化'],a:'ABCD'},
+  {id:'m40',q:'5Why应用要点（）',o:['对事不对人','找真因','到现场','落地对策'],a:'ABCD'},
+  {id:'m41',q:'价值流分析目的（）',o:['识别浪费','优化流程','缩短周期','降低成本'],a:'ABCD'},
+  {id:'m42',q:'先进先出FIFO适用（）',o:['物料','在制品','成品','工具'],a:'ABC'},
+  {id:'m43',q:'红牌作战适用（）',o:['不要物','过期品','呆滞品','报废品'],a:'ABCD'},
+  {id:'m44',q:'班组精益管理内容（）',o:['5S','改善提案','标准作业','安全点检'],a:'ABCD'},
+  {id:'m45',q:'改善提案评价维度（）',o:['安全','品质','效率','成本','现场'],a:'ABCDE'},
+  {id:'m46',q:'精益生产适用行业（）',o:['制造','物流','服务','办公'],a:'ABCD'},
+  {id:'m47',q:'导致过量生产原因（）',o:['计划不准','担心缺料','设备故障多','换模时间长'],a:'ABCD'},
+  {id:'m48',q:'导致设备故障原因（）',o:['无保养','点检不到位','润滑不良','超负荷'],a:'ABCD'},
+  {id:'m49',q:'导致动作浪费原因（）',o:['物品未定位','工具不合理','工位不适','无标准'],a:'ABCD'},
+  {id:'m50',q:'精益成功关键因素（）',o:['高层支持','全员参与','持续改善','数据支撑'],a:'ABCD'}
+];
+
+var JUDGE = [
+  {id:'j1',q:'精益生产就是减少人员、降低成本。（）',a:'B'},
+  {id:'j2',q:'精益生产核心是消除一切不增值的浪费。（）',a:'A'},
+  {id:'j3',q:'过量生产是最大浪费。（）',a:'A'},
+  {id:'j4',q:'JIT就是需要多少生产多少、什么时候需要什么时候生产。（）',a:'A'},
+  {id:'j5',q:'公司精益提案改善被采纳后有奖金发放（）',a:'A'},
+  {id:'j6',q:'5S做好是推行精益的基础。（）',a:'A'},
+  {id:'j7',q:'整理就是把东西摆放整齐。（）',a:'B'},
+  {id:'j8',q:'整顿就是定点、定容、定量。（）',a:'A'},
+  {id:'j9',q:'清扫就是打扫卫生、同时点检设备。（）',a:'A'},
+  {id:'j10',q:'清洁就是维持3S成果，制度化。（）',a:'A'},
+  {id:'j11',q:'素养就是员工遵守规则、养成好习惯。（）',a:'A'},
+  {id:'j12',q:'库存越多生产越安全。（）',a:'B'},
+  {id:'j13',q:'库存会掩盖设备故障、品质不良、交付延迟等问题。（）',a:'A'},
+  {id:'j14',q:'拉动生产是后工序向前工序取料。（）',a:'A'},
+  {id:'j15',q:'推动生产是前工序向后工序送料。（）',a:'A'},
+  {id:'j16',q:'看板是拉动生产的工具。（）',a:'A'},
+  {id:'j17',q:'TPM只是维修工的事。（）',a:'B'},
+  {id:'j18',q:'TPM强调全员参与设备保养。（）',a:'A'},
+  {id:'j19',q:'快速换模目的是实现小批量多品种。（）',a:'A'},
+  {id:'j20',q:'防错就是靠员工认真仔细。（）',a:'B'},
+  {id:'j21',q:'防错是从设计/工装防止犯错，不是靠人。（）',a:'A'},
+  {id:'j22',q:'节拍时间=有效工作时间/客户需求数量。（）',a:'A'},
+  {id:'j23',q:'产线平衡就是让每个工位工时接近节拍。（）',a:'A'},
+  {id:'j24',q:'瓶颈工位决定整条线产能。（）',a:'A'},
+  {id:'j25',q:'价值由企业定义。（）',a:'B'},
+  {id:'j26',q:'价值由客户定义。（）',a:'A'},
+  {id:'j27',q:'等待、搬运、检验都属于浪费。（）',a:'A'},
+  {id:'j28',q:'单件流可以快速发现不良品。（）',a:'A'},
+  {id:'j29',q:'5Why就是连续问5个为什么找到根本原因。（）',a:'A'},
+  {id:'j30',q:'PDCA循环就是持续改善。（）',a:'A'},
+  {id:'j31',q:'ECRS优先顺序：取消>合并>重排>简化。（）',a:'A'},
+  {id:'j32',q:'红牌作战属于整理活动。（）',a:'A'},
+  {id:'j33',q:'三定原则：定点、定容、定量。（）',a:'A'},
+  {id:'j34',q:'目视化管理让问题一目了然。（）',a:'A'},
+  {id:'j35',q:'均衡化生产可以减少生产波动。（）',a:'A'},
+  {id:'j36',q:'多能工不利于产线平衡。（）',a:'B'},
+  {id:'j37',q:'标准作业可以稳定品质、提高效率。（）',a:'A'},
+  {id:'j38',q:'不良品浪费包括返修、报废、重复检验。（）',a:'A'},
+  {id:'j39',q:'加工过剩就是工艺要求超过客户需求。（）',a:'A'},
+  {id:'j40',q:'动作浪费包括多余弯腰、转身、寻找。（）',a:'A'},
+  {id:'j41',q:'搬运浪费可以通过优化布局改善。（）',a:'A'},
+  {id:'j42',q:'等待浪费包括等料、等设备、等指令。（）',a:'A'},
+  {id:'j43',q:'精益生产只适合汽车行业。（）',a:'B'},
+  {id:'j44',q:'精益生产适用于所有制造与服务业。（）',a:'A'},
+  {id:'j45',q:'改善只需要技术人员参与。（）',a:'B'},
+  {id:'j46',q:'改善需要全员参与，从班组长、员工开始。（）',a:'A'},
+  {id:'j47',q:'现场改善要先易后难、先现场后设备。（）',a:'A'},
+  {id:'j48',q:'精益改善追求一次性大改变，不接受小改善。（）',a:'B'},
+  {id:'j49',q:'持续改善（Kaizen）强调每天进步一点点。（）',a:'A'},
+  {id:'j50',q:'安全是精益生产的前提。（）',a:'A'},
+  {id:'j51',q:'内部换模是设备停机才能做的作业。（）',a:'A'},
+  {id:'j52',q:'外部换模是设备运转时可提前准备的作业。（）',a:'A'},
+  {id:'j53',q:'SMED目标是把换模时间缩到最短。（）',a:'A'},
+  {id:'j54',q:'自主保养是操作工负责自己设备的日常点检保养。（）',a:'A'},
+  {id:'j55',q:'专业保全是维修工负责设备大修与预防维护。（）',a:'A'},
+  {id:'j56',q:'价值流图分为现状图和未来图。（）',a:'A'},
+  {id:'j57',q:'先进先出（FIFO）可以防止物料过期。（）',a:'A'},
+  {id:'j58',q:'现场5S差会影响效率、品质、安全。（）',a:'A'},
+  {id:'j59',q:'过量生产会造成在制品积压、资金占用。（）',a:'A'},
+  {id:'j60',q:'精益生产追求零浪费、零不良、零故障、零停滞。（）',a:'A'},
+  {id:'j61',q:'标准作业一旦制定就不能修改。（）',a:'B'},
+  {id:'j62',q:'标准作业要根据改善不断优化更新。（）',a:'A'},
+  {id:'j63',q:'异常发生时应立即停机、上报、处理。（）',a:'A'},
+  {id:'j64',q:'自働化可以防止不良品流到下工序。（）',a:'A'},
+  {id:'j65',q:'看板可以防止过量生产。（）',a:'A'},
+  {id:'j66',q:'产线平衡率越高，浪费越少。（）',a:'A'},
+  {id:'j67',q:'鱼骨图用于分析问题原因。（）',a:'A'},
+  {id:'j68',q:'二八定律：大部分问题由少数关键原因造成。（）',a:'A'},
+  {id:'j69',q:'精益生产以客户需求为导向。（）',a:'A'},
+  {id:'j70',q:'不增值活动都应该消除或减少。（）',a:'A'},
+  {id:'j71',q:'改善提案只奖励省钱多的项目。（）',a:'B'},
+  {id:'j72',q:'改善提案应鼓励安全、品质、效率、现场小改善。（）',a:'A'},
+  {id:'j73',q:'三现主义：现场、现物、现实。（）',a:'A'},
+  {id:'j74',q:'设备点检属于TPM活动。（）',a:'A'},
+  {id:'j75',q:'换模作业并行作业可以缩短时间。（）',a:'A'},
+  {id:'j76',q:'工装治具化可以减少动作浪费、防错。（）',a:'A'},
+  {id:'j77',q:'物流交叉、迂回属于搬运浪费。（）',a:'A'},
+  {id:'j78',q:'员工频繁找工具属于动作浪费。（）',a:'A'},
+  {id:'j79',q:'生产计划波动大会造成等待与过量生产。（）',a:'A'},
+  {id:'j80',q:'供应商交付不稳定会造成等待浪费。（）',a:'A'},
+  {id:'j81',q:'U型产线有利于人员调配、减少搬运。（）',a:'A'},
+  {id:'j82',q:'精益生产反对大批量、长周期生产。（）',a:'A'},
+  {id:'j83',q:'精益生产支持小批量、流动化生产。（）',a:'A'},
+  {id:'j84',q:'清洁=清扫。（）',a:'B'},
+  {id:'j85',q:'素养是5S的最终目的。（）',a:'A'},
+  {id:'j86',q:'不良品流出是最大的品质浪费。（）',a:'A'},
+  {id:'j87',q:'预防重于检验是精益品质思想。（）',a:'A'},
+  {id:'j88',q:'设备零故障是TPM追求目标。（）',a:'A'},
+  {id:'j89',q:'快速换模有利于降低库存、缩短交期。（）',a:'A'},
+  {id:'j90',q:'目视化管理可以减少沟通成本、快速识别异常。（）',a:'A'},
+  {id:'j91',q:'多技能员工比单一技能员工更符合精益。（）',a:'A'},
+  {id:'j92',q:'产线在制品越多越好。（）',a:'B'},
+  {id:'j93',q:'精益改善从识别浪费开始。（）',a:'A'},
+  {id:'j94',q:'浪费无处不在，改善永无止境。（）',a:'A'},
+  {id:'j95',q:'推行精益可以提高交付、品质、效率、降低成本。（）',a:'A'},
+  {id:'j96',q:'精益生产就是降本增效、与员工利益无关。（）',a:'B'},
+  {id:'j97',q:'精益改善让员工作业更轻松、安全、高效。（）',a:'A'},
+  {id:'j98',q:'领导重视是精益推行成功的关键。（）',a:'A'},
+  {id:'j99',q:'精益推行需要长期坚持，不是一阵风。（）',a:'A'},
+  {id:'j100',q:'精益的终点是完美，持续改善没有终点。（）',a:'A'}
+];
+
+// ========== 工具函数 ==========
+function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a}
+function pick(arr,n){return shuffle(arr.slice()).slice(0,Math.min(n,arr.length))}
+function fmtTime(d){d=d||new Date();var p=function(x){return String(x).padStart(2,'0')};return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())+' '+p(d.getHours())+':'+p(d.getMinutes())+':'+p(d.getSeconds())}
+function genFp(){
+  var parts=[navigator.userAgent||'',screen.width+'x'+screen.height,String(screen.colorDepth),Intl.DateTimeFormat().resolvedOptions().timeZone||'',navigator.language||'',navigator.hardwareConcurrency||'',navigator.platform||''];
+  try{var c=document.createElement('canvas');c.width=60;c.height=20;var t=c.getContext('2d');t.textBaseline='top';t.font='14px Arial';t.fillStyle='#f60';t.fillRect(0,0,60,20);t.fillStyle='#069';t.fillText('Lean2',2,2);parts.push(c.toDataURL().slice(-80))}catch(e){parts.push('na')}
+  var raw=parts.join('|||'),h=0;for(var i=0;i<raw.length;i++){h=((h<<5)-h)+raw.charCodeAt(i);h|=0}return 'fp_'+Math.abs(h).toString(36).slice(0,12)
+}
+function getFp(){var fp=localStorage.getItem(C.SK_FP);if(!fp){fp=genFp();try{localStorage.setItem(C.SK_FP,fp)}catch(e){}}return fp}
+function isDone(){try{var fp=getFp();var done=JSON.parse(localStorage.getItem(C.SK_COMPLETED)||'[]');return done.indexOf(fp)!==-1}catch(e){return false}}
+function markDone(){try{var fp=getFp();var done=JSON.parse(localStorage.getItem(C.SK_COMPLETED)||'[]');if(done.indexOf(fp)===-1){done.push(fp);localStorage.setItem(C.SK_COMPLETED,JSON.stringify(done))}}catch(e){}}
+function getRecords(){try{return JSON.parse(localStorage.getItem(C.SK_RECORDS)||'[]')}catch(e){return[]}}
+function saveRecord(r){try{var recs=getRecords();recs.push(r);localStorage.setItem(C.SK_RECORDS,JSON.stringify(recs))}catch(e){}}
+function getMyRecord(){var fp=getFp();var recs=getRecords();for(var i=recs.length-1;i>=0;i--){if(recs[i].fp===fp)return recs[i]}return null}
+function getUser(){try{return JSON.parse(localStorage.getItem(C.SK_USER)||'null')}catch(e){return null}}
+function saveUser(u){try{localStorage.setItem(C.SK_USER,JSON.stringify(u))}catch(e){}}
+
+var body=document.getElementById('body');
+var toastEl=document.getElementById('toast');
+var _tt;
+function toast(msg,cls){
+  toastEl.textContent=msg;toastEl.className='toast on'+(cls?' '+cls:'');
+  clearTimeout(_tt);_tt=setTimeout(function(){toastEl.className='toast'},2200);
+}
+
+// ========== 渲染 ==========
+function render(view,data){
+  data=data||{};
+  if(view==='home') renderHome(data);
+  else if(view==='quiz') renderQuiz(data);
+  else if(view==='result') renderResult(data);
+  else if(view==='admin') renderAdmin(data);
+  else renderHome(data);
+  body.scrollTop=0;
+}
+
+// ========== 首页 ==========
+function renderHome(){
+  var done=isDone();
+  var rec=done?getMyRecord():null;
+
+  if(done && rec){
+    var passed=rec.score>=C.PASS_SCORE;
+    body.innerHTML='<div class="text-center">'+
+      '<span class="r-icon">'+(passed?'🎉':'😔')+'</span>'+
+      '<p class="text-muted" style="margin-top:4px">您的得分</p>'+
+      '<div class="r-score '+(passed?'good':'bad')+'">'+rec.score+'</div>'+
+      '<p style="font-weight:600">满分100分 | 及格线80分</p>'+
+      '<div class="card '+(passed?'card-ok':'card-err')+'">'+
+        '<p style="font-weight:600">'+(passed?'恭喜'+rec.name+'！已合格，请前往领奖处领奖！':'很遗憾，未达到领奖线（≥80分），继续加油！')+'</p>'+
+        '<p class="text-xs text-muted">姓名：'+escHtml(rec.name)+' | 工号：'+escHtml(rec.eid)+'</p>'+
+        '<p class="text-xs text-muted">答题时间：'+escHtml(rec.time)+'</p>'+
+      '</div>'+
+      '<button class="btn btn-out btn-sm mt-3" id="btnDetail">查看答题详情</button>'+
+      '<p class="text-xs text-muted mt-2">每人仅限参与1次</p>'+
+    '</div>';
+    document.getElementById('btnDetail').onclick=function(){
+      renderResult({score:rec.score,passed:passed,details:rec.details||[],record:rec});
+    };
+  } else {
+    body.innerHTML='<div>'+
+      '<p style="font-weight:700;font-size:16px;margin-bottom:4px">请填写信息后开始答题</p>'+
+      '<p class="text-xs text-muted" style="margin-bottom:14px">信息用于兑奖登记，请务必准确填写</p>'+
+      '<div class="form-group">'+
+        '<label>姓名</label>'+
+        '<input type="text" id="regName" placeholder="请输入真实姓名" maxlength="20" autocomplete="off">'+
+      '</div>'+
+      '<div class="form-group">'+
+        '<label>工号</label>'+
+        '<input type="text" id="regEid" placeholder="请输入工号" maxlength="30" autocomplete="off">'+
+      '</div>'+
+      '<div class="card card-info">'+
+        '<p style="font-size:13px;font-weight:600">活动规则</p>'+
+        '<ul class="rules">'+
+          '<li>随机出题 <b>10题</b>（单选4+多选2+判断4）</li>'+
+          '<li>每题10分，满分<b>100分</b></li>'+
+          '<li>得分<b>≥80分</b> 可现场领奖1次</li>'+
+          '<li>每人仅限参与<b>1次</b></li>'+
+        '</ul>'+
+      '</div>'+
+      '<button class="btn btn-pri btn-block" style="margin-top:8px" id="btnGo">确认并开始答题</button>'+
+      '<p class="text-xs text-muted text-center mt-2">活动时间：2026年5月25日</p>'+
+    '</div>';
+
+    document.getElementById('btnGo').onclick=function(){
+      var name=document.getElementById('regName').value.trim();
+      var eid=document.getElementById('regEid').value.trim();
+      if(!name) return toast('请输入姓名','warn');
+      if(!eid) return toast('请输入工号','warn');
+      var user={name:name,eid:eid};
+      saveUser(user);
+      var qs=genQuestions();
+      renderQuiz({questions:qs,currentIndex:0,answers:{},user:user});
+    };
+  }
+}
+
+// ========== 抽题 ==========
+function genQuestions(){
+  var s=pick(SINGLE,C.S_CNT);
+  var m=pick(MULTI,C.M_CNT);
+  var j=pick(JUDGE,C.J_CNT);
+  var all=s.concat(m).concat(j);
+  return shuffle(all).map(function(q){
+    var type='single';
+    for(var i=0;i<MULTI.length;i++){if(MULTI[i].id===q.id){type='multiple';break}}
+    if(type==='single'){for(var k=0;k<JUDGE.length;k++){if(JUDGE[k].id===q.id){type='judge';break}}}
+    q.type=type;
+    return q;
+  });
+}
+
+// ========== 答题页 ==========
+function renderQuiz(data){
+  var qs=data.questions, idx=data.currentIndex, ans=data.answers, user=data.user;
+  var total=qs.length, q=qs[idx];
+  var sel=ans[idx]||[], isLast=idx===total-1;
+  var isCheck=q.type==='multiple';
+  var badge=q.type==='single'?'单选题':q.type==='multiple'?'多选题':'判断题';
+  var badgeCls=q.type==='single'?'badge-a':q.type==='multiple'?'badge-b':'badge-c';
+  var opts=q.type==='judge'?['正确','错误']:(q.o||[]);
+  var letters=q.type==='judge'?['A','B']:opts.map(function(_,i){return String.fromCharCode(65+i)});
+
+  var optHtml='';
+  opts.forEach(function(t,i){
+    var l=letters[i];
+    var sc=sel.indexOf(l)!==-1?' sel':'';
+    var ind=isCheck?'<div class="opt-check">'+(sel.indexOf(l)!==-1?'✓':'')+'</div>':'<div class="opt-radio"></div>';
+    optHtml+='<div class="opt'+sc+'" data-l="'+l+'"><span class="opt-letter">'+l+'.</span>'+ind+'<span class="opt-text">'+escHtml(t)+'</span></div>';
+  });
+
+  body.innerHTML=
+    '<div class="progress-wrap"><div class="progress-fill" style="width:'+Math.round(idx/total*100)+'%"></div></div>'+
+    '<p class="progress-txt">第 '+(idx+1)+'/'+total+' 题</p>'+
+    '<div class="q-card">'+
+      '<span class="q-badge '+badgeCls+'">'+badge+'</span>'+
+      '<div class="q-text">'+(idx+1)+'. '+escHtml(q.q)+'</div>'+
+      (isCheck?'<p class="text-xs" style="color:#d97706">多选：可选择多个答案</p>':'')+
+      '<div class="opt-list" id="optList">'+optHtml+'</div>'+
+    '</div>'+
+    '<div class="nav-row">'+
+      (idx===0?'<span></span>':'<button class="btn btn-out btn-sm" id="btnPrev">上一题</button>')+
+      '<button class="btn btn-pri btn-sm" id="btnNext">'+(isLast?'提交答卷':'下一题')+'</button>'+
+    '</div>';
+
+  document.getElementById('optList').onclick=function(e){
+    var el=e.target.closest('.opt');if(!el)return;
+    var l=el.dataset.l;
+    var cur=ans[idx]||[];
+    if(isCheck){if(cur.indexOf(l)!==-1)cur=cur.filter(function(x){return x!==l});else{cur=cur.concat([l]);cur.sort()}}
+    else cur=[l];
+    ans[idx]=cur;
+    document.querySelectorAll('.opt').forEach(function(o){
+      var dl=o.dataset.l;var on=cur.indexOf(dl)!==-1;
+      o.classList.toggle('sel',on);
+      var ck=o.querySelector('.opt-check');if(ck)ck.textContent=on?'✓':'';
+    });
+  };
+  var btnPrev=document.getElementById('btnPrev');
+  if(btnPrev)btnPrev.onclick=function(){renderQuiz({questions:qs,currentIndex:idx-1,answers:ans,user:user})};
+  document.getElementById('btnNext').onclick=function(){
+    if((ans[idx]||[]).length===0)return toast('请选择答案','warn');
+    if(isLast) submit(qs,ans,user);
+    else renderQuiz({questions:qs,currentIndex:idx+1,answers:ans,user:user});
+  };
+}
+
+// ========== 提交 ==========
+function submit(qs,ans,user){
+  var score=0,details=[];
+  qs.forEach(function(q,i){
+    var u=(ans[i]||[]).sort().join('');
+    var ok=(q.type==='multiple'?u===q.a:u===q.a);
+    if(ok)score+=10;
+    details.push({qi:i+1,qt:q.q,type:q.type,ua:u||'(未作答)',ca:q.a,ok:ok});
+  });
+  var passed=score>=C.PASS_SCORE;
+  var rec={
+    id:Date.now(),time:fmtTime(),score:score,passed:passed,
+    fp:getFp(),name:user.name,eid:user.eid,details:details
+  };
+  saveRecord(rec);markDone();
+  renderResult({score:score,passed:passed,details:details,record:rec});
+}
+
+// ========== 结果页 ==========
+function renderResult(data){
+  var score=data.score, passed=data.passed, details=data.details, rec=data.record;
+  var rows='';
+  details.forEach(function(d){
+    rows+='<tr><td>'+d.qi+'</td><td style="text-align:left;max-width:130px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="'+escHtml(d.qt)+'">'+escHtml(d.qt)+'</td><td>'+escHtml(d.ua)+'</td><td>'+escHtml(d.ca)+'</td><td>'+(d.ok?'✓':'✗')+'</td></tr>';
+  });
+  body.innerHTML='<div class="text-center">'+
+    '<span class="r-icon">'+(passed?'🎉':'😔')+'</span>'+
+    '<p class="text-muted" style="margin-top:4px">'+escHtml(rec.name||'')+' 的得分</p>'+
+    '<div class="r-score '+(passed?'good':'bad')+'">'+score+'</div>'+
+    '<p style="font-weight:600">满分100分 | 及格线80分</p>'+
+    '<div class="card '+(passed?'card-ok':'card-err')+'">'+
+      '<p style="font-weight:600">'+(passed?'成绩合格，请前往领奖处领取奖品！':'未达到领奖线（≥80分），继续加油！')+'</p>'+
+      (passed?'<p class="text-sm" style="color:#555">出示此页面给工作人员登记领奖</p>':'')+
+      '<p class="text-xs text-muted">答题时间：'+escHtml(rec.time)+'</p>'+
+    '</div>'+
+    '<div style="margin-top:10px;text-align:left">'+
+      '<p style="font-weight:600;font-size:13px">答题详情</p>'+
+      '<div class="dtbl-wrap"><table class="dtbl"><thead><tr><th>#</th><th>题目</th><th>你的答案</th><th>正确</th><th>结果</th></tr></thead><tbody>'+rows+'</tbody></table></div>'+
+    '</div>'+
+    '<button class="btn btn-out btn-sm mt-3" id="btnHome">返回首页</button>'+
+  '</div>';
+  document.getElementById('btnHome').onclick=function(){render('home')};
+}
+
+// ========== 管理面板 ==========
+function renderAdmin(){
+  var recs=getRecords();
+  var sorted=recs.slice().sort(function(a,b){return a.id-b.id});
+  var disp=sorted.map(function(r,i){r.seq=i+1;return r});
+  var rows='';
+  disp.forEach(function(r){
+    rows+='<tr class="'+(r.passed?'row-good':'row-bad')+'"><td>'+r.seq+'</td><td>'+escHtml(r.time)+'</td><td>'+escHtml(r.name||'-')+'</td><td>'+escHtml(r.eid||'-')+'</td><td><b style="color:'+(r.passed?'#059669':'#dc2626')+'">'+r.score+'</b></td><td>'+(r.passed?'合格':'未达标')+'</td></tr>';
+  });
+  body.innerHTML=
+    '<div class="admin-box">'+
+      '<h3>管理面板</h3>'+
+      '<p class="text-sm">总记录：<b>'+disp.length+'</b> | 合格：<b>'+disp.filter(function(r){return r.passed}).length+'</b></p>'+
+      '<div class="gap-8" style="margin:8px 0">'+
+        '<button class="btn btn-ok btn-sm" id="btnXlsx">导出Excel</button>'+
+        '<button class="btn btn-out btn-sm" id="btnJson">导出JSON</button>'+
+        '<button class="btn btn-err btn-sm" id="btnClear">清空</button>'+
+        '<button class="btn btn-out btn-sm" id="btnCls">关闭</button>'+
+      '</div>'+
+      '<div class="tbl-wrap"><table class="tbl"><thead><tr><th>序号</th><th>答题时间</th><th>姓名</th><th>工号</th><th>得分</th><th>状态</th></tr></thead><tbody>'+(rows||'<tr><td colspan="6">暂无记录</td></tr>')+'</tbody></table></div>'+
+    '</div>';
+  document.getElementById('btnXlsx').onclick=function(){exportXlsx(disp)};
+  document.getElementById('btnJson').onclick=function(){exportJson(disp)};
+  document.getElementById('btnClear').onclick=function(){
+    if(confirm('确定清空所有记录？建议先导出备份。')){
+      localStorage.removeItem(C.SK_RECORDS);localStorage.removeItem(C.SK_COMPLETED);localStorage.removeItem(C.SK_FP);
+      toast('已清空','ok');setTimeout(function(){render('admin')},400);
+    }
+  };
+  document.getElementById('btnCls').onclick=function(){render('home')};
+}
+
+function exportXlsx(recs){
+  var data=recs.map(function(r){
+    return {
+      '序号':r.seq,'答题时间':r.time,'姓名':r.name,'工号':r.eid,
+      '得分':r.score,'是否合格':r.passed?'合格':'未达标',
+      '答题详情':(r.details||[]).map(function(d){return 'Q'+d.qi+':'+(d.ok?'对':'错')+'[答:'+d.ua+'/正:'+d.ca+']'}).join('; ')
+    };
+  });
+  var ws=XLSX.utils.json_to_sheet(data);
+  ws['!cols']=[{wch:5},{wch:20},{wch:10},{wch:12},{wch:6},{wch:8},{wch:60}];
+  var wb=XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb,ws,'答题记录');
+  XLSX.writeFile(wb,'精益问答记录_'+fmtTime().replace(/:/g,'-')+'.xlsx');
+  toast('Excel导出成功','ok');
+}
+function exportJson(recs){
+  var blob=new Blob([JSON.stringify(recs,null,2)],{type:'application/json'});
+  var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='精益问答记录_'+fmtTime().replace(/:/g,'-')+'.json';
+  document.body.appendChild(a);a.click();document.body.removeChild(a);
+  toast('JSON导出成功','ok');
+}
+
+// ========== 管理员入口 ==========
+document.getElementById('admBtn').onclick=function(){
+  var pw=prompt('请输入管理密码：');
+  if(pw===C.ADMIN_PW)render('admin');
+  else if(pw!==null)toast('密码错误','warn');
+};
+
+function escHtml(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
+
+// 启动
+render('home');
+})();
+</script>
+</body>
+</html>
