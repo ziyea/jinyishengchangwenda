@@ -565,7 +565,7 @@ function syncToGitHub(rec, callback){
     rec.seq=(records.length?Math.max.apply(null,records.map(function(r){return r.seq||0})):0)+1;
     rec.syncedAt=new Date().toISOString();
     // 去掉 fp 字段节省空间
-    var clean={seq:rec.seq,time:rec.time,name:rec.name,eid:rec.eid,score:rec.score,passed:rec.passed,details:rec.details,syncedAt:rec.syncedAt};
+    var clean={seq:rec.seq,time:rec.time,name:rec.name,eid:rec.eid,dept:rec.dept,score:rec.score,passed:rec.passed,details:rec.details,syncedAt:rec.syncedAt};
     records.push(clean);
 
     var content=btoa(unescape(encodeURIComponent(JSON.stringify(records,null,2))));
@@ -621,7 +621,7 @@ function renderHome(){
       '<p style="font-weight:600">满分100分 | 及格线80分</p>'+
       '<div class="card '+(passed?'card-ok':'card-err')+'">'+
         '<p style="font-weight:600">'+(passed?'恭喜'+rec.name+'！已合格，请前往领奖处领奖！':'很遗憾，未达到领奖线（≥80分），继续加油！')+'</p>'+
-        '<p class="text-xs text-muted">姓名：'+escHtml(rec.name)+' | 工号：'+escHtml(rec.eid)+'</p>'+
+        '<p class="text-xs text-muted">姓名：'+escHtml(rec.name)+' | 工号：'+escHtml(rec.eid)+' | 部门：'+escHtml(rec.dept||'')+'</p>'+
         '<p class="text-xs text-muted">答题时间：'+escHtml(rec.time)+'</p>'+
       '</div>'+
       '<button class="btn btn-out btn-sm mt-3" id="btnDetail">查看答题详情</button>'+
@@ -642,6 +642,10 @@ function renderHome(){
         '<label>工号</label>'+
         '<input type="text" id="regEid" placeholder="请输入工号" maxlength="30" autocomplete="off">'+
       '</div>'+
+      '<div class="form-group">'+
+        '<label>部门</label>'+
+        '<input type="text" id="regDept" placeholder="请输入部门" maxlength="30" autocomplete="off">'+
+      '</div>'+
       '<div class="card card-info">'+
         '<p style="font-size:13px;font-weight:600">活动规则</p>'+
         '<ul class="rules">'+
@@ -658,9 +662,11 @@ function renderHome(){
     document.getElementById('btnGo').onclick=function(){
       var name=document.getElementById('regName').value.trim();
       var eid=document.getElementById('regEid').value.trim();
+      var dept=document.getElementById('regDept').value.trim();
       if(!name) return toast('请输入姓名','warn');
       if(!eid) return toast('请输入工号','warn');
-      var user={name:name,eid:eid};
+      if(!dept) return toast('请输入部门','warn');
+      var user={name:name,eid:eid,dept:dept};
       saveUser(user);
       var qs=genQuestions();
       renderQuiz({questions:qs,currentIndex:0,answers:{},user:user});
@@ -750,7 +756,7 @@ function submit(qs,ans,user){
   var passed=score>=C.PASS_SCORE;
   var rec={
     id:Date.now(),time:fmtTime(),score:score,passed:passed,
-    fp:getFp(),name:user.name,eid:user.eid,details:details
+    fp:getFp(),name:user.name,eid:user.eid,dept:user.dept,details:details
   };
   saveRecord(rec);markDone();
   console.log('答题记录已保存:',rec.id,'得分:',score,'记录数:',getRecords().length);
@@ -797,7 +803,7 @@ function renderAdmin(){
   var disp=sorted.map(function(r,i){r.seq=i+1;return r});
   var rows='';
   disp.forEach(function(r){
-    rows+='<tr class="'+(r.passed?'row-good':'row-bad')+'"><td>'+r.seq+'</td><td>'+escHtml(r.time)+'</td><td>'+escHtml(r.name||'-')+'</td><td>'+escHtml(r.eid||'-')+'</td><td><b style="color:'+(r.passed?'#059669':'#dc2626')+'">'+r.score+'</b></td><td>'+(r.passed?'合格':'未达标')+'</td></tr>';
+    rows+='<tr class="'+(r.passed?'row-good':'row-bad')+'"><td>'+r.seq+'</td><td>'+escHtml(r.time)+'</td><td>'+escHtml(r.name||'-')+'</td><td>'+escHtml(r.eid||'-')+'</td><td>'+escHtml(r.dept||'-')+'</td><td><b style="color:'+(r.passed?'#059669':'#dc2626')+'">'+r.score+'</b></td><td>'+(r.passed?'合格':'未达标')+'</td></tr>';
   });
 	var ghStatus, ghBtnHtml='';
 	  if(canSyncToGitHub()){
@@ -823,7 +829,7 @@ function renderAdmin(){
 	        '<button class="btn btn-err btn-sm" id="btnClear">清空</button>'+
 	        '<button class="btn btn-out btn-sm" id="btnCls">关闭</button>'+
 	      '</div>'+
-	      '<div class="tbl-wrap"><table class="tbl"><thead><tr><th>序号</th><th>答题时间</th><th>姓名</th><th>工号</th><th>得分</th><th>状态</th></tr></thead><tbody>'+(rows||'<tr><td colspan="6">暂无记录</td></tr>')+'</tbody></table></div>'+
+	      '<div class="tbl-wrap"><table class="tbl"><thead><tr><th>序号</th><th>答题时间</th><th>姓名</th><th>工号</th><th>部门</th><th>得分</th><th>状态</th></tr></thead><tbody>'+(rows||'<tr><td colspan="7">暂无记录</td></tr>')+'</tbody></table></div>'+
 	    '</div>';
 	  document.getElementById('btnXlsx').onclick=function(){exportXlsx(disp)};
 	  document.getElementById('btnJson').onclick=function(){exportJson(disp)};
@@ -862,7 +868,7 @@ function syncAllRecords(recs){
   };
   // 构建同步数据
   var records=recs.map(function(r,i){
-    return {seq:i+1,time:r.time,name:r.name,eid:r.eid,score:r.score,passed:r.passed,details:r.details,syncedAt:new Date().toISOString()};
+    return {seq:i+1,time:r.time,name:r.name,eid:r.eid,dept:r.dept,score:r.score,passed:r.passed,details:r.details,syncedAt:new Date().toISOString()};
   });
   // 直接 PUT（覆盖）
   var content=btoa(unescape(encodeURIComponent(JSON.stringify(records,null,2))));
@@ -895,13 +901,13 @@ function exportXlsx(recs){
   if(typeof XLSX==='undefined') return toast('Excel库加载失败，请检查网络连接','warn');
   var data=recs.map(function(r){
     return {
-      '序号':r.seq,'答题时间':r.time,'姓名':r.name,'工号':r.eid,
+      '序号':r.seq,'答题时间':r.time,'姓名':r.name,'工号':r.eid,'部门':r.dept||'',
       '得分':r.score,'是否合格':r.passed?'合格':'未达标',
       '答题详情':(r.details||[]).map(function(d){return 'Q'+d.qi+':'+(d.ok?'对':'错')+'[答:'+d.ua+'/正:'+d.ca+']'}).join('; ')
     };
   });
   var ws=XLSX.utils.json_to_sheet(data);
-  ws['!cols']=[{wch:5},{wch:20},{wch:10},{wch:12},{wch:6},{wch:8},{wch:60}];
+  ws['!cols']=[{wch:5},{wch:20},{wch:10},{wch:12},{wch:10},{wch:6},{wch:8},{wch:60}];
   var wb=XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb,ws,'答题记录');
   XLSX.writeFile(wb,'精益问答记录_'+fmtTime().replace(/:/g,'-')+'.xlsx');

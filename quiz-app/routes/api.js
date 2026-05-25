@@ -56,7 +56,7 @@ router.get('/random-questions', getUserIdentifier, (req, res) => {
 router.post('/submit', getUserIdentifier, (req, res) => {
     const db = req.app.get('db');
     const openid = req.userId;
-    const { answers, name, employee_id } = req.body; // answers: [{ questionId, userAnswer }]
+    const { answers, name, employee_id, department } = req.body; // answers: [{ questionId, userAnswer }]
     
     // 先检查是否已提交
     db.get("SELECT * FROM user_records WHERE openid = ?", [openid], (err, existing) => {
@@ -108,9 +108,9 @@ router.post('/submit', getUserIdentifier, (req, res) => {
                 db.get("SELECT MAX(serial_no) as maxSerial FROM user_records", (err, row) => {
                     const newSerial = (row.maxSerial || 0) + 1;
                     const submitTime = new Date().toISOString();
-                    db.run(`INSERT INTO user_records (serial_no, openid, name, employee_id, score, answers, question_ids, submit_time)
-                            VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
-                        [newSerial, openid, name || '', employee_id || '', score, JSON.stringify(answersDetail), JSON.stringify(questionIds), submitTime],
+                    db.run(`INSERT INTO user_records (serial_no, openid, name, employee_id, department, score, answers, question_ids, submit_time)
+                            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+                        [newSerial, openid, name || '', employee_id || '', department || '', score, JSON.stringify(answersDetail), JSON.stringify(questionIds), submitTime],
                         (err) => {
                             if (err) return res.status(500).json({ error: err.message });
                             // 删除临时会话

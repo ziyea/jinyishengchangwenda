@@ -589,6 +589,7 @@ module.exports = async (db) => {
             openid TEXT UNIQUE,
             name TEXT,
             employee_id TEXT,
+            department TEXT,
             score INTEGER,
             answers TEXT,
             question_ids TEXT,
@@ -598,6 +599,7 @@ module.exports = async (db) => {
         // 兼容旧表结构：添加新字段（如果不存在）
         db.run("ALTER TABLE user_records ADD COLUMN name TEXT", () => {});
         db.run("ALTER TABLE user_records ADD COLUMN employee_id TEXT", () => {});
+        db.run("ALTER TABLE user_records ADD COLUMN department TEXT", () => {});
 
         // 临时答题会话表（存储用户抽中的题目）
         db.run(`CREATE TABLE IF NOT EXISTS temp_sessions (
