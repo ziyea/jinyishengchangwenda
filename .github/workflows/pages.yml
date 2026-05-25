@@ -23,12 +23,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Inject GitHub Sync Token
+        run: |
+          if [ -n "${{ secrets.GH_SYNC_TOKEN }}" ]; then
+            sed -i "s|GITHUB_TOKEN: ''|GITHUB_TOKEN: '${{ secrets.GH_SYNC_TOKEN }}'|g" index.html
+            echo "Token injected into index.html"
+          else
+            echo "GH_SYNC_TOKEN secret not set — sync will use runtime input"
+          fi
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
