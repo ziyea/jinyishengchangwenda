@@ -587,12 +587,18 @@ module.exports = async (db) => {
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             serial_no INTEGER UNIQUE,
             openid TEXT UNIQUE,
+            name TEXT,
+            employee_id TEXT,
             score INTEGER,
             answers TEXT,
             question_ids TEXT,
             submit_time TEXT
         )`);
-        
+
+        // 兼容旧表结构：添加新字段（如果不存在）
+        db.run("ALTER TABLE user_records ADD COLUMN name TEXT", () => {});
+        db.run("ALTER TABLE user_records ADD COLUMN employee_id TEXT", () => {});
+
         // 临时答题会话表（存储用户抽中的题目）
         db.run(`CREATE TABLE IF NOT EXISTS temp_sessions (
             openid TEXT PRIMARY KEY,

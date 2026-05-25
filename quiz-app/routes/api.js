@@ -23,12 +23,15 @@ router.get('/random-questions', getUserIdentifier, (req, res) => {
                 return res.json({ status: 'pending', questions });
             }
             
-            // 随机抽取10题
-            db.all("SELECT * FROM questions", (err, allQuestions) => {
+            // 按题型比例随机抽取10题 (4单选+2多选+4判断)
+            db.all("SELECT * FROM questions WHERE type = 'single' ORDER BY RANDOM() LIMIT 4", (err, singles) => {
                 if (err) return res.status(500).json({ error: err.message });
-                // 随机选10题
-                const shuffled = allQuestions.sort(() => 0.5 - Math.random());
-                const selected = shuffled.slice(0, 10);
+                db.all("SELECT * FROM questions WHERE type = 'multiple' ORDER BY RANDOM() LIMIT 2", (err, multis) => {
+                    if (err) return res.status(500).json({ error: err.message });
+                    db.all("SELECT * FROM questions WHERE type = 'judge' ORDER BY RANDOM() LIMIT 4", (err, judges) => {
+                        if (err) return res.status(500).json({ error: err.message });
+                        // 合并后随机打乱题目顺序
+                        const selected = [...singles, ...multis, ...judges].sort(() => 0.5 - Math.random());
                 const questionsData = selected.map(q => ({
                     id: q.id,
                     text: q.text,
@@ -53,7 +56,7 @@ router.get('/random-questions', getUserIdentifier, (req, res) => {
 router.post('/submit', getUserIdentifier, (req, res) => {
     const db = req.app.get('db');
     const openid = req.userId;
-    const { answers } = req.body; // answers: [{ questionId, userAnswer }]
+    const { answers, name, employee_id } = req.body; // answers: [{ questionId, userAnswer }]
     
     // 先检查是否已提交
     db.get("SELECT * FROM user_records WHERE openid = ?", [openid], (err, existing) => {
@@ -105,9 +108,9 @@ router.post('/submit', getUserIdentifier, (req, res) => {
                 db.get("SELECT MAX(serial_no) as maxSerial FROM user_records", (err, row) => {
                     const newSerial = (row.maxSerial || 0) + 1;
                     const submitTime = new Date().toISOString();
-                    db.run(`INSERT INTO user_records (serial_no, openid, score, answers, question_ids, submit_time)
-                            VALUES (?, ?, ?, ?, ?, ?)`,
-                        [newSerial, openid, score, JSON.stringify(answersDetail), JSON.stringify(questionIds), submitTime],
+                    db.run(`INSERT INTO user_records (serial_no, openid, name, employee_id, score, answers, question_ids, submit_time)
+                            VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+                        [newSerial, openid, name || '', employee_id || '', score, JSON.stringify(answersDetail), JSON.stringify(questionIds), submitTime],
                         (err) => {
                             if (err) return res.status(500).json({ error: err.message });
                             // 删除临时会话

@@ -231,8 +231,21 @@ var C = {
   SK_RECORDS: 'lean2_records',
   SK_FP: 'lean2_fp',
   SK_USER: 'lean2_user',
-  S_CNT: 4, M_CNT: 2, J_CNT: 4
+  S_CNT: 4, M_CNT: 2, J_CNT: 4,
+  // GitHub 同步配置（数据保存到仓库 database/ 文件夹）
+  // GITHUB_TOKEN: 需要在 GitHub 创建 fine-grained PAT，权限选 contents:write (仅此仓库)
+  GITHUB_TOKEN: '',
+  GITHUB_RESULTS_PATH: 'database/results.json'
 };
+(function(){
+  // 从 GitHub Pages URL 自动推断仓库 owner 和 repo
+  // 格式: https://<owner>.github.io/<repo>/
+  var hn=window.location.hostname, pn=window.location.pathname;
+  if(hn.indexOf('github.io')!==-1){
+    C.GITHUB_OWNER=hn.split('.')[0];
+    C.GITHUB_REPO=(pn.split('/')[1]||'').replace(/\/$/,'');
+  }
+})();
 
 // ========== 题库 (250题) ==========
 var SINGLE = [
@@ -505,13 +518,76 @@ function genFp(){
 }
 function getFp(){var fp=localStorage.getItem(C.SK_FP);if(!fp){fp=genFp();try{localStorage.setItem(C.SK_FP,fp)}catch(e){}}return fp}
 function isDone(){try{var fp=getFp();var done=JSON.parse(localStorage.getItem(C.SK_COMPLETED)||'[]');return done.indexOf(fp)!==-1}catch(e){return false}}
-function markDone(){try{var fp=getFp();var done=JSON.parse(localStorage.getItem(C.SK_COMPLETED)||'[]');if(done.indexOf(fp)===-1){done.push(fp);localStorage.setItem(C.SK_COMPLETED,JSON.stringify(done))}}catch(e){}}
-function getRecords(){try{return JSON.parse(localStorage.getItem(C.SK_RECORDS)||'[]')}catch(e){return[]}}
-function saveRecord(r){try{var recs=getRecords();recs.push(r);localStorage.setItem(C.SK_RECORDS,JSON.stringify(recs))}catch(e){}}
+function markDone(){try{var fp=getFp();var done=JSON.parse(localStorage.getItem(C.SK_COMPLETED)||'[]');if(done.indexOf(fp)===-1){done.push(fp);localStorage.setItem(C.SK_COMPLETED,JSON.stringify(done))}}catch(e){console.error('markDone失败:',e);alert('保存答题状态失败，请检查浏览器存储空间或关闭隐私模式后重试')}}
+function getRecords(){try{return JSON.parse(localStorage.getItem(C.SK_RECORDS)||'[]')}catch(e){console.error('getRecords失败:',e);return[]}}
+function saveRecord(r){try{var recs=getRecords();recs.push(r);localStorage.setItem(C.SK_RECORDS,JSON.stringify(recs))}catch(e){console.error('saveRecord失败:',e);alert('保存答题记录失败！请检查浏览器存储空间是否充足，或是否开启了隐私/无痕模式。建议截图保存当前页面。')}}
 function getMyRecord(){var fp=getFp();var recs=getRecords();for(var i=recs.length-1;i>=0;i--){if(recs[i].fp===fp)return recs[i]}return null}
 function getUser(){try{return JSON.parse(localStorage.getItem(C.SK_USER)||'null')}catch(e){return null}}
-function saveUser(u){try{localStorage.setItem(C.SK_USER,JSON.stringify(u))}catch(e){}}
+function saveUser(u){try{localStorage.setItem(C.SK_USER,JSON.stringify(u))}catch(e){console.error('saveUser失败:',e)}}
 
+// ========== GitHub API 同步 ==========
+function getGitHubToken(){
+  return C.GITHUB_TOKEN || sessionStorage.getItem('gh_token') || '';
+}
+function canSyncToGitHub(){
+  return !!(getGitHubToken() && C.GITHUB_OWNER && C.GITHUB_REPO);
+}
+function syncToGitHub(rec, callback){
+  if(!canSyncToGitHub()){
+    console.log('GitHub同步未配置: 缺少TOKEN/OWNER/REPO');
+    if(callback) callback(false);
+    return;
+  }
+  var apiBase='https://api.github.com/repos/'+C.GITHUB_OWNER+'/'+C.GITHUB_REPO;
+  var filePath=C.GITHUB_RESULTS_PATH;
+  var headers={
+    'Authorization': 'Bearer '+getGitHubToken(),
+    'Accept': 'application/vnd.github+json',
+    'X-GitHub-Api-Version': '2022-11-28'
+  };
+
+  // 查询当前 results.json 是否存在
+  fetch(apiBase+'/contents/'+filePath,{headers:headers})
+  .then(function(resp){
+    if(resp.status===404){
+      // 文件不存在，创建新文件
+      return {sha:null,existing:[]};
+    }
+    if(!resp.ok) throw new Error('GET results.json failed: '+resp.status);
+    return resp.json().then(function(data){
+      var content=JSON.parse(atob(data.content.replace(/\s/g,'')));
+      return {sha:data.sha,existing:Array.isArray(content)?content:[]};
+    });
+  })
+  .then(function(result){
+    var records=result.existing;
+    // 为记录添加序号
+    rec.seq=(records.length?Math.max.apply(null,records.map(function(r){return r.seq||0})):0)+1;
+    rec.syncedAt=new Date().toISOString();
+    // 去掉 fp 字段节省空间
+    var clean={seq:rec.seq,time:rec.time,name:rec.name,eid:rec.eid,score:rec.score,passed:rec.passed,details:rec.details,syncedAt:rec.syncedAt};
+    records.push(clean);
+
+    var content=btoa(unescape(encodeURIComponent(JSON.stringify(records,null,2))));
+    var body={message:'添加答题记录 #'+rec.seq+' - '+rec.name+' '+rec.score+'分',content:content};
+    if(result.sha) body.sha=result.sha;
+
+    return fetch(apiBase+'/contents/'+filePath,{
+      method:'PUT',
+      headers:headers,
+      body:JSON.stringify(body)
+    });
+  })
+  .then(function(resp){
+    if(!resp.ok) throw new Error('PUT results.json failed: '+resp.status);
+    console.log('GitHub同步成功: 记录已写入 '+filePath);
+    if(callback) callback(true);
+  })
+  .catch(function(e){
+    console.error('GitHub同步失败:',e.message);
+    if(callback) callback(false);
+  });
+}
 var body=document.getElementById('body');
 var toastEl=document.getElementById('toast');
 var _tt;
@@ -677,6 +753,14 @@ function submit(qs,ans,user){
     fp:getFp(),name:user.name,eid:user.eid,details:details
   };
   saveRecord(rec);markDone();
+  console.log('答题记录已保存:',rec.id,'得分:',score,'记录数:',getRecords().length);
+  // 同步到 GitHub 仓库 database/ 文件夹
+  if(canSyncToGitHub()){
+    syncToGitHub(rec, function(ok){
+      if(ok) toast('数据已同步到GitHub','ok');
+      else toast('GitHub同步失败，数据仅保存在本地','warn');
+    });
+  }
   renderResult({score:score,passed:passed,details:details,record:rec});
 }
 
@@ -715,20 +799,47 @@ function renderAdmin(){
   disp.forEach(function(r){
     rows+='<tr class="'+(r.passed?'row-good':'row-bad')+'"><td>'+r.seq+'</td><td>'+escHtml(r.time)+'</td><td>'+escHtml(r.name||'-')+'</td><td>'+escHtml(r.eid||'-')+'</td><td><b style="color:'+(r.passed?'#059669':'#dc2626')+'">'+r.score+'</b></td><td>'+(r.passed?'合格':'未达标')+'</td></tr>';
   });
-  body.innerHTML=
-    '<div class="admin-box">'+
-      '<h3>管理面板</h3>'+
-      '<p class="text-sm">总记录：<b>'+disp.length+'</b> | 合格：<b>'+disp.filter(function(r){return r.passed}).length+'</b></p>'+
-      '<div class="gap-8" style="margin:8px 0">'+
-        '<button class="btn btn-ok btn-sm" id="btnXlsx">导出Excel</button>'+
-        '<button class="btn btn-out btn-sm" id="btnJson">导出JSON</button>'+
-        '<button class="btn btn-err btn-sm" id="btnClear">清空</button>'+
-        '<button class="btn btn-out btn-sm" id="btnCls">关闭</button>'+
-      '</div>'+
-      '<div class="tbl-wrap"><table class="tbl"><thead><tr><th>序号</th><th>答题时间</th><th>姓名</th><th>工号</th><th>得分</th><th>状态</th></tr></thead><tbody>'+(rows||'<tr><td colspan="6">暂无记录</td></tr>')+'</tbody></table></div>'+
-    '</div>';
-  document.getElementById('btnXlsx').onclick=function(){exportXlsx(disp)};
-  document.getElementById('btnJson').onclick=function(){exportJson(disp)};
+	var ghStatus, ghBtnHtml='';
+	  if(canSyncToGitHub()){
+	    var src=C.GITHUB_TOKEN?'CONFIG':'运行时';
+	    ghStatus='<span style="color:#059669">已配置 ('+src+' → '+C.GITHUB_OWNER+'/'+C.GITHUB_REPO+'/'+C.GITHUB_RESULTS_PATH+')</span>';
+	    ghBtnHtml='<button class="btn btn-pri btn-sm" id="btnSyncAll">同步全部到GitHub</button> ';
+	  }else if(C.GITHUB_OWNER && C.GITHUB_REPO){
+	    ghStatus='<span style="color:#d97706">未配置 — 粘贴Token后即可同步</span>';
+	    ghBtnHtml='<input type="password" id="ghTokenInput" placeholder="粘贴 GitHub PAT" style="padding:6px 10px;border:1px solid #d1d5db;border-radius:6px;font-size:13px;width:260px"> '+
+	      '<button class="btn btn-ok btn-sm" id="btnSetToken">设置Token</button> ';
+	  }else{
+	    ghStatus='<span style="color:#dc2626">无法识别仓库</span>';
+	  }
+	  body.innerHTML=
+	    '<div class="admin-box">'+
+	      '<h3>管理面板</h3>'+
+	      '<p class="text-sm">总记录：<b>'+disp.length+'</b> | 合格：<b>'+disp.filter(function(r){return r.passed}).length+'</b></p>'+
+	      '<p class="text-xs" style="margin-top:4px">GitHub同步：'+ghStatus+'</p>'+
+	      '<div class="gap-8" style="margin:8px 0;display:flex;flex-wrap:wrap;align-items:center">'+
+	        '<button class="btn btn-ok btn-sm" id="btnXlsx">导出Excel</button>'+
+	        '<button class="btn btn-out btn-sm" id="btnJson">导出JSON</button>'+
+	        ghBtnHtml+
+	        '<button class="btn btn-err btn-sm" id="btnClear">清空</button>'+
+	        '<button class="btn btn-out btn-sm" id="btnCls">关闭</button>'+
+	      '</div>'+
+	      '<div class="tbl-wrap"><table class="tbl"><thead><tr><th>序号</th><th>答题时间</th><th>姓名</th><th>工号</th><th>得分</th><th>状态</th></tr></thead><tbody>'+(rows||'<tr><td colspan="6">暂无记录</td></tr>')+'</tbody></table></div>'+
+	    '</div>';
+	  document.getElementById('btnXlsx').onclick=function(){exportXlsx(disp)};
+	  document.getElementById('btnJson').onclick=function(){exportJson(disp)};
+	  if(canSyncToGitHub()){
+	    document.getElementById('btnSyncAll').onclick=function(){syncAllRecords(disp)};
+	  }
+	  var btnSetToken=document.getElementById('btnSetToken');
+	  if(btnSetToken)btnSetToken.onclick=function(){
+	    var v=document.getElementById('ghTokenInput').value.trim();
+	    if(!v) return toast('请输入Token','warn');
+	    sessionStorage.setItem('gh_token',v);
+	    toast('Token已设置（仅本次会话有效）','ok');
+	    render('admin');
+	  };
+	  var inp=document.getElementById('ghTokenInput');
+	  if(inp)inp.onkeydown=function(e){if(e.key==='Enter')btnSetToken.click()};
   document.getElementById('btnClear').onclick=function(){
     if(confirm('确定清空所有记录？建议先导出备份。')){
       localStorage.removeItem(C.SK_RECORDS);localStorage.removeItem(C.SK_COMPLETED);localStorage.removeItem(C.SK_FP);
@@ -738,7 +849,50 @@ function renderAdmin(){
   document.getElementById('btnCls').onclick=function(){render('home')};
 }
 
+// 手动同步全部记录到 GitHub
+function syncAllRecords(recs){
+  if(!recs.length) return toast('没有可同步的记录','warn');
+  if(!canSyncToGitHub()) return toast('GitHub同步未配置','warn');
+  var apiBase='https://api.github.com/repos/'+C.GITHUB_OWNER+'/'+C.GITHUB_REPO;
+  var filePath=C.GITHUB_RESULTS_PATH;
+  var headers={
+    'Authorization': 'Bearer '+getGitHubToken(),
+    'Accept': 'application/vnd.github+json',
+    'X-GitHub-Api-Version': '2022-11-28'
+  };
+  // 构建同步数据
+  var records=recs.map(function(r,i){
+    return {seq:i+1,time:r.time,name:r.name,eid:r.eid,score:r.score,passed:r.passed,details:r.details,syncedAt:new Date().toISOString()};
+  });
+  // 直接 PUT（覆盖）
+  var content=btoa(unescape(encodeURIComponent(JSON.stringify(records,null,2))));
+  var body={message:'批量同步答题记录 ('+records.length+'条)',content:content};
+  // 先获取当前 SHA
+  fetch(apiBase+'/contents/'+filePath,{headers:headers})
+  .then(function(resp){
+    if(resp.ok) return resp.json().then(function(d){return d.sha});
+    if(resp.status===404) return null;
+    throw new Error('查询失败: '+resp.status);
+  })
+  .then(function(sha){
+    if(sha) body.sha=sha;
+    return fetch(apiBase+'/contents/'+filePath,{
+      method:'PUT',headers:headers,body:JSON.stringify(body)
+    });
+  })
+  .then(function(resp){
+    if(!resp.ok) throw new Error('提交失败: '+resp.status);
+    toast('已同步 '+records.length+' 条记录到GitHub','ok');
+  })
+  .catch(function(e){
+    console.error('批量同步失败:',e);
+    toast('同步失败: '+e.message,'warn');
+  });
+}
+
 function exportXlsx(recs){
+  if(!recs.length) return toast('没有可导出的答题记录','warn');
+  if(typeof XLSX==='undefined') return toast('Excel库加载失败，请检查网络连接','warn');
   var data=recs.map(function(r){
     return {
       '序号':r.seq,'答题时间':r.time,'姓名':r.name,'工号':r.eid,
@@ -754,6 +908,7 @@ function exportXlsx(recs){
   toast('Excel导出成功','ok');
 }
 function exportJson(recs){
+  if(!recs.length) return toast('没有可导出的答题记录','warn');
   var blob=new Blob([JSON.stringify(recs,null,2)],{type:'application/json'});
   var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='精益问答记录_'+fmtTime().replace(/:/g,'-')+'.json';
   document.body.appendChild(a);a.click();document.body.removeChild(a);

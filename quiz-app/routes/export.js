@@ -1,35 +1,35 @@
 // routes/export.js
 const express = require('express');
 const router = express.Router();
-const json2csv = require('json2csv').parse;
-const fs = require('fs');
-const path = require('path');
 
 // 简单验证（可自行修改密钥）
 const ADMIN_SECRET = 'lean2026';
+
+function toCSV(rows) {
+    if (!rows.length) return '﻿序号,姓名,工号,得分,提交时间,答题详情\n';
+    const headers = ['序号', '姓名', '工号', '得分', '提交时间', '答题详情'];
+    const csvRows = [headers.join(',')];
+    for (const r of rows) {
+        csvRows.push([r.serial_no, r.name, r.employee_id, r.score, r.submit_time, r.answers]
+            .map(v => '"' + String(v).replace(/"/g, '""') + '"').join(','));
+    }
+    return '﻿' + csvRows.join('\n');
+}
 
 router.get('/excel', (req, res) => {
     const { secret } = req.query;
     if (secret !== ADMIN_SECRET) {
         return res.status(403).send('无权访问');
     }
-    
+
     const db = req.app.get('db');
-    db.all("SELECT serial_no, openid, score, submit_time, answers FROM user_records ORDER BY serial_no ASC", (err, rows) => {
+    db.all("SELECT serial_no, name, employee_id, score, submit_time, answers FROM user_records ORDER BY serial_no ASC", (err, rows) => {
         if (err) {
             return res.status(500).json({ error: err.message });
         }
-        
-        const csvData = rows.map(row => ({
-            序号: row.serial_no,
-            用户标识: row.openid,
-            得分: row.score,
-            提交时间: row.submit_time,
-            答题详情: row.answers
-        }));
-        
-        const csv = json2csv(csvData);
-        res.header('Content-Type', 'text/csv');
+
+        const csv = toCSV(rows);
+        res.header('Content-Type', 'text/csv; charset=utf-8');
         res.attachment(`quiz_records_${new Date().toISOString().slice(0,19)}.csv`);
         res.send(csv);
     });
