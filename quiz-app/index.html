@@ -1,0 +1,119 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>精益知识有奖问答</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏭 精益知识大闯关</h1>
+            <p>学精益 · 懂精益 · 用精益</p>
+        </header>
+        <main id="app">
+            <div class="loading">加载中...</div>
+        </main>
+        <footer>
+            <p>提委会 & 行政人事部 主办</p>
+        </footer>
+    </div>
+    <script>
+        let currentQuestions = [];
+        let quizStatus = null;
+        
+        async function loadStatus() {
+            const res = await fetch('/api/random-questions');
+            const data = await res.json();
+            if (data.status === 'completed') {
+                // 已完成答题，显示分数
+                showScore(data.score);
+            } else if (data.status === 'pending') {
+                currentQuestions = data.questions;
+                renderQuestions(currentQuestions);
+            } else if (data.status === 'new') {
+                currentQuestions = data.questions;
+                renderQuestions(currentQuestions);
+            }
+        }
+        
+        function showScore(score) {
+            const app = document.getElementById('app');
+            app.innerHTML = `
+                <div class="result-card">
+                    <div class="score-circle">${score}</div>
+                    <h2>您的得分：${score}分</h2>
+                    <p>${score >= 80 ? '🎉 恭喜您获得奖品！请现场登记领奖 🎉' : '📚 再接再厉，学习更多精益知识！'}</p>
+                    <button onclick="location.reload()">刷新页面</button>
+                </div>
+            `;
+        }
+        
+        function renderQuestions(questions) {
+            const app = document.getElementById('app');
+            let html = '<form id="quizForm">';
+            questions.forEach((q, idx) => {
+                html += `<div class="question-card"><div class="q-title">${idx+1}. ${q.text}</div>`;
+                if (q.type === 'single') {
+                    html += `<div class="options">`;
+                    q.options.forEach(opt => {
+                        html += `<label><input type="radio" name="q${q.id}" value="${opt.key}"> ${opt.key}. ${opt.text}</label>`;
+                    });
+                    html += `</div>`;
+                } else if (q.type === 'multiple') {
+                    html += `<div class="options">`;
+                    q.options.forEach(opt => {
+                        html += `<label><input type="checkbox" name="q${q.id}" value="${opt.key}"> ${opt.key}. ${opt.text}</label>`;
+                    });
+                    html += `</div><p class="hint">*多选题，请勾选所有正确答案</p>`;
+                } else if (q.type === 'judge') {
+                    html += `<div class="options"><label><input type="radio" name="q${q.id}" value="正确"> 正确</label>
+                            <label><input type="radio" name="q${q.id}" value="错误"> 错误</label></div>`;
+                }
+                html += `</div>`;
+            });
+            html += `<button type="submit" class="submit-btn">提交答案</button></form>`;
+            app.innerHTML = html;
+            
+            document.getElementById('quizForm').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const answers = [];
+                for (let q of currentQuestions) {
+                    const name = `q${q.id}`;
+                    if (q.type === 'multiple') {
+                        const selected = Array.from(document.querySelectorAll(`input[name="${name}"]:checked`)).map(cb => cb.value);
+                        answers.push({ questionId: q.id, userAnswer: selected.sort().join('') });
+                    } else {
+                        const selected = document.querySelector(`input[name="${name}"]:checked`);
+                        if (selected) {
+                            answers.push({ questionId: q.id, userAnswer: selected.value });
+                        } else {
+                            alert(`请回答第${currentQuestions.indexOf(q)+1}题`);
+                            return;
+                        }
+                    }
+                }
+                const res = await fetch('/api/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ answers })
+                });
+                const result = await res.json();
+                if (result.status === 'success') {
+                    alert(`答题完成！您的得分：${result.score}分，序号：${result.serialNo}`);
+                    showScore(result.score);
+                } else if (result.status === 'already') {
+                    alert('您已经参加过答题！');
+                    showScore(result.score);
+                } else {
+                    alert('提交失败：' + (result.error || '未知错误'));
+                }
+            });
+        }
+        
+        loadStatus();
+    </script>
+</body>
+</html>

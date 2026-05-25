@@ -1,0 +1,42 @@
+<!-- public/admin.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理后台 - 精益问答</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container admin">
+        <h1>📊 活动管理后台</h1>
+        <div id="qrArea">
+            <h3>答题二维码</h3>
+            <div id="qrcodeImg"></div>
+            <p>答题链接：<span id="quizUrl"></span></p>
+        </div>
+        <div class="export-area">
+            <h3>数据导出</h3>
+            <button id="exportBtn">📎 导出答题记录 (Excel CSV)</button>
+            <p class="hint">*导出需要密钥，默认密钥 lean2026</p>
+        </div>
+    </div>
+    <script>
+        async function loadQrcode() {
+            const res = await fetch('/api/qrcode');
+            const data = await res.json();
+            document.getElementById('quizUrl').innerText = data.quizUrl;
+            const img = document.createElement('img');
+            img.src = data.qrDataUrl;
+            document.getElementById('qrcodeImg').appendChild(img);
+        }
+        document.getElementById('exportBtn').addEventListener('click', () => {
+            const secret = prompt('请输入导出密钥：', 'lean2026');
+            if (secret) {
+                window.location.href = `/export/excel?secret=${secret}`;
+            }
+        });
+        loadQrcode();
+    </script>
+</body>
+</html>
