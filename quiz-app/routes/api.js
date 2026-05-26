@@ -23,9 +23,16 @@ router.get('/random-questions', getUserIdentifier, (req, res) => {
                 return res.json({ status: 'pending', questions });
             }
             
-            // 按题型比例随机抽取10题 (4单选+2多选+4判断)
-            db.all("SELECT * FROM questions WHERE type = 'single' ORDER BY RANDOM() LIMIT 4", (err, singles) => {
+            // 必考题 IDs
+            const MANDATORY_IDS = [43, 45];
+            // 先取必考题
+            db.all("SELECT * FROM questions WHERE id IN (" + MANDATORY_IDS.join(',') + ")", (err, mandatory) => {
                 if (err) return res.status(500).json({ error: err.message });
+                // 随机补足剩余单选 (4 - 必考题数)
+                const remain = Math.max(0, 4 - mandatory.length);
+                db.all("SELECT * FROM questions WHERE type = 'single' AND id NOT IN (" + MANDATORY_IDS.join(',') + ") ORDER BY RANDOM() LIMIT " + remain, (err, randSingles) => {
+                    if (err) return res.status(500).json({ error: err.message });
+                    const singles = [...mandatory, ...randSingles];
                 db.all("SELECT * FROM questions WHERE type = 'multiple' ORDER BY RANDOM() LIMIT 2", (err, multis) => {
                     if (err) return res.status(500).json({ error: err.message });
                     db.all("SELECT * FROM questions WHERE type = 'judge' ORDER BY RANDOM() LIMIT 4", (err, judges) => {
