@@ -31,14 +31,14 @@ router.get('/random-questions', getUserIdentifier, (req, res) => {
                 const manSingle = mandatory.filter(q => q.type === 'single');
                 const manJudge = mandatory.filter(q => q.type === 'judge');
                 // 随机补足剩余单选
-                const remainSingle = Math.max(0, 4 - manSingle.length);
+                const remainSingle = Math.max(0, 5 - manSingle.length);
                 db.all("SELECT * FROM questions WHERE type = 'single' AND id NOT IN (" + MANDATORY_IDS.join(',') + ") ORDER BY RANDOM() LIMIT " + remainSingle, (err, randSingles) => {
                     if (err) return res.status(500).json({ error: err.message });
                     const singles = [...manSingle, ...randSingles];
                 db.all("SELECT * FROM questions WHERE type = 'multiple' ORDER BY RANDOM() LIMIT 2", (err, multis) => {
                     if (err) return res.status(500).json({ error: err.message });
                     // 随机补足剩余判断
-                    const remainJudge = Math.max(0, 4 - manJudge.length);
+                    const remainJudge = Math.max(0, 3 - manJudge.length);
                     db.all("SELECT * FROM questions WHERE type = 'judge' AND id NOT IN (" + MANDATORY_IDS.join(',') + ") ORDER BY RANDOM() LIMIT " + remainJudge, (err, randJudges) => {
                         if (err) return res.status(500).json({ error: err.message });
                         const judges = [...manJudge, ...randJudges];
