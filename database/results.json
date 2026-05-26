@@ -1,6 +1,98 @@
 [
   {
     "seq": 1,
+    "time": "2026-05-26 09:04:39",
+    "name": "胡321313",
+    "eid": "0002",
+    "dept": "SSD",
+    "score": 80,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "快速换模目的是实现小批量多品种。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "防错是从设计/工装防止犯错，不是靠人。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 3,
+        "qt": "过量生产是因为（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "ECRS中\"C\"是（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 5,
+        "qt": "改善需要全员参与，从班组长、员工开始。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "精益生产适用于所有制造与服务业。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "5S管理包括（）",
+        "type": "multiple",
+        "ua": "ABCDE",
+        "ca": "ABCDE",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "产线平衡改善方法（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "不良品浪费不包括（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "D",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "产线瓶颈工位（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-05-26T01:21:20.783Z"
+  },
+  {
+    "seq": 2,
     "time": "2026-05-26 09:17:24",
     "name": "金佳琪",
     "eid": "4340",
@@ -89,6 +181,6 @@
         "ok": true
       }
     ],
-    "syncedAt": "2026-05-26T01:17:25.264Z"
+    "syncedAt": "2026-05-26T01:21:20.783Z"
   }
 ]
