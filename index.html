@@ -707,20 +707,24 @@ function renderHome(){
 
 // ========== 抽题 ==========
 // 必考题 ID 列表
-var MANDATORY_IDS = ['s43', 's45'];
+var MANDATORY_IDS = ['s101', 's102', 'j101'];
 
 function genQuestions(){
-  // 从题库中找出必考题
-  var mandatory=[];
-  var restSingle=[];
+  // 从题库中分离必考题和普通题
+  var manSingle=[], restSingle=[];
   for(var i=0;i<SINGLE.length;i++){
-    if(MANDATORY_IDS.indexOf(SINGLE[i].id)!==-1) mandatory.push(SINGLE[i]);
+    if(MANDATORY_IDS.indexOf(SINGLE[i].id)!==-1) manSingle.push(SINGLE[i]);
     else restSingle.push(SINGLE[i]);
   }
-  // 随机单选池 = 必考题 + 随机补足
-  var s=mandatory.concat(pick(restSingle,Math.max(0,C.S_CNT-mandatory.length)));
+  var manJudge=[], restJudge=[];
+  for(var i=0;i<JUDGE.length;i++){
+    if(MANDATORY_IDS.indexOf(JUDGE[i].id)!==-1) manJudge.push(JUDGE[i]);
+    else restJudge.push(JUDGE[i]);
+  }
+  // 必考题 + 随机补足
+  var s=manSingle.concat(pick(restSingle,Math.max(0,C.S_CNT-manSingle.length)));
   var m=pick(MULTI,C.M_CNT);
-  var j=pick(JUDGE,C.J_CNT);
+  var j=manJudge.concat(pick(restJudge,Math.max(0,C.J_CNT-manJudge.length)));
   var all=s.concat(m).concat(j);
   return shuffle(all).map(function(q){
     var type='single';

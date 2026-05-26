@@ -23,20 +23,25 @@ router.get('/random-questions', getUserIdentifier, (req, res) => {
                 return res.json({ status: 'pending', questions });
             }
             
-            // 必考题 IDs
-            const MANDATORY_IDS = [43, 45];
-            // 先取必考题
+            // 必考题 IDs (db: 251=s101, 252=s102, 254=j101)
+            const MANDATORY_IDS = [251, 252, 254];
+            // 先取所有必考题
             db.all("SELECT * FROM questions WHERE id IN (" + MANDATORY_IDS.join(',') + ")", (err, mandatory) => {
                 if (err) return res.status(500).json({ error: err.message });
-                // 随机补足剩余单选 (4 - 必考题数)
-                const remain = Math.max(0, 4 - mandatory.length);
-                db.all("SELECT * FROM questions WHERE type = 'single' AND id NOT IN (" + MANDATORY_IDS.join(',') + ") ORDER BY RANDOM() LIMIT " + remain, (err, randSingles) => {
+                const manSingle = mandatory.filter(q => q.type === 'single');
+                const manJudge = mandatory.filter(q => q.type === 'judge');
+                // 随机补足剩余单选
+                const remainSingle = Math.max(0, 4 - manSingle.length);
+                db.all("SELECT * FROM questions WHERE type = 'single' AND id NOT IN (" + MANDATORY_IDS.join(',') + ") ORDER BY RANDOM() LIMIT " + remainSingle, (err, randSingles) => {
                     if (err) return res.status(500).json({ error: err.message });
-                    const singles = [...mandatory, ...randSingles];
+                    const singles = [...manSingle, ...randSingles];
                 db.all("SELECT * FROM questions WHERE type = 'multiple' ORDER BY RANDOM() LIMIT 2", (err, multis) => {
                     if (err) return res.status(500).json({ error: err.message });
-                    db.all("SELECT * FROM questions WHERE type = 'judge' ORDER BY RANDOM() LIMIT 4", (err, judges) => {
+                    // 随机补足剩余判断
+                    const remainJudge = Math.max(0, 4 - manJudge.length);
+                    db.all("SELECT * FROM questions WHERE type = 'judge' AND id NOT IN (" + MANDATORY_IDS.join(',') + ") ORDER BY RANDOM() LIMIT " + remainJudge, (err, randJudges) => {
                         if (err) return res.status(500).json({ error: err.message });
+                        const judges = [...manJudge, ...randJudges];
                         // 合并后随机打乱题目顺序
                         const selected = [...singles, ...multis, ...judges].sort(() => 0.5 - Math.random());
                 const questionsData = selected.map(q => ({
