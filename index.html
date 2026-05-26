@@ -883,19 +883,32 @@ function renderAdmin(allData){
   document.getElementById('btnCls').onclick=function(){render('home')};
 }
 
-// 从 GitHub 加载云端全部数据
+// 从 GitHub 加载云端全部数据（使用 Contents API，无缓存延迟）
 function loadCloudData(){
   if(!C.GITHUB_OWNER || !C.GITHUB_REPO) return toast('无法识别仓库','warn');
   toast('正在加载云端数据...','ok');
-  var url='https://raw.githubusercontent.com/'+C.GITHUB_OWNER+'/'+C.GITHUB_REPO+'/main/'+C.GITHUB_RESULTS_PATH;
-  fetch(url)
+  var apiBase='https://api.github.com/repos/'+C.GITHUB_OWNER+'/'+C.GITHUB_REPO;
+  var headers={'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
+  var token=getGitHubToken();
+  if(token) headers['Authorization']='Bearer '+token;
+
+  fetch(apiBase+'/contents/'+C.GITHUB_RESULTS_PATH,{headers:headers})
   .then(function(resp){
+    if(resp.status===404) return renderAdmin([]);
     if(!resp.ok) throw new Error('HTTP '+resp.status);
     return resp.json();
   })
-  .then(function(data){
-    if(!Array.isArray(data)) throw new Error('数据格式异常');
-    renderAdmin(data);
+  .then(function(fileData){
+    var content;
+    try{
+      // GitHub API 返回 base64 编码的内容
+      var raw=atob(fileData.content.replace(/\s/g,''));
+      content=JSON.parse(raw);
+    }catch(e){
+      throw new Error('解析数据失败');
+    }
+    if(!Array.isArray(content)) throw new Error('数据格式异常');
+    renderAdmin(content);
   })
   .catch(function(e){
     console.error('加载云端数据失败:',e);
