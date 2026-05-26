@@ -274,5 +274,97 @@
       }
     ],
     "syncedAt": "2026-05-26T01:04:40.284Z"
+  },
+  {
+    "seq": 4,
+    "time": "2026-05-26 09:13:28",
+    "name": "张三",
+    "eid": "0123",
+    "dept": "测试",
+    "score": 30,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "以下属于推动式生产特点的是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 2,
+        "qt": "5Why分析法的目的是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 3,
+        "qt": "节拍时间=有效工作时间/客户需求数量。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "快速换模SMED改善要点（）",
+        "type": "multiple",
+        "ua": "B",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 5,
+        "qt": "设备点检属于TPM活动。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "加工过剩就是工艺要求超过客户需求。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "防错装置类型包括（）",
+        "type": "multiple",
+        "ua": "A",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 8,
+        "qt": "精益生产推行从（）开始",
+        "type": "single",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "现场区域划线属于（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "标准作业一旦制定就不能修改。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-05-26T01:13:29.673Z"
   }
 ]
