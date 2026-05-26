@@ -509,13 +509,14 @@ var JUDGE = [
 
 // ========== 工具函数 ==========
 function shuffle(a){
-  // 使用 crypto.getRandomValues 获得更好的随机性，避免某些环境下 Math.random() 不够随机
   var arr=a.slice();
   var randArr;
-  if(typeof crypto!=='undefined'&&crypto.getRandomValues){
-    randArr=new Uint32Array(arr.length);
-    crypto.getRandomValues(randArr);
-  }
+  try{
+    if(typeof crypto!=='undefined'&&crypto.getRandomValues&&typeof Uint32Array!=='undefined'){
+      randArr=new Uint32Array(arr.length);
+      crypto.getRandomValues(randArr);
+    }
+  }catch(e){}
   for(var i=arr.length-1;i>0;i--){
     var j;
     if(randArr){j=randArr[i]%(i+1)}
