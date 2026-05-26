@@ -508,7 +508,22 @@ var JUDGE = [
 ];
 
 // ========== 工具函数 ==========
-function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a}
+function shuffle(a){
+  // 使用 crypto.getRandomValues 获得更好的随机性，避免某些环境下 Math.random() 不够随机
+  var arr=a.slice();
+  var randArr;
+  if(typeof crypto!=='undefined'&&crypto.getRandomValues){
+    randArr=new Uint32Array(arr.length);
+    crypto.getRandomValues(randArr);
+  }
+  for(var i=arr.length-1;i>0;i--){
+    var j;
+    if(randArr){j=randArr[i]%(i+1)}
+    else{j=Math.floor(Math.random()*(i+1))}
+    var t=arr[i];arr[i]=arr[j];arr[j]=t;
+  }
+  return arr;
+}
 function pick(arr,n){return shuffle(arr.slice()).slice(0,Math.min(n,arr.length))}
 function fmtTime(d){d=d||new Date();var p=function(x){return String(x).padStart(2,'0')};return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())+' '+p(d.getHours())+':'+p(d.getMinutes())+':'+p(d.getSeconds())}
 function genFp(){
