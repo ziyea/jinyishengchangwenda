@@ -182,5 +182,97 @@
       }
     ],
     "syncedAt": "2026-05-26T01:22:17.715Z"
+  },
+  {
+    "seq": 3,
+    "time": "2026-05-26 14:59:15",
+    "name": "胡123",
+    "eid": "0459",
+    "dept": "SSD",
+    "score": 70,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "精益改善常用工具（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "标准作业的目的是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "精益生产以客户需求为导向。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "换模作业并行作业可以缩短时间。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "推行JIT的基础是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "价值流图的主要作用是（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 7,
+        "qt": "拉动式生产特点（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "价值流图分为现状图和未来图。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "TPM只是维修工的事。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "自働化（Jidoka）的核心是（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "B",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-05-26T06:59:17.085Z"
   }
 ]
