@@ -529,6 +529,17 @@ function saveUser(u){try{localStorage.setItem(C.SK_USER,JSON.stringify(u))}catch
 function getGitHubToken(){
   return C.GITHUB_TOKEN || sessionStorage.getItem('gh_token') || '';
 }
+// 将 GitHub API 返回的 base64（UTF-8 编码）解码为字符串
+function b64Decode(b64){
+  var raw=atob(b64.replace(/\s/g,''));
+  try{
+    var bytes=new Uint8Array(raw.length);
+    for(var i=0;i<raw.length;i++) bytes[i]=raw.charCodeAt(i)&0xff;
+    return new TextDecoder('utf-8').decode(bytes);
+  }catch(e){
+    return raw;
+  }
+}
 function canSyncToGitHub(){
   return !!(getGitHubToken() && C.GITHUB_OWNER && C.GITHUB_REPO);
 }
@@ -555,7 +566,7 @@ function syncToGitHub(rec, callback){
     }
     if(!resp.ok) throw new Error('GET results.json failed: '+resp.status);
     return resp.json().then(function(data){
-      var content=JSON.parse(atob(data.content.replace(/\s/g,'')));
+      var content=JSON.parse(b64Decode(data.content));
       return {sha:data.sha,existing:Array.isArray(content)?content:[]};
     });
   })
@@ -901,9 +912,8 @@ function loadCloudData(){
   .then(function(fileData){
     var content;
     try{
-      // GitHub API 返回 base64 编码的内容
-      var raw=atob(fileData.content.replace(/\s/g,''));
-      content=JSON.parse(raw);
+      // GitHub API 返回 base64 编码的 UTF-8 内容
+      content=JSON.parse(b64Decode(fileData.content));
     }catch(e){
       throw new Error('解析数据失败');
     }
