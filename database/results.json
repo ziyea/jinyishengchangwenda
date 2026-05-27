@@ -274,5 +274,97 @@
       }
     ],
     "syncedAt": "2026-05-26T06:59:17.085Z"
+  },
+  {
+    "seq": 4,
+    "time": "2026-05-27 08:03:18",
+    "name": "123",
+    "eid": "123",
+    "dept": "123",
+    "score": 70,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "全员改善的主体是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "价值流分析目的（）",
+        "type": "multiple",
+        "ua": "B",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 4,
+        "qt": "看板管理的作用是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "精益生产追求的是（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 6,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "清扫就是打扫卫生、同时点检设备。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "节拍时间=有效工作时间/客户需求数量。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "红牌作战适用（）",
+        "type": "multiple",
+        "ua": "B",
+        "ca": "ABCD",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-05-27T00:03:20.313Z"
   }
 ]
