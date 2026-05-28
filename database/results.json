@@ -1,1 +1,94 @@
-[]
+[
+  {
+    "seq": 1,
+    "time": "2026-05-28 10:50:54",
+    "name": "111",
+    "eid": "111",
+    "dept": "111",
+    "score": 40,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "价值流图的主要作用是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 2,
+        "qt": "整理就是把东西摆放整齐。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 3,
+        "qt": "自働化（Jidoka）的核心是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 4,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "整理的内容包括（）",
+        "type": "multiple",
+        "ua": "A",
+        "ca": "ABC",
+        "ok": false
+      },
+      {
+        "qi": 6,
+        "qt": "精益生产适用行业（）",
+        "type": "multiple",
+        "ua": "A",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 7,
+        "qt": "目视化管理让问题一目了然。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "改善的基本原则是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "D",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-05-28T02:50:55.386Z"
+  }
+]
