@@ -231,6 +231,7 @@ var C = {
   SK_RECORDS: 'lean2_records',
   SK_FP: 'lean2_fp',
   SK_USER: 'lean2_user',
+  VERSION: 'v2',
   S_CNT: 5, M_CNT: 2, J_CNT: 3,
   // GitHub 同步配置（数据保存到仓库 database/ 文件夹）
   // GITHUB_TOKEN: 需要在 GitHub 创建 fine-grained PAT，权限选 contents:write (仅此仓库)
@@ -247,7 +248,20 @@ var C = {
   }
 })();
 
-// ========== 题库 (250题) ==========
+// 版本检查：版本号变更时自动清除旧数据，全员可重新答题
+(function(){
+  var storedVer=localStorage.getItem('lean2_version');
+  if(storedVer!==C.VERSION){
+    localStorage.removeItem(C.SK_RECORDS);
+    localStorage.removeItem(C.SK_COMPLETED);
+    localStorage.removeItem(C.SK_FP);
+    localStorage.removeItem(C.SK_USER);
+    localStorage.setItem('lean2_version',C.VERSION);
+    console.log('数据已重置（版本 '+C.VERSION+'）');
+  }
+})();
+
+// ========== 题库 (原250题，现已补充) ==========
 var SINGLE = [
   {id:'s1',q:'精益生产的核心思想是（）',o:['提高产量','消除浪费、持续改善','扩大产能','增加设备'],a:'B'},
   {id:'s2',q:'精益生产起源于（）',o:['美国福特','日本丰田','德国大众','中国海尔'],a:'B'},
