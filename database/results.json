@@ -182,5 +182,97 @@
       }
     ],
     "syncedAt": "2026-05-29T01:37:51.879Z"
+  },
+  {
+    "seq": 3,
+    "time": "2026-05-29 11:31:03",
+    "name": "唐梦宏",
+    "eid": "4100",
+    "dept": "结构设计部",
+    "score": 90,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "价值流图包含（）",
+        "type": "multiple",
+        "ua": "ABCDE",
+        "ca": "ABCDE",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "精益成功关键因素（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "数据化管理强调（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "工艺过度打磨、多余工序属于（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 8,
+        "qt": "动作浪费包括多余弯腰、转身、寻找。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "自主保养是操作工负责自己设备的日常点检保养。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "工装夹具不合理会造成（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-05-29T03:31:05.363Z"
   }
 ]
