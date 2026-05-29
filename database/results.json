@@ -550,5 +550,97 @@
       }
     ],
     "syncedAt": "2026-05-29T03:39:08.110Z"
+  },
+  {
+    "seq": 7,
+    "time": "2026-05-29 11:42:57",
+    "name": "吴操许",
+    "eid": "1397",
+    "dept": "工艺",
+    "score": 60,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "价值由企业定义。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 2,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 3,
+        "qt": "班组精益管理内容（）",
+        "type": "multiple",
+        "ua": "ACD",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 4,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "改善需要全员参与，从班组长、员工开始。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "小批量多品种生产适合（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "全员改善的主体是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "零停滞是（）追求目标",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "加工过剩改善（）",
+        "type": "multiple",
+        "ua": "B",
+        "ca": "ABCD",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-05-29T03:42:58.802Z"
   }
 ]
