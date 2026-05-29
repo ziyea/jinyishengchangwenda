@@ -642,5 +642,97 @@
       }
     ],
     "syncedAt": "2026-05-29T03:42:58.802Z"
+  },
+  {
+    "seq": 8,
+    "time": "2026-05-29 13:19:10",
+    "name": "秦宇心",
+    "eid": "2694",
+    "dept": "设计验证部",
+    "score": 90,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "红牌作战适用（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "均衡化生产的目的是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "精益中\"价值\"由（）定义",
+        "type": "single",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 5,
+        "qt": "精益改善追求一次性大改变，不接受小改善。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "现场改善优先遵循（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "拉动生产是后工序向前工序取料。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "价值流分析目的（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-05-29T05:19:11.908Z"
   }
 ]
