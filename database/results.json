@@ -1470,5 +1470,97 @@
       }
     ],
     "syncedAt": "2026-05-29T08:29:45.380Z"
+  },
+  {
+    "seq": 17,
+    "time": "2026-05-29 16:47:31",
+    "name": "吴飞",
+    "eid": "0344",
+    "dept": "生产部",
+    "score": 60,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "5S做好是推行精益的基础。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "价值流图包含（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCDE",
+        "ok": false
+      },
+      {
+        "qi": 4,
+        "qt": "以下属于\"动作浪费\"的是（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 5,
+        "qt": "5Why应用要点（）",
+        "type": "multiple",
+        "ua": "BCD",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 6,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "公司推行精益提案改善的目的是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "精益生产就是减少人员、降低成本。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "精益生产的核心思想是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-05-29T08:47:35.235Z"
   }
 ]
