@@ -2022,5 +2022,97 @@
       }
     ],
     "syncedAt": "2026-05-30T04:59:31.588Z"
+  },
+  {
+    "seq": 23,
+    "time": "2026-05-30 17:11:33",
+    "name": "徐志锋",
+    "eid": "3882",
+    "dept": "工程样版组",
+    "score": 80,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "多能工作用（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "红牌作战适用（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "精益生产中\"七大浪费\"之首是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "C",
+        "ok": false
+      },
+      {
+        "qi": 5,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "多能工培养目的是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "三现主义：现场、现物、现实。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "供应商交付不及时会造成（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "PDCA循环就是持续改善。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-05-30T09:11:36.282Z"
   }
 ]
