@@ -3126,5 +3126,97 @@
       }
     ],
     "syncedAt": "2026-06-01T04:02:35.307Z"
+  },
+  {
+    "seq": 35,
+    "time": "2026-06-01 17:12:20",
+    "name": "甄花",
+    "eid": "2060",
+    "dept": "SMT",
+    "score": 50,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "素养的要点（）",
+        "type": "multiple",
+        "ua": "ABC",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 3,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "5S中\"整顿\"的目的是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "瓶颈工位决定整条线产能。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "不良品浪费不包括（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "D",
+        "ok": false
+      },
+      {
+        "qi": 7,
+        "qt": "先进先出FIFO适用（）",
+        "type": "multiple",
+        "ua": "BC",
+        "ca": "ABC",
+        "ok": false
+      },
+      {
+        "qi": 8,
+        "qt": "生产计划波动大会造成等待与过量生产。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "生产节拍（Takt Time）依据（）计算",
+        "type": "single",
+        "ua": "D",
+        "ca": "B",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-06-01T09:12:21.850Z"
   }
 ]
