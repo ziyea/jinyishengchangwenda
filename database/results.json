@@ -2482,5 +2482,97 @@
       }
     ],
     "syncedAt": "2026-06-01T00:51:33.191Z"
+  },
+  {
+    "seq": 28,
+    "time": "2026-06-01 09:54:41",
+    "name": "黄长丽",
+    "eid": "2308",
+    "dept": "仓库",
+    "score": 90,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "产线平衡就是让每个工位工时接近节拍。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "素养的要点（）",
+        "type": "multiple",
+        "ua": "AB",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 4,
+        "qt": "工艺过度打磨、多余工序属于（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "全面质量管理强调（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "精益改善追求一次性大改变，不接受小改善。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "过量生产是因为（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "防错装置类型包括（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-01T01:54:43.232Z"
   }
 ]
