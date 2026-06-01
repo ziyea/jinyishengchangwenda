@@ -2666,5 +2666,97 @@
       }
     ],
     "syncedAt": "2026-06-01T02:01:33.635Z"
+  },
+  {
+    "seq": 30,
+    "time": "2026-06-01 10:08:06",
+    "name": "蒋冬梅",
+    "eid": "4237",
+    "dept": "仓库",
+    "score": 100,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "推动式生产缺点（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "先进先出（FIFO）可以防止物料过期。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "多能工作用（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "精益生产中\"七大浪费\"之首是（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "C",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "库存浪费被称为（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "TPM的中文含义是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "设备点检属于TPM活动。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-01T02:08:07.972Z"
   }
 ]
