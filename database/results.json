@@ -2942,5 +2942,97 @@
       }
     ],
     "syncedAt": "2026-06-01T02:26:32.198Z"
+  },
+  {
+    "seq": 33,
+    "time": "2026-06-01 11:14:34",
+    "name": "赖林",
+    "eid": "4248",
+    "dept": "工艺样板组",
+    "score": 70,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "物料先进先出（FIFO）用于改善（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "TPM强调全员参与设备保养。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "等待浪费的原因（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "多能工培养目的是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "零切换是（）追求目标",
+        "type": "single",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "5S管理包括（）",
+        "type": "multiple",
+        "ua": "ABCDEF",
+        "ca": "ABCDE",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "精益生产反对大批量、长周期生产。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-06-01T03:14:36.449Z"
   }
 ]
