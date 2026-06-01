@@ -3218,5 +3218,97 @@
       }
     ],
     "syncedAt": "2026-06-01T09:12:21.850Z"
+  },
+  {
+    "seq": 36,
+    "time": "2026-06-01 22:06:14",
+    "name": "许丽琴",
+    "eid": "1173",
+    "dept": "SMT",
+    "score": 80,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "精益生产中\"人\"强调（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "现场异常处理\"三现\"是（）",
+        "type": "multiple",
+        "ua": "ABC",
+        "ca": "ABC",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "设备零故障是TPM追求目标。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "库存浪费被称为（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "属于不增值活动的是（）",
+        "type": "multiple",
+        "ua": "A",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 8,
+        "qt": "以下属于推动式生产特点的是（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "精益生产只适合汽车行业。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-01T14:06:19.028Z"
   }
 ]
