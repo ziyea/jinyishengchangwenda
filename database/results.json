@@ -4138,5 +4138,97 @@
       }
     ],
     "syncedAt": "2026-06-04T07:41:30.124Z"
+  },
+  {
+    "seq": 46,
+    "time": "2026-06-04 17:22:03",
+    "name": "邱启明",
+    "eid": "4181",
+    "dept": "生产部",
+    "score": 80,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "以下最能体现精益思想的是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "产线平衡率越高说明（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "动作浪费改善方向（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "精益改善追求一次性大改变，不接受小改善。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "U型产线有利于人员调配、减少搬运。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "公司推行提案改善项目的作用是（）",
+        "type": "multiple",
+        "ua": "BDEF",
+        "ca": "ABCDEF",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "供应商交付不及时会造成（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "A",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-06-04T09:22:07.410Z"
   }
 ]
