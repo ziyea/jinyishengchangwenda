@@ -4230,5 +4230,97 @@
       }
     ],
     "syncedAt": "2026-06-04T09:22:07.410Z"
+  },
+  {
+    "seq": 47,
+    "time": "2026-06-04 17:24:16",
+    "name": "郭俊峰",
+    "eid": "4161",
+    "dept": "生产部",
+    "score": 80,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "精益生产最终追求（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "精益生产适用于所有制造与服务业。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "导致设备故障原因（）",
+        "type": "multiple",
+        "ua": "ABD",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 5,
+        "qt": "ECRS优先顺序：取消>合并>重排>简化。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "产线平衡改善方法（）",
+        "type": "multiple",
+        "ua": "ACD",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "现场5S差最直接影响（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "以下属于\"等待浪费\"的是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-04T09:24:19.034Z"
   }
 ]
