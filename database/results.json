@@ -4046,5 +4046,97 @@
       }
     ],
     "syncedAt": "2026-06-04T04:14:30.674Z"
+  },
+  {
+    "seq": 45,
+    "time": "2026-06-04 15:41:28",
+    "name": "蔺雨",
+    "eid": "3043",
+    "dept": "工艺部",
+    "score": 80,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "不良品浪费改善（）",
+        "type": "multiple",
+        "ua": "ABC",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 2,
+        "qt": "精益生产就是减少人员、降低成本。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "素养是指（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "持续改善（Kaizen）强调（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "产线平衡的目标是消除（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "班组精益管理内容（）",
+        "type": "multiple",
+        "ua": "ABC",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "标准作业要根据改善不断优化更新。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-04T07:41:30.124Z"
   }
 ]
