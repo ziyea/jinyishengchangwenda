@@ -5150,5 +5150,97 @@
       }
     ],
     "syncedAt": "2026-06-05T09:58:57.939Z"
+  },
+  {
+    "seq": 57,
+    "time": "2026-06-05 18:01:59",
+    "name": "陈展宏",
+    "eid": "4357",
+    "dept": "生产部",
+    "score": 90,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "快速换模步骤（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "生产现场\"三定\"不包括（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "D",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "单件流的优势是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "多能工不利于产线平衡。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "二八定律：大部分问题由少数关键原因造成。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "整顿的\"三定\"是（）",
+        "type": "multiple",
+        "ua": "ABC",
+        "ca": "ABC",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "加工过剩浪费是指（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-06-05T10:02:01.400Z"
   }
 ]
