@@ -4598,5 +4598,97 @@
       }
     ],
     "syncedAt": "2026-06-05T03:50:18.392Z"
+  },
+  {
+    "seq": 51,
+    "time": "2026-06-05 12:04:04",
+    "name": "李观玲",
+    "eid": "1201",
+    "dept": "生产部",
+    "score": 60,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "精益生产追求零浪费、零不良、零故障、零停滞。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "属于增值活动的是（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "精益生产以客户需求为导向。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "快速换模将换模作业分为（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 7,
+        "qt": "现场改善优先遵循（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 8,
+        "qt": "拉动生产的载体是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "快速换模SMED改善要点（）",
+        "type": "multiple",
+        "ua": "BCD",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-05T04:04:06.719Z"
   }
 ]
