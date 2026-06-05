@@ -4506,5 +4506,97 @@
       }
     ],
     "syncedAt": "2026-06-05T02:00:57.082Z"
+  },
+  {
+    "seq": 50,
+    "time": "2026-06-05 11:50:16",
+    "name": "李苗",
+    "eid": "4257",
+    "dept": "生产部",
+    "score": 30,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "生产节拍（Takt Time）依据（）计算",
+        "type": "single",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 2,
+        "qt": "清扫的要点（）",
+        "type": "multiple",
+        "ua": "ACD",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 3,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "精益改善常用工具（）",
+        "type": "multiple",
+        "ua": "BD",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 5,
+        "qt": "过量生产会造成在制品积压、资金占用。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "目视化管理让问题一目了然。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 8,
+        "qt": "加工过剩浪费是指（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "零不良是（）追求目标",
+        "type": "single",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-06-05T03:50:18.392Z"
   }
 ]
