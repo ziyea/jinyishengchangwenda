@@ -6530,5 +6530,97 @@
       }
     ],
     "syncedAt": "2026-06-08T03:47:47.116Z"
+  },
+  {
+    "seq": 72,
+    "time": "2026-06-08 12:52:41",
+    "name": "刘星",
+    "eid": "3820",
+    "dept": "生产部",
+    "score": 90,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "公司精益提案改善被采纳后有奖金发放（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "精益七大浪费包括（）",
+        "type": "multiple",
+        "ua": "ABCDEFG",
+        "ca": "ABCDEFG",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "精益生产的核心思想是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "自働化（Jidoka）的核心是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "产线平衡的目标是消除（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "看板是拉动生产的工具。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "看板作用（）",
+        "type": "multiple",
+        "ua": "AD",
+        "ca": "ABCD",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-06-08T04:52:44.056Z"
   }
 ]
