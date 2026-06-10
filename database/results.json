@@ -12878,5 +12878,97 @@
       }
     ],
     "syncedAt": "2026-06-10T04:07:17.579Z"
+  },
+  {
+    "seq": 141,
+    "time": "2026-06-10 12:07:22",
+    "name": "罗孝州",
+    "eid": "0397",
+    "dept": "生产部",
+    "score": 80,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "清洁=清扫。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "二八定律指（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "员工重复取放工具属于（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "拉动式生产特点（）",
+        "type": "multiple",
+        "ua": "CD",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 6,
+        "qt": "精益生产推行从（）开始",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "看板作用（）",
+        "type": "multiple",
+        "ua": "AD",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "精益生产就是降本增效、与员工利益无关。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T04:07:24.465Z"
   }
 ]
