@@ -18030,5 +18030,97 @@
       }
     ],
     "syncedAt": "2026-06-10T09:12:31.380Z"
+  },
+  {
+    "seq": 197,
+    "time": "2026-06-10 17:10:37",
+    "name": "周亚琼",
+    "eid": "0272",
+    "dept": "品质部",
+    "score": 80,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "精益生产反对大批量、长周期生产。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "推行JIT的基础是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "不良品浪费包括返修、报废、重复检验。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "精益生产推行从（）开始",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "目视化管理的形式有（）",
+        "type": "multiple",
+        "ua": "ABCDE",
+        "ca": "ABCDE",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "ECRS中\"C\"是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 8,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "5S管理包括（）",
+        "type": "multiple",
+        "ua": "ABCDEF",
+        "ca": "ABCDE",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-06-10T09:10:39.351Z"
   }
 ]
