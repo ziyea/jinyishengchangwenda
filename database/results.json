@@ -15454,5 +15454,97 @@
       }
     ],
     "syncedAt": "2026-06-10T04:14:37.434Z"
+  },
+  {
+    "seq": 169,
+    "time": "2026-06-10 12:15:20",
+    "name": "彭妹",
+    "eid": "1193",
+    "dept": "生产部",
+    "score": 80,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "5Why分析法的目的是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "精益改善以（）为中心",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "等待、搬运、检验都属于浪费。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "过量生产会造成在制品积压、资金占用。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "精益生产起源于（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 8,
+        "qt": "素养的要点（）",
+        "type": "multiple",
+        "ua": "D",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "精益七大浪费包括（）",
+        "type": "multiple",
+        "ua": "ABCDEFG",
+        "ca": "ABCDEFG",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T04:15:30.497Z"
   }
 ]
