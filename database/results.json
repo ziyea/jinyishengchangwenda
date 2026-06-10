@@ -17386,5 +17386,97 @@
       }
     ],
     "syncedAt": "2026-06-10T09:09:03.886Z"
+  },
+  {
+    "seq": 190,
+    "time": "2026-06-10 17:09:14",
+    "name": "黄庆旋",
+    "eid": "3318",
+    "dept": "生产部",
+    "score": 70,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "拉动生产是后工序向前工序取料。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "改善只需要技术人员参与。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "过量生产会造成（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "属于不增值活动的是（）",
+        "type": "multiple",
+        "ua": "A",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 8,
+        "qt": "属于增值活动的是（）",
+        "type": "multiple",
+        "ua": "D",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "SMED是指（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "5S管理的第一步是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T09:09:16.943Z"
   }
 ]
