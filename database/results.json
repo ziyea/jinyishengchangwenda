@@ -15546,5 +15546,97 @@
       }
     ],
     "syncedAt": "2026-06-10T08:59:05.047Z"
+  },
+  {
+    "seq": 170,
+    "time": "2026-06-10 16:59:27",
+    "name": "吴奇",
+    "eid": "3821",
+    "dept": "固件设计部",
+    "score": 60,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "精益生产的两大支柱是（）",
+        "type": "multiple",
+        "ua": "CD",
+        "ca": "AB",
+        "ok": false
+      },
+      {
+        "qi": 2,
+        "qt": "改善只需要技术人员参与。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "生产计划不合理最容易造成（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 4,
+        "qt": "过量生产会造成在制品积压、资金占用。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "标准作业的目的是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "库存浪费的危害（）",
+        "type": "multiple",
+        "ua": "ACD",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "TPM自主保养的执行者是（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "B",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-06-10T08:59:31.612Z"
   }
 ]
