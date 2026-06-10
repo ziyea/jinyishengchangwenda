@@ -21342,5 +21342,97 @@
       }
     ],
     "syncedAt": "2026-06-10T11:49:46.537Z"
+  },
+  {
+    "seq": 233,
+    "time": "2026-06-10 19:50:57",
+    "name": "周通",
+    "eid": "1146",
+    "dept": "生产部",
+    "score": 70,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "搬运浪费可以通过优化布局改善。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "TPM的中文含义是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 5,
+        "qt": "多能工培养目的是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "精益生产只适合汽车行业。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "持续改善（Kaizen）强调（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "导致过量生产原因（）",
+        "type": "multiple",
+        "ua": "ABD",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "搬运浪费改善（）",
+        "type": "multiple",
+        "ua": "BCD",
+        "ca": "ABCD",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-06-10T11:51:01.007Z"
   }
 ]
