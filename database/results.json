@@ -5426,5 +5426,97 @@
       }
     ],
     "syncedAt": "2026-06-10T03:48:05.868Z"
+  },
+  {
+    "seq": 60,
+    "time": "2026-06-10 11:48:18",
+    "name": "赵威",
+    "eid": "4218",
+    "dept": "生产部",
+    "score": 80,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "多技能员工比单一技能员工更符合精益。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "ECRS优先顺序：取消>合并>重排>简化。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 3,
+        "qt": "现场异常处理\"三现\"是（）",
+        "type": "multiple",
+        "ua": "ABC",
+        "ca": "ABC",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "精益生产的核心思想是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "现场改善优先遵循（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "TPM八大支柱包括（）",
+        "type": "multiple",
+        "ua": "ABCDEF",
+        "ca": "ABCDEF",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "换模时间越短，越有利于（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-06-10T03:48:20.327Z"
   }
 ]
