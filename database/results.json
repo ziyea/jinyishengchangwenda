@@ -20238,5 +20238,97 @@
       }
     ],
     "syncedAt": "2026-06-10T09:37:08.891Z"
+  },
+  {
+    "seq": 221,
+    "time": "2026-06-10 17:39:15",
+    "name": "刘超华",
+    "eid": "0119",
+    "dept": "安规认证部",
+    "score": 90,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "物流交叉、迂回属于搬运浪费。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "导致设备故障原因（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "不增值的活动称为（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "过量生产会造成（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "设备零故障是（）的目标",
+        "type": "single",
+        "ua": "D",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "快速换模目的是实现小批量多品种。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "标准作业三要素（）",
+        "type": "multiple",
+        "ua": "ABC",
+        "ca": "ABC",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T09:39:17.539Z"
   }
 ]
