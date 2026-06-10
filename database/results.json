@@ -19502,5 +19502,97 @@
       }
     ],
     "syncedAt": "2026-06-10T08:19:03.180Z"
+  },
+  {
+    "seq": 213,
+    "time": "2026-06-10 16:27:51",
+    "name": "姚知俊",
+    "eid": "0629",
+    "dept": "生产",
+    "score": 100,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "价值流图分为（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "加工过剩改善（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "拉动式生产的指令来自（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "等待、搬运、检验都属于浪费。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "5S做好是推行精益的基础。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "现场5S差最直接影响（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "改善提案评价维度（）",
+        "type": "multiple",
+        "ua": "ABCDE",
+        "ca": "ABCDE",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T08:27:58.820Z"
   }
 ]
