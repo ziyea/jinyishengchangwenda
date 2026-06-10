@@ -15362,5 +15362,97 @@
       }
     ],
     "syncedAt": "2026-06-10T08:57:07.890Z"
+  },
+  {
+    "seq": 168,
+    "time": "2026-06-10 16:57:28",
+    "name": "邬安杰",
+    "eid": "1086",
+    "dept": "品质部",
+    "score": 90,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "产线平衡就是让每个工位工时接近节拍。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "快速换模将换模作业分为（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "精益生产就是降本增效、与员工利益无关。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 4,
+        "qt": "工装夹具不合理会造成（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "精益七大浪费包括（）",
+        "type": "multiple",
+        "ua": "ABCDEFG",
+        "ca": "ABCDEFG",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "班组精益管理内容（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "精益生产最终为（）创造价值",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T08:57:31.167Z"
   }
 ]
