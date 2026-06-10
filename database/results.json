@@ -17662,5 +17662,97 @@
       }
     ],
     "syncedAt": "2026-06-10T04:30:43.779Z"
+  },
+  {
+    "seq": 193,
+    "time": "2026-06-10 12:30:36",
+    "name": "甘巧媚",
+    "eid": "3803",
+    "dept": "运作系统部",
+    "score": 80,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "快速换模改善优先（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 3,
+        "qt": "精益七大浪费包括（）",
+        "type": "multiple",
+        "ua": "ABCDEFG",
+        "ca": "ABCDEFG",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "PDCA循环包括（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "外部换模是设备运转时可提前准备的作业。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "改善提案应鼓励安全、品质、效率、现场小改善。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "换模中\"外部作业\"是指（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "现场区域划线属于（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T04:31:10.180Z"
   }
 ]
