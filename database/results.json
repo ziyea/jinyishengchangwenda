@@ -16098,5 +16098,97 @@
       }
     ],
     "syncedAt": "2026-06-10T09:04:09.516Z"
+  },
+  {
+    "seq": 176,
+    "time": "2026-06-10 17:05:20",
+    "name": "范妙纯",
+    "eid": "0432",
+    "dept": "品质",
+    "score": 100,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "多技能员工比单一技能员工更符合精益。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "库存浪费的危害（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "瓶颈工位决定整条线产能。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "现场异常处理原则是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "看板管理的作用是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "快速换模SMED改善要点（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "以下最能体现精益思想的是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T09:05:28.205Z"
   }
 ]
