@@ -13522,5 +13522,97 @@
       }
     ],
     "syncedAt": "2026-06-10T04:09:25.482Z"
+  },
+  {
+    "seq": 148,
+    "time": "2026-06-10 12:09:42",
+    "name": "杨素娟",
+    "eid": "3960",
+    "dept": "样品",
+    "score": 70,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "精益七大浪费包括（）",
+        "type": "multiple",
+        "ua": "A",
+        "ca": "ABCDEFG",
+        "ok": false
+      },
+      {
+        "qi": 2,
+        "qt": "导致动作浪费原因（）",
+        "type": "multiple",
+        "ua": "A",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 3,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "设备零故障是TPM追求目标。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "精益中\"价值\"由（）定义",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "多能工培养目的是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "加工过剩浪费是指（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 8,
+        "qt": "推行精益可以提高交付、品质、效率、降低成本。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T04:09:44.957Z"
   }
 ]
