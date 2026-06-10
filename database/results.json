@@ -15914,5 +15914,97 @@
       }
     ],
     "syncedAt": "2026-06-10T04:16:39.263Z"
+  },
+  {
+    "seq": 174,
+    "time": "2026-06-10 12:16:53",
+    "name": "周志敏",
+    "eid": "3484",
+    "dept": "生产部",
+    "score": 60,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "清洁的要点（）",
+        "type": "multiple",
+        "ua": "ABC",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 3,
+        "qt": "5S做好是推行精益的基础。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "标准作业三要素不包括（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "D",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "加工过剩浪费是指（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 6,
+        "qt": "精益生产以客户需求为导向。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "拉动生产的载体是（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "产线平衡改善方法（）",
+        "type": "multiple",
+        "ua": "ABC",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T04:16:55.600Z"
   }
 ]
