@@ -12510,5 +12510,97 @@
       }
     ],
     "syncedAt": "2026-06-10T04:06:14.415Z"
+  },
+  {
+    "seq": 137,
+    "time": "2026-06-10 12:06:22",
+    "name": "肖胜华",
+    "eid": "4135",
+    "dept": "生产部",
+    "score": 50,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "导致设备故障原因（）",
+        "type": "multiple",
+        "ua": "D",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 2,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "多能工培养目的是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "改善的基本原则是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "D",
+        "ok": false
+      },
+      {
+        "qi": 6,
+        "qt": "生产现场\"三定\"不包括（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "D",
+        "ok": false
+      },
+      {
+        "qi": 7,
+        "qt": "看板作用（）",
+        "type": "multiple",
+        "ua": "A",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 8,
+        "qt": "精益生产支持小批量、流动化生产。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "精益生产以客户需求为导向。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T04:06:25.186Z"
   }
 ]
