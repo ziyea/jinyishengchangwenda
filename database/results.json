@@ -18674,5 +18674,97 @@
       }
     ],
     "syncedAt": "2026-06-10T05:17:06.349Z"
+  },
+  {
+    "seq": 204,
+    "time": "2026-06-10 14:01:06",
+    "name": "李杨杨",
+    "eid": "4093",
+    "dept": "品质部",
+    "score": 100,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "多能工培养目的是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "现场5S差最直接影响（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "价值流图分为现状图和未来图。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "换模作业并行作业可以缩短时间。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "产线平衡改善方法（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "员工重复取放工具属于（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "防错装置类型包括（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T06:01:07.980Z"
   }
 ]
