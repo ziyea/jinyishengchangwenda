@@ -17294,5 +17294,97 @@
       }
     ],
     "syncedAt": "2026-06-10T09:09:00.036Z"
+  },
+  {
+    "seq": 189,
+    "time": "2026-06-10 17:09:01",
+    "name": "周治贵",
+    "eid": "3131",
+    "dept": "生产部",
+    "score": 80,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "防错装置类型包括（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "两次搬运、交叉搬运属于（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "过量生产会造成在制品积压、资金占用。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "精益生产只适合汽车行业。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 7,
+        "qt": "员工培训、遵守制度属于5S的（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "C",
+        "ok": false
+      },
+      {
+        "qi": 8,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "工装夹具不合理会造成（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "快速换模步骤（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T09:09:03.886Z"
   }
 ]
