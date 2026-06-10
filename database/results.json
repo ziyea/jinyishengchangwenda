@@ -9934,5 +9934,97 @@
       }
     ],
     "syncedAt": "2026-06-10T04:01:12.651Z"
+  },
+  {
+    "seq": 109,
+    "time": "2026-06-10 12:01:18",
+    "name": "王春梅",
+    "eid": "0360",
+    "dept": "生产部",
+    "score": 80,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "班组管理中\"班前会\"不包括（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "D",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "精益生产适用行业（）",
+        "type": "multiple",
+        "ua": "A",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 3,
+        "qt": "以下不属于5S的是（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "C",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "等待浪费包括等料、等设备、等指令。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "SMED目标是把换模时间缩到最短。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "精益生产的两大支柱是（）",
+        "type": "multiple",
+        "ua": "B",
+        "ca": "AB",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "精益生产中\"人\"强调（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T04:01:20.507Z"
   }
 ]
