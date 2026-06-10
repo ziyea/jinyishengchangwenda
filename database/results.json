@@ -17202,5 +17202,97 @@
       }
     ],
     "syncedAt": "2026-06-10T09:08:35.706Z"
+  },
+  {
+    "seq": 188,
+    "time": "2026-06-10 17:08:58",
+    "name": "彭玲玲",
+    "eid": "1383",
+    "dept": "品质部",
+    "score": 70,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "JIT准时化生产的条件（）",
+        "type": "multiple",
+        "ua": "B",
+        "ca": "ABCDE",
+        "ok": false
+      },
+      {
+        "qi": 3,
+        "qt": "拉动式生产的指令来自（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 4,
+        "qt": "TPM目标（）",
+        "type": "multiple",
+        "ua": "C",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 5,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "设备零故障是（）的目标",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "两次搬运、交叉搬运属于（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "单件流可以快速发现不良品。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "5S做好是推行精益的基础。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T09:09:00.036Z"
   }
 ]
