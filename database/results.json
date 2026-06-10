@@ -6714,5 +6714,97 @@
       }
     ],
     "syncedAt": "2026-06-10T03:50:55.908Z"
+  },
+  {
+    "seq": 74,
+    "time": "2026-06-10 11:51:41",
+    "name": "李文镱",
+    "eid": "1074",
+    "dept": "行政人事部",
+    "score": 100,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "内部换模是设备停机才能做的作业。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "素养是指（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "快速换模步骤（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "员工培训、遵守制度属于5S的（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "C",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "三定原则：定点、定容、定量。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "标准作业的目的是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "价值流分析目的（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T03:51:45.490Z"
   }
 ]
