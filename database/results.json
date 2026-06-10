@@ -11866,5 +11866,97 @@
       }
     ],
     "syncedAt": "2026-06-10T04:05:10.992Z"
+  },
+  {
+    "seq": 130,
+    "time": "2026-06-10 12:05:28",
+    "name": "刘选淑",
+    "eid": "108",
+    "dept": "生产部",
+    "score": 50,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "设备点检属于TPM活动。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 3,
+        "qt": "改善完成后，精益工作要求做到？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "快速换模改善优先（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 5,
+        "qt": "快速换模SMED改善要点（）",
+        "type": "multiple",
+        "ua": "BC",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 6,
+        "qt": "精益生产追求\"四零\"是（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "自主保养七步法不包括（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "D",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "改善提案只奖励省钱多的项目。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "B",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-06-10T04:05:30.386Z"
   }
 ]
