@@ -11958,5 +11958,97 @@
       }
     ],
     "syncedAt": "2026-06-10T04:05:30.386Z"
+  },
+  {
+    "seq": 131,
+    "time": "2026-06-10 12:05:37",
+    "name": "胡江北",
+    "eid": "0549",
+    "dept": "系统软件部",
+    "score": 100,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "改善提案应鼓励安全、品质、效率、现场小改善。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "改善的基本原则是（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "D",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "企业推行精益成功关键是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "JIT准时化生产的条件（）",
+        "type": "multiple",
+        "ua": "ABCDE",
+        "ca": "ABCDE",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "班组管理中\"班前会\"不包括（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "D",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "不增值活动都应该消除或减少。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "快速换模步骤（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T04:05:39.550Z"
   }
 ]
