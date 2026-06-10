@@ -7726,5 +7726,97 @@
       }
     ],
     "syncedAt": "2026-06-10T03:55:57.043Z"
+  },
+  {
+    "seq": 85,
+    "time": "2026-06-10 11:56:19",
+    "name": "王立海",
+    "eid": "2400",
+    "dept": "环安部",
+    "score": 80,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "等待、搬运、检验都属于浪费。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 2,
+        "qt": "防错装置优先（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "拉动式生产的指令来自（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 4,
+        "qt": "TPM目标（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "多技能员工比单一技能员工更符合精益。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "改善提案评价维度（）",
+        "type": "multiple",
+        "ua": "ABCDE",
+        "ca": "ABCDE",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "精益生产反对（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "C",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T03:56:21.924Z"
   }
 ]
