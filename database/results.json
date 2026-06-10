@@ -8462,5 +8462,97 @@
       }
     ],
     "syncedAt": "2026-06-10T03:58:12.606Z"
+  },
+  {
+    "seq": 93,
+    "time": "2026-06-10 11:58:17",
+    "name": "夏小波",
+    "eid": "2759",
+    "dept": "生产部",
+    "score": 100,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "班组精益管理内容（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "三现主义：现场、现物、现实。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "SMED目标是把换模时间缩到最短。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "快速换模将换模作业分为（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "产线平衡率越高说明（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "等待浪费的原因（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "以下哪项不是JIT的条件（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "C",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T03:58:19.095Z"
   }
 ]
