@@ -1838,5 +1838,97 @@
       }
     ],
     "syncedAt": "2026-06-10T03:32:12.925Z"
+  },
+  {
+    "seq": 21,
+    "time": "2026-06-10 11:33:14",
+    "name": "李根强",
+    "eid": "0053",
+    "dept": "项目部",
+    "score": 70,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "整顿的\"三定\"是（）",
+        "type": "multiple",
+        "ua": "ACD",
+        "ca": "ABC",
+        "ok": false
+      },
+      {
+        "qi": 2,
+        "qt": "JIT就是需要多少生产多少、什么时候需要什么时候生产。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "JIT准时化生产的条件（）",
+        "type": "multiple",
+        "ua": "ACDE",
+        "ca": "ABCDE",
+        "ok": false
+      },
+      {
+        "qi": 5,
+        "qt": "TPM的中文含义是（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 6,
+        "qt": "5S管理的第一步是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "单件流的优势是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "持续改善（Kaizen）强调每天进步一点点。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T03:33:16.719Z"
   }
 ]
