@@ -13338,5 +13338,97 @@
       }
     ],
     "syncedAt": "2026-06-10T04:08:34.786Z"
+  },
+  {
+    "seq": 146,
+    "time": "2026-06-10 12:08:53",
+    "name": "许明君",
+    "eid": "1682",
+    "dept": "生产",
+    "score": 60,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "不增值的活动称为（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "5S管理的第一步是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "加工过剩浪费是指（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "先进先出FIFO适用（）",
+        "type": "multiple",
+        "ua": "A",
+        "ca": "ABC",
+        "ok": false
+      },
+      {
+        "qi": 6,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 8,
+        "qt": "员工频繁找工具属于动作浪费。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "红牌作战属于整理活动。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "属于不增值活动的是（）",
+        "type": "multiple",
+        "ua": "A",
+        "ca": "ABCD",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-06-10T04:08:55.667Z"
   }
 ]
