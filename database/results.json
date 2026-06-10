@@ -15178,5 +15178,97 @@
       }
     ],
     "syncedAt": "2026-06-10T08:55:33.906Z"
+  },
+  {
+    "seq": 166,
+    "time": "2026-06-10 16:56:46",
+    "name": "钟林芳",
+    "eid": "0218",
+    "dept": "机电组",
+    "score": 70,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 2,
+        "qt": "红牌作战属于5S的（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "现场异常处理\"三现\"是（）",
+        "type": "multiple",
+        "ua": "B",
+        "ca": "ABC",
+        "ok": false
+      },
+      {
+        "qi": 4,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "精益生产中\"七大浪费\"之首是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "C",
+        "ok": false
+      },
+      {
+        "qi": 6,
+        "qt": "加工过剩就是工艺要求超过客户需求。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "精益生产以客户需求为导向。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "物料先进先出（FIFO）用于改善（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "价值流分析目的（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T08:56:48.477Z"
   }
 ]
