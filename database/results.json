@@ -17938,5 +17938,97 @@
       }
     ],
     "syncedAt": "2026-06-10T09:10:15.580Z"
+  },
+  {
+    "seq": 196,
+    "time": "2026-06-10 17:12:29",
+    "name": "刘丽芸",
+    "eid": "2711",
+    "dept": "生产部",
+    "score": 90,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "导致过量生产原因（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "改善的基本原则是（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "D",
+        "ok": false
+      },
+      {
+        "qi": 3,
+        "qt": "标准作业三要素不包括（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "D",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "拉动生产是后工序向前工序取料。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "以下不属于浪费的是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "多能工作用（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "多能工不利于产线平衡。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T09:12:31.380Z"
   }
 ]
