@@ -18214,5 +18214,97 @@
       }
     ],
     "syncedAt": "2026-06-10T09:10:44.898Z"
+  },
+  {
+    "seq": 199,
+    "time": "2026-06-10 17:11:01",
+    "name": "李春梅",
+    "eid": "0867",
+    "dept": "生产部",
+    "score": 40,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "红牌作战属于整理活动。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 3,
+        "qt": "过量生产会造成（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "价值由客户定义。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 6,
+        "qt": "库存浪费被称为（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 7,
+        "qt": "搬运浪费改善（）",
+        "type": "multiple",
+        "ua": "ABC",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 8,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "现场区域划线属于（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "价值流图包含（）",
+        "type": "multiple",
+        "ua": "BCDE",
+        "ca": "ABCDE",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-06-10T09:11:03.096Z"
   }
 ]
