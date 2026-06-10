@@ -7266,5 +7266,97 @@
       }
     ],
     "syncedAt": "2026-06-10T03:54:18.308Z"
+  },
+  {
+    "seq": 80,
+    "time": "2026-06-10 11:54:37",
+    "name": "蔡剑华",
+    "eid": "0143",
+    "dept": "工程支持部",
+    "score": 60,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "零停滞是（）追求目标",
+        "type": "single",
+        "ua": "D",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 2,
+        "qt": "精益生产追求\"四零\"是（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "以下哪项不是JIT的条件（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "C",
+        "ok": false
+      },
+      {
+        "qi": 4,
+        "qt": "目视化管理可以减少沟通成本、快速识别异常。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "精益生产就是降本增效、与员工利益无关。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 7,
+        "qt": "精益改善常用工具（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "生产计划不合理最容易造成（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-06-10T03:54:39.125Z"
   }
 ]
