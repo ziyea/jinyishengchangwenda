@@ -2574,5 +2574,97 @@
       }
     ],
     "syncedAt": "2026-06-10T03:36:47.047Z"
+  },
+  {
+    "seq": 29,
+    "time": "2026-06-10 11:36:48",
+    "name": "张强强",
+    "eid": "2278",
+    "dept": "SMT生产部",
+    "score": 100,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "标准作业三要素（）",
+        "type": "multiple",
+        "ua": "ABC",
+        "ca": "ABC",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "5S管理的第一步是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "看板可以防止过量生产。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "零切换是（）追求目标",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "以下属于\"等待浪费\"的是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "看板作用（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "节拍时间=有效工作时间/客户需求数量。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T03:36:49.879Z"
   }
 ]
