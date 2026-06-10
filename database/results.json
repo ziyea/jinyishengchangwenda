@@ -4598,5 +4598,97 @@
       }
     ],
     "syncedAt": "2026-06-10T03:46:09.279Z"
+  },
+  {
+    "seq": 51,
+    "time": "2026-06-10 11:46:27",
+    "name": "赵凤娇",
+    "eid": "2653",
+    "dept": "模组",
+    "score": 60,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "产线平衡就是让每个工位工时接近节拍。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "生产现场\"三不原则\"不包括（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "D",
+        "ok": false
+      },
+      {
+        "qi": 5,
+        "qt": "自主保养七步法不包括（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "D",
+        "ok": false
+      },
+      {
+        "qi": 6,
+        "qt": "改善提案评价维度（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCDE",
+        "ok": false
+      },
+      {
+        "qi": 7,
+        "qt": "工装夹具不合理会造成（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "持续改善（Kaizen）强调每天进步一点点。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "标准作业三要素（）",
+        "type": "multiple",
+        "ua": "BCD",
+        "ca": "ABC",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-06-10T03:46:28.987Z"
   }
 ]
