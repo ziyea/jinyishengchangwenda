@@ -10946,5 +10946,97 @@
       }
     ],
     "syncedAt": "2026-06-10T04:03:19.968Z"
+  },
+  {
+    "seq": 120,
+    "time": "2026-06-10 12:03:21",
+    "name": "杨井会",
+    "eid": "0955",
+    "dept": "环安部",
+    "score": 80,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "以下最能体现精益思想的是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "素养的要点（）",
+        "type": "multiple",
+        "ua": "D",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 3,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "5S管理的第一步是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "鱼骨图主要用于（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "员工频繁找工具属于动作浪费。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "外部换模是设备运转时可提前准备的作业。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "精益对人的要求（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T04:03:23.487Z"
   }
 ]
