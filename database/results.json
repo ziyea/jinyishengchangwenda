@@ -9750,5 +9750,97 @@
       }
     ],
     "syncedAt": "2026-06-10T04:00:45.125Z"
+  },
+  {
+    "seq": 107,
+    "time": "2026-06-10 12:00:56",
+    "name": "韦喜玲",
+    "eid": "3225",
+    "dept": "品质部",
+    "score": 90,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "产线平衡的目标是消除（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 2,
+        "qt": "以下哪项不是JIT的条件（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "C",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "清扫的要点（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "目视化管理的目的是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "瓶颈工位决定整条线产能。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "公司推行提案改善项目的作用是（）",
+        "type": "multiple",
+        "ua": "ABCDEF",
+        "ca": "ABCDEF",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "精益改善让员工作业更轻松、安全、高效。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T04:00:58.014Z"
   }
 ]
