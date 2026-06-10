@@ -15270,5 +15270,97 @@
       }
     ],
     "syncedAt": "2026-06-10T08:56:48.477Z"
+  },
+  {
+    "seq": 167,
+    "time": "2026-06-10 16:57:05",
+    "name": "罗建军",
+    "eid": "0696",
+    "dept": "机电组",
+    "score": 70,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "清扫就是打扫卫生、同时点检设备。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "清洁的要点（）",
+        "type": "multiple",
+        "ua": "BC",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 3,
+        "qt": "多技能员工比单一技能员工更符合精益。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "生产现场\"三不原则\"不包括（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "D",
+        "ok": false
+      },
+      {
+        "qi": 5,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "员工重复取放工具属于（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "公司推行提案改善项目的作用是（）",
+        "type": "multiple",
+        "ua": "BCD",
+        "ca": "ABCDEF",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "产线平衡的目标是消除（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T08:57:07.890Z"
   }
 ]
