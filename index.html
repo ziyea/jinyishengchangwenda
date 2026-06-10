@@ -248,7 +248,7 @@ var C = {
   }
 })();
 
-// 版本检查：版本号变更时自动清除旧数据，全员可重新答题
+// 版本检查：版本号变更时全局重置；低于80分自动允许重答
 (function(){
   var storedVer=localStorage.getItem('lean2_version');
   if(storedVer!==C.VERSION){
@@ -258,6 +258,22 @@ var C = {
     localStorage.removeItem(C.SK_USER);
     localStorage.setItem('lean2_version',C.VERSION);
     console.log('数据已重置（版本 '+C.VERSION+'）');
+  }else{
+    // 检查本地记录，低于80分自动解除限制
+    try{
+      var recs=JSON.parse(localStorage.getItem(C.SK_RECORDS)||'[]');
+      var fp=localStorage.getItem(C.SK_FP);
+      var done=JSON.parse(localStorage.getItem(C.SK_COMPLETED)||'[]');
+      if(fp && done.indexOf(fp)!==-1){
+        var myRec=null;
+        for(var i=recs.length-1;i>=0;i--){if(recs[i].fp===fp){myRec=recs[i];break}}
+        if(myRec && myRec.score<80){
+          var newDone=done.filter(function(x){return x!==fp});
+          localStorage.setItem(C.SK_COMPLETED,JSON.stringify(newDone));
+          console.log('低于80分，已允许重新答题');
+        }
+      }
+    }catch(e){}
   }
 })();
 
