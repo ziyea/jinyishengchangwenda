@@ -5334,5 +5334,97 @@
       }
     ],
     "syncedAt": "2026-06-10T03:47:34.555Z"
+  },
+  {
+    "seq": 59,
+    "time": "2026-06-10 11:48:04",
+    "name": "何丹丹",
+    "eid": "2566",
+    "dept": "生产部",
+    "score": 60,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "不良品浪费不包括（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "D",
+        "ok": false
+      },
+      {
+        "qi": 2,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "不良品浪费改善（）",
+        "type": "multiple",
+        "ua": "C",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 4,
+        "qt": "库存浪费被称为（）",
+        "type": "single",
+        "ua": "C",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 5,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "精益生产适用行业（）",
+        "type": "multiple",
+        "ua": "A",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 7,
+        "qt": "现场5S差最直接影响（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "SMED目标是把换模时间缩到最短。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "自主保养是操作工负责自己设备的日常点检保养。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T03:48:05.868Z"
   }
 ]
