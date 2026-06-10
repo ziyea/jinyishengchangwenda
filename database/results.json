@@ -5518,5 +5518,97 @@
       }
     ],
     "syncedAt": "2026-06-10T03:48:20.327Z"
+  },
+  {
+    "seq": 61,
+    "time": "2026-06-10 11:48:21",
+    "name": "黄景成",
+    "eid": "3859",
+    "dept": "生产部",
+    "score": 50,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "精益成功关键因素（）",
+        "type": "multiple",
+        "ua": "B",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 3,
+        "qt": "目视化管理的形式有（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCDE",
+        "ok": false
+      },
+      {
+        "qi": 4,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "工艺过度打磨、多余工序属于（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 6,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "ECRS中\"S\"是（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "D",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "拉动式生产的指令来自（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "加工过剩就是工艺要求超过客户需求。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 10,
+        "qt": "改善只需要技术人员参与。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T03:48:23.508Z"
   }
 ]
