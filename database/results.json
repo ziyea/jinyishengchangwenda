@@ -16650,5 +16650,97 @@
       }
     ],
     "syncedAt": "2026-06-10T09:06:50.410Z"
+  },
+  {
+    "seq": 182,
+    "time": "2026-06-10 17:07:31",
+    "name": "张小利",
+    "eid": "3963",
+    "dept": "生产部",
+    "score": 80,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "持续改善（Kaizen）强调（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "三现主义：现场、现物、现实。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "价值流分析目的（）",
+        "type": "multiple",
+        "ua": "B",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 4,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "清洁的要点（）",
+        "type": "multiple",
+        "ua": "C",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 7,
+        "qt": "精益生产最终追求（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "目视化管理让问题一目了然。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "多能工培养目的是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T09:07:33.695Z"
   }
 ]
