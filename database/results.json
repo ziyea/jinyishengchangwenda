@@ -18950,5 +18950,97 @@
       }
     ],
     "syncedAt": "2026-06-10T07:02:51.107Z"
+  },
+  {
+    "seq": 207,
+    "time": "2026-06-10 16:00:58",
+    "name": "邹鸿圣",
+    "eid": "4531",
+    "dept": "品质部",
+    "score": 80,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "清洁的要点（）",
+        "type": "multiple",
+        "ua": "ABC",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 2,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "5Why就是连续问5个为什么找到根本原因。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "改善提案评价维度（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCDE",
+        "ok": false
+      },
+      {
+        "qi": 5,
+        "qt": "标准作业的目的是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "二八定律指（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "换模中\"外部作业\"是指（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "整顿就是定点、定容、定量。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T08:01:03.157Z"
   }
 ]
