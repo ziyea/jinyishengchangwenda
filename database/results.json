@@ -9474,5 +9474,97 @@
       }
     ],
     "syncedAt": "2026-06-10T04:00:21.200Z"
+  },
+  {
+    "seq": 104,
+    "time": "2026-06-10 12:00:20",
+    "name": "李芳",
+    "eid": "1739",
+    "dept": "生产部",
+    "score": 60,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "目视化管理可以减少沟通成本、快速识别异常。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "改善完成后，精益工作要求做到？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "5S管理的第一步是（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 6,
+        "qt": "单件流可以快速发现不良品。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "产线平衡改善方法（）",
+        "type": "multiple",
+        "ua": "BC",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 8,
+        "qt": "精益成功关键因素（）",
+        "type": "multiple",
+        "ua": "ABC",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "以下属于推动式生产特点的是（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "B",
+        "ok": false
+      }
+    ],
+    "syncedAt": "2026-06-10T04:00:23.090Z"
   }
 ]
