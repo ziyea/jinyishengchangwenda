@@ -15546,5 +15546,97 @@
       }
     ],
     "syncedAt": "2026-06-10T04:15:30.497Z"
+  },
+  {
+    "seq": 170,
+    "time": "2026-06-10 12:15:40",
+    "name": "谭达全",
+    "eid": "0715",
+    "dept": "生产部",
+    "score": 70,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "5S中\"整顿\"的目的是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 2,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "均衡化生产好处（）",
+        "type": "multiple",
+        "ua": "ACD",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 5,
+        "qt": "异常发生时应立即停机、上报、处理。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "生产现场\"三不原则\"不包括（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "D",
+        "ok": false
+      },
+      {
+        "qi": 8,
+        "qt": "5S管理包括（）",
+        "type": "multiple",
+        "ua": "ABCDEF",
+        "ca": "ABCDE",
+        "ok": false
+      },
+      {
+        "qi": 9,
+        "qt": "安全在精益生产中（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "精益生产就是减少人员、降低成本。（）",
+        "type": "judge",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-10T04:15:43.005Z"
   }
 ]
