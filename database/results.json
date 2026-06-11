@@ -22170,5 +22170,97 @@
       }
     ],
     "syncedAt": "2026-06-11T01:17:54.511Z"
+  },
+  {
+    "seq": 242,
+    "time": "2026-06-11 09:22:16",
+    "name": "吴小燕",
+    "eid": "1218",
+    "dept": "生产部",
+    "score": 90,
+    "passed": true,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "标准作业三要素（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABC",
+        "ok": false
+      },
+      {
+        "qi": 2,
+        "qt": "自働化（Jidoka）的核心是（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "改善提案应鼓励安全、品质、效率、现场小改善。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 4,
+        "qt": "生产计划波动大会造成等待与过量生产。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 5,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "导致动作浪费原因（）",
+        "type": "multiple",
+        "ua": "ABCD",
+        "ca": "ABCD",
+        "ok": true
+      },
+      {
+        "qi": 7,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 8,
+        "qt": "物料先进先出（FIFO）用于改善（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "两次搬运、交叉搬运属于（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-11T01:22:19.419Z"
   }
 ]
