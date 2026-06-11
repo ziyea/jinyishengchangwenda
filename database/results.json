@@ -1,3578 +1,6 @@
 [
   {
     "seq": 1,
-    "time": "2026-05-26 09:17:24",
-    "name": "金佳琪",
-    "eid": "4340",
-    "dept": "IE部",
-    "platform": "未知",
-    "score": 100,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "看板管理的作用是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "库存会掩盖设备故障、品质不良、交付延迟等问题。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "均衡化生产好处（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "过量生产会造成（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "价值流分析目的（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "数据化管理强调（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "精益生产追求的是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "目视化管理让问题一目了然。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "产线在制品越多越好。（）",
-        "type": "judge",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "ECRS优先顺序：取消>合并>重排>简化。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-05-26T01:17:25.264Z",
-    "restored": true
-  },
-  {
-    "seq": 2,
-    "time": "2026-05-29 09:37:50",
-    "name": "徐晓梅",
-    "eid": "1150",
-    "dept": "SQE",
-    "score": 100,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "属于增值活动的是（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "物流交叉、迂回属于搬运浪费。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "素养是指（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "现场改善优先遵循（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "员工培训、遵守制度属于5S的（）",
-        "type": "single",
-        "ua": "C",
-        "ca": "C",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "清扫的要点（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "防错就是靠员工认真仔细。（）",
-        "type": "judge",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-05-29T01:37:51.879Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 3,
-    "time": "2026-05-29 11:31:03",
-    "name": "唐梦宏",
-    "eid": "4100",
-    "dept": "结构设计部",
-    "score": 90,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "价值流图包含（）",
-        "type": "multiple",
-        "ua": "ABCDE",
-        "ca": "ABCDE",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "精益成功关键因素（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "数据化管理强调（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "工艺过度打磨、多余工序属于（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "A",
-        "ok": false
-      },
-      {
-        "qi": 8,
-        "qt": "动作浪费包括多余弯腰、转身、寻找。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "自主保养是操作工负责自己设备的日常点检保养。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "工装夹具不合理会造成（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-05-29T03:31:05.363Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 4,
-    "time": "2026-05-29 11:39:07",
-    "name": "鲁小林",
-    "eid": "1681",
-    "dept": "工艺部",
-    "score": 100,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "搬运浪费的改善方向是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "红牌作战属于整理活动。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "5Why应用要点（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "自働化（Jidoka）的核心是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "精益改善从识别浪费开始。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "多能工作用（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "零切换是（）追求目标",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-05-29T03:39:08.110Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 5,
-    "time": "2026-05-29 13:31:16",
-    "name": "李镇玮",
-    "eid": "3783",
-    "dept": "研发部门",
-    "score": 80,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "等待浪费包括等料、等设备、等指令。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "现场改善ECRS原则（）",
-        "type": "multiple",
-        "ua": "BCD",
-        "ca": "ABCD",
-        "ok": false
-      },
-      {
-        "qi": 6,
-        "qt": "SMED目标是把换模时间缩到最短。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "看板管理的作用是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "现场物品未标识，会造成（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "工装夹具不合理会造成（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "TPM目标（）",
-        "type": "multiple",
-        "ua": "ACD",
-        "ca": "ABCD",
-        "ok": false
-      }
-    ],
-    "syncedAt": "2026-05-29T05:31:17.461Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 6,
-    "time": "2026-05-29 13:40:09",
-    "name": "黄安润",
-    "eid": "1535",
-    "dept": "固件设计部",
-    "score": 90,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "价值流图包含（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCDE",
-        "ok": false
-      },
-      {
-        "qi": 2,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "产线平衡率越高，浪费越少。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "精益生产起源于（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "JIT准时化生产的条件（）",
-        "type": "multiple",
-        "ua": "ABCDE",
-        "ca": "ABCDE",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "工艺过度打磨、多余工序属于（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "三现主义：现场、现物、现实。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "多能工培养目的是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-05-29T05:40:11.911Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 7,
-    "time": "2026-05-29 13:44:41",
-    "name": "陈玉想",
-    "eid": "0517",
-    "dept": "物流",
-    "score": 90,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "U型产线有利于人员调配、减少搬运。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "拉动式生产特点（）",
-        "type": "multiple",
-        "ua": "C",
-        "ca": "ABCD",
-        "ok": false
-      },
-      {
-        "qi": 4,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "5S管理包括（）",
-        "type": "multiple",
-        "ua": "ABCDE",
-        "ca": "ABCDE",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "返修、重工、报废属于（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "ECRS中\"C\"是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "内部换模是设备停机才能做的作业。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "以下哪项不是JIT的条件（）",
-        "type": "single",
-        "ua": "C",
-        "ca": "C",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-05-29T05:44:47.185Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 8,
-    "time": "2026-05-29 14:30:39",
-    "name": "罗锦宏",
-    "eid": "3785",
-    "dept": "结构设计部",
-    "score": 100,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "换模作业并行作业可以缩短时间。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "TPM自主保养的执行者是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "产线平衡改善方法（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "防错装置类型包括（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "设备零故障是（）的目标",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "精益改善追求一次性大改变，不接受小改善。（）",
-        "type": "judge",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "精益改善以（）为中心",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-05-29T06:30:40.855Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 9,
-    "time": "2026-05-29 14:31:20",
-    "name": "柯志华",
-    "eid": "1532",
-    "dept": "结构设计部",
-    "score": 90,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "零切换是（）追求目标",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "精益生产中\"七大浪费\"之首是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "C",
-        "ok": false
-      },
-      {
-        "qi": 4,
-        "qt": "TPM强调全员参与设备保养。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "以下属于\"动作浪费\"的是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "设备零故障是TPM追求目标。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "防错装置类型包括（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "单件流好处（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-05-29T06:31:22.221Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 10,
-    "time": "2026-05-30 04:51:34",
-    "name": "罗祥波",
-    "eid": "2873",
-    "dept": "生产部",
-    "score": 80,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "精益生产起源于（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "5S做好是推行精益的基础。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "素养的要点（）",
-        "type": "multiple",
-        "ua": "A",
-        "ca": "ABCD",
-        "ok": false
-      },
-      {
-        "qi": 6,
-        "qt": "快速换模SMED改善要点（）",
-        "type": "multiple",
-        "ua": "A",
-        "ca": "ABCD",
-        "ok": false
-      },
-      {
-        "qi": 7,
-        "qt": "拉动式生产的指令来自（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "瓶颈工位决定整条线产能。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "设备零故障是（）的目标",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-05-29T20:51:36.068Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 11,
-    "time": "2026-05-30 17:11:33",
-    "name": "徐志锋",
-    "eid": "3882",
-    "dept": "工程样版组",
-    "score": 80,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "多能工作用（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "红牌作战适用（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "精益生产中\"七大浪费\"之首是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "C",
-        "ok": false
-      },
-      {
-        "qi": 5,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "多能工培养目的是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "三现主义：现场、现物、现实。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "供应商交付不及时会造成（）",
-        "type": "single",
-        "ua": "D",
-        "ca": "A",
-        "ok": false
-      },
-      {
-        "qi": 10,
-        "qt": "PDCA循环就是持续改善。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-05-30T09:11:36.282Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 12,
-    "time": "2026-05-31 18:13:18",
-    "name": "赵文芒",
-    "eid": "0812",
-    "dept": "品质部",
-    "score": 100,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "整顿就是定点、定容、定量。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "导致动作浪费原因（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "单件流可以快速发现不良品。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "TPM目标（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "价值流图的主要作用是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "现场异常处理原则是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "返修、重工、报废属于（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-05-31T10:13:20.433Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 13,
-    "time": "2026-06-01 09:54:41",
-    "name": "黄长丽",
-    "eid": "2308",
-    "dept": "仓库",
-    "score": 90,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "产线平衡就是让每个工位工时接近节拍。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "素养的要点（）",
-        "type": "multiple",
-        "ua": "AB",
-        "ca": "ABCD",
-        "ok": false
-      },
-      {
-        "qi": 4,
-        "qt": "工艺过度打磨、多余工序属于（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "全面质量管理强调（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "精益改善追求一次性大改变，不接受小改善。（）",
-        "type": "judge",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "过量生产是因为（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "防错装置类型包括（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-01T01:54:43.232Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 14,
-    "time": "2026-06-01 10:01:32",
-    "name": "赵永",
-    "eid": "1679",
-    "dept": "项目部",
-    "score": 100,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "以下不属于5S的是（）",
-        "type": "single",
-        "ua": "C",
-        "ca": "C",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "5S中\"整顿\"的目的是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "防错装置类型包括（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "自主保养七步法不包括（）",
-        "type": "single",
-        "ua": "D",
-        "ca": "D",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "整理的内容包括（）",
-        "type": "multiple",
-        "ua": "ABC",
-        "ca": "ABC",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "三现主义：现场、现物、现实。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "工装治具化可以减少动作浪费、防错。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-01T02:01:33.635Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 15,
-    "time": "2026-06-01 10:15:25",
-    "name": "张万龙",
-    "eid": "0047",
-    "dept": "仓库",
-    "score": 100,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "加工过剩改善（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "返修、重工、报废属于（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "素养就是员工遵守规则、养成好习惯。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "数据化管理强调（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "公司推行精益提案改善的目的是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "工装治具化可以减少动作浪费、防错。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "导致设备故障原因（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-01T02:15:27.768Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 16,
-    "time": "2026-06-01 10:26:30",
-    "name": "高登平",
-    "eid": "2695",
-    "dept": "仓库",
-    "score": 100,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "以下最能体现精益思想的是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "属于增值活动的是（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "精益生产推行从（）开始",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "素养是5S的最终目的。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "快速换模SMED改善要点（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "公司精益提案改善被采纳后有奖金发放（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "价值流图的主要作用是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-01T02:26:32.198Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 17,
-    "time": "2026-06-02 07:40:10",
-    "name": "刘唐明",
-    "eid": "3036",
-    "dept": "生产部",
-    "score": 80,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "不良品浪费不包括（）",
-        "type": "single",
-        "ua": "C",
-        "ca": "D",
-        "ok": false
-      },
-      {
-        "qi": 2,
-        "qt": "精益生产关注（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "A",
-        "ok": false
-      },
-      {
-        "qi": 3,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "导致过量生产原因（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "过量生产是最大浪费。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "防错装置类型包括（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "素养是指（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "不良品流出是最大的品质浪费。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-01T23:40:12.781Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 18,
-    "time": "2026-06-02 12:27:06",
-    "name": "李婉妮",
-    "eid": "3107",
-    "dept": "SMT",
-    "score": 100,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "JIT就是需要多少生产多少、什么时候需要什么时候生产。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "生产现场\"三定\"不包括（）",
-        "type": "single",
-        "ua": "D",
-        "ca": "D",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "红牌作战属于5S的（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "价值流图的主要作用是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "价值流图分为现状图和未来图。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "精益改善常用工具（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "清洁的要点（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-02T04:27:08.567Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 19,
-    "time": "2026-06-04 09:20:07",
-    "name": "彭涛",
-    "eid": "4215",
-    "dept": "DIP",
-    "score": 100,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "产线平衡率越高说明（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "二八定律指（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "标准作业可以稳定品质、提高效率。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "价值由客户定义。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "以下属于\"动作浪费\"的是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "均衡化生产好处（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "JIT准时化生产的条件（）",
-        "type": "multiple",
-        "ua": "ABCDE",
-        "ca": "ABCDE",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-04T01:20:08.862Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 20,
-    "time": "2026-06-04 10:23:28",
-    "name": "秦延伟",
-    "eid": "2273",
-    "dept": "生产部",
-    "score": 90,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "现场5S差最直接影响（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "目视化管理的形式有（）",
-        "type": "multiple",
-        "ua": "ABCDE",
-        "ca": "ABCDE",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "现场异常处理原则是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "价值流图包含（）",
-        "type": "multiple",
-        "ua": "ABCDE",
-        "ca": "ABCDE",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "改善的基本原则是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "D",
-        "ok": false
-      },
-      {
-        "qi": 8,
-        "qt": "精益推行需要长期坚持，不是一阵风。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "产线平衡就是让每个工位工时接近节拍。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-04T02:23:29.919Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 21,
-    "time": "2026-06-04 15:41:28",
-    "name": "蔺雨",
-    "eid": "3043",
-    "dept": "工艺部",
-    "score": 80,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "不良品浪费改善（）",
-        "type": "multiple",
-        "ua": "ABC",
-        "ca": "ABCD",
-        "ok": false
-      },
-      {
-        "qi": 2,
-        "qt": "精益生产就是减少人员、降低成本。（）",
-        "type": "judge",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "素养是指（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "持续改善（Kaizen）强调（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "产线平衡的目标是消除（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "班组精益管理内容（）",
-        "type": "multiple",
-        "ua": "ABC",
-        "ca": "ABCD",
-        "ok": false
-      },
-      {
-        "qi": 9,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "标准作业要根据改善不断优化更新。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-04T07:41:30.124Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 22,
-    "time": "2026-06-04 17:22:03",
-    "name": "邱启明",
-    "eid": "4181",
-    "dept": "生产部",
-    "score": 80,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "以下最能体现精益思想的是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "产线平衡率越高说明（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "动作浪费改善方向（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "精益改善追求一次性大改变，不接受小改善。（）",
-        "type": "judge",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "U型产线有利于人员调配、减少搬运。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "公司推行提案改善项目的作用是（）",
-        "type": "multiple",
-        "ua": "BDEF",
-        "ca": "ABCDEF",
-        "ok": false
-      },
-      {
-        "qi": 10,
-        "qt": "供应商交付不及时会造成（）",
-        "type": "single",
-        "ua": "D",
-        "ca": "A",
-        "ok": false
-      }
-    ],
-    "syncedAt": "2026-06-04T09:22:07.410Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 23,
-    "time": "2026-06-04 17:24:16",
-    "name": "郭俊峰",
-    "eid": "4161",
-    "dept": "生产部",
-    "score": 80,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "精益生产最终追求（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "精益生产适用于所有制造与服务业。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "导致设备故障原因（）",
-        "type": "multiple",
-        "ua": "ABD",
-        "ca": "ABCD",
-        "ok": false
-      },
-      {
-        "qi": 5,
-        "qt": "ECRS优先顺序：取消>合并>重排>简化。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "产线平衡改善方法（）",
-        "type": "multiple",
-        "ua": "ACD",
-        "ca": "ABCD",
-        "ok": false
-      },
-      {
-        "qi": 9,
-        "qt": "现场5S差最直接影响（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "以下属于\"等待浪费\"的是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-04T09:24:19.034Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 24,
-    "time": "2026-06-05 09:52:40",
-    "name": "田维凯",
-    "eid": "2973",
-    "dept": "生产部",
-    "score": 80,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "自働化（Jidoka）的核心是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "清扫的要点（）",
-        "type": "multiple",
-        "ua": "A",
-        "ca": "ABCD",
-        "ok": false
-      },
-      {
-        "qi": 3,
-        "qt": "安全是精益生产的前提。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "精益生产的核心思想是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "物流交叉、迂回属于搬运浪费。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "库存浪费被称为（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "快速换模SMED改善要点（）",
-        "type": "multiple",
-        "ua": "A",
-        "ca": "ABCD",
-        "ok": false
-      }
-    ],
-    "syncedAt": "2026-06-05T01:52:42.583Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 25,
-    "time": "2026-06-05 10:00:55",
-    "name": "徐然然",
-    "eid": "2976",
-    "dept": "生产部",
-    "score": 100,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "防错装置优先（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "等待浪费的原因（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "标准作业三要素（）",
-        "type": "multiple",
-        "ua": "ABC",
-        "ca": "ABC",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "小批量多品种生产适合（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "浪费无处不在，改善永无止境。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "现场物品未标识，会造成（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "快速换模目的是实现小批量多品种。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-05T02:00:57.082Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 26,
-    "time": "2026-06-05 17:41:52",
-    "name": "肖红梅",
-    "eid": "0729",
-    "dept": "生产部",
-    "score": 90,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "精益生产关注（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "过量生产是最大浪费。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "价值流图包含（）",
-        "type": "multiple",
-        "ua": "A",
-        "ca": "ABCDE",
-        "ok": false
-      },
-      {
-        "qi": 5,
-        "qt": "快速换模目的是实现小批量多品种。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "拉动生产的载体是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "快速换模SMED改善要点（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "以下不属于浪费的是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-05T09:41:54.213Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 27,
-    "time": "2026-06-05 17:52:09",
-    "name": "熊江江",
-    "eid": "3077",
-    "dept": "生产部",
-    "score": 100,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "库存浪费的危害（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "生产现场\"三不原则\"不包括（）",
-        "type": "single",
-        "ua": "D",
-        "ca": "D",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "PDCA循环中\"C\"是（）",
-        "type": "single",
-        "ua": "C",
-        "ca": "C",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "动作浪费包括多余弯腰、转身、寻找。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "单件流好处（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "安全是精益生产的前提。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "仓库积压、成品过期属于（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-05T09:52:11.344Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 28,
-    "time": "2026-06-05 18:01:59",
-    "name": "陈展宏",
-    "eid": "4357",
-    "dept": "生产部",
-    "score": 90,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "快速换模步骤（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "生产现场\"三定\"不包括（）",
-        "type": "single",
-        "ua": "D",
-        "ca": "D",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "单件流的优势是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "多能工不利于产线平衡。（）",
-        "type": "judge",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "二八定律：大部分问题由少数关键原因造成。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "整顿的\"三定\"是（）",
-        "type": "multiple",
-        "ua": "ABC",
-        "ca": "ABC",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "加工过剩浪费是指（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "A",
-        "ok": false
-      }
-    ],
-    "syncedAt": "2026-06-05T10:02:01.400Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 29,
-    "time": "2026-06-05 21:31:35",
-    "name": "黄可秀",
-    "eid": "1385",
-    "dept": "DIP",
-    "score": 90,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "导致设备故障原因（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "多能工作用（）",
-        "type": "multiple",
-        "ua": "ABC",
-        "ca": "ABCD",
-        "ok": false
-      },
-      {
-        "qi": 4,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "单件流的优势是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "推行JIT的基础是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "产线在制品越多越好。（）",
-        "type": "judge",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "素养是指（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "不良品流出是最大的品质浪费。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-05T13:31:40.718Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 30,
-    "time": "2026-06-05 22:37:37",
-    "name": "朱红燕",
-    "eid": "2303",
-    "dept": "SMT生产部",
-    "score": 100,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "精益改善常用工具（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "现场异常处理原则是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "精益对人的要求（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "以下不属于浪费的是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "素养是5S的最终目的。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "产线平衡就是让每个工位工时接近节拍。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "现场区域划线属于（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-05T14:37:43.682Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 31,
-    "time": "2026-06-05 22:48:49",
-    "name": "罗菊花",
-    "eid": "1781",
-    "dept": "生产部",
-    "score": 80,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "TPM强调全员参与设备保养。（）",
-        "type": "judge",
-        "ua": "B",
-        "ca": "A",
-        "ok": false
-      },
-      {
-        "qi": 2,
-        "qt": "精益生产支持小批量、流动化生产。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "公司推行提案改善项目的作用是（）",
-        "type": "multiple",
-        "ua": "ABCDEF",
-        "ca": "ABCDEF",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "精益生产起源于（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "快速换模步骤（）",
-        "type": "multiple",
-        "ua": "ABD",
-        "ca": "ABCD",
-        "ok": false
-      },
-      {
-        "qi": 8,
-        "qt": "精益中\"价值\"由（）定义",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "素养是指（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-05T14:49:00.671Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 32,
-    "time": "2026-06-05 22:55:04",
-    "name": "杨金发",
-    "eid": "1951",
-    "dept": "生产部",
-    "score": 90,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "素养是指（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "公司推行精益提案改善的目的是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "精益生产适用行业（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "红牌作战适用（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "看板可以防止过量生产。（）",
-        "type": "judge",
-        "ua": "B",
-        "ca": "A",
-        "ok": false
-      },
-      {
-        "qi": 9,
-        "qt": "拉动式生产的指令来自（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "TPM强调全员参与设备保养。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-05T14:55:06.358Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 33,
-    "time": "2026-06-06 23:51:35",
-    "name": "李焕其",
-    "eid": "0492",
-    "dept": "DⅠP",
-    "score": 100,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "加工过剩改善（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "PDCA循环中\"C\"是（）",
-        "type": "single",
-        "ua": "C",
-        "ca": "C",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "素养是5S的最终目的。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "等待浪费包括等料、等设备、等指令。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "全面质量管理强调（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "价值流分析目的（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "不增值的活动称为（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-06T15:51:40.070Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 34,
-    "time": "2026-06-08 12:52:41",
-    "name": "刘星",
-    "eid": "3820",
-    "dept": "生产部",
-    "score": 90,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "公司精益提案改善被采纳后有奖金发放（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "精益七大浪费包括（）",
-        "type": "multiple",
-        "ua": "ABCDEFG",
-        "ca": "ABCDEFG",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "精益生产的核心思想是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "自働化（Jidoka）的核心是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "产线平衡的目标是消除（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "看板是拉动生产的工具。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "看板作用（）",
-        "type": "multiple",
-        "ua": "AD",
-        "ca": "ABCD",
-        "ok": false
-      }
-    ],
-    "syncedAt": "2026-06-08T04:52:44.056Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 35,
-    "time": "2026-06-08 13:41:58",
-    "name": "李剑萍",
-    "eid": "1448",
-    "dept": "生产部",
-    "score": 90,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "异常发生时应立即停机、上报、处理。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "现场异常处理\"三现\"是（）",
-        "type": "multiple",
-        "ua": "ABC",
-        "ca": "ABC",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "TPM自主保养的执行者是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "B",
-        "ok": false
-      },
-      {
-        "qi": 5,
-        "qt": "过量生产会造成在制品积压、资金占用。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "ECRS中\"C\"是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "搬运浪费改善（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "设备空转、人员待机属于（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-08T05:41:59.522Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 36,
-    "time": "2026-06-08 17:25:09",
-    "name": "毛琴",
-    "eid": "4169",
-    "dept": "DIP",
-    "score": 100,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "公司精益提案改善被采纳后有奖金发放（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "精益生产中\"七大浪费\"之首是（）",
-        "type": "single",
-        "ua": "C",
-        "ca": "C",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "精益生产适用于所有制造与服务业。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "素养是指（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "现场异常处理\"三现\"是（）",
-        "type": "multiple",
-        "ua": "ABC",
-        "ca": "ABC",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "标准作业的目的是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "改善提案评价维度（）",
-        "type": "multiple",
-        "ua": "ABCDE",
-        "ca": "ABCDE",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-08T09:25:10.887Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 37,
-    "time": "2026-06-09 15:45:08",
-    "name": "黄孝祥",
-    "eid": "2289",
-    "dept": "仓库",
-    "score": 100,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "安全在精益生产中（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "清洁的要点（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "员工频繁找工具属于动作浪费。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "5Why分析法的目的是（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "TPM八大支柱包括（）",
-        "type": "multiple",
-        "ua": "ABCDEF",
-        "ca": "ABCDEF",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "标准作业要根据改善不断优化更新。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 8,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "以下属于目视化工具的是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-09T07:45:16.840Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 38,
-    "time": "2026-06-09 19:03:01",
-    "name": "邱裕红",
-    "eid": "3100",
-    "dept": "IE部",
-    "score": 90,
-    "passed": true,
-    "details": [
-      {
-        "qi": 1,
-        "qt": "精益生产以客户需求为导向。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 2,
-        "qt": "精益生产反对大批量、长周期生产。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 3,
-        "qt": "导致过量生产原因（）",
-        "type": "multiple",
-        "ua": "ABCD",
-        "ca": "ABCD",
-        "ok": true
-      },
-      {
-        "qi": 4,
-        "qt": "提出有效提案改善有奖励。（）",
-        "type": "judge",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 5,
-        "qt": "单件流的优势是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 6,
-        "qt": "以下不属于浪费的是（）",
-        "type": "single",
-        "ua": "A",
-        "ca": "A",
-        "ok": true
-      },
-      {
-        "qi": 7,
-        "qt": "拉动式生产的指令来自（）",
-        "type": "single",
-        "ua": "C",
-        "ca": "B",
-        "ok": false
-      },
-      {
-        "qi": 8,
-        "qt": "员工提出精益改善提案，第一步应当？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      },
-      {
-        "qi": 9,
-        "qt": "精益七大浪费包括（）",
-        "type": "multiple",
-        "ua": "ABCDEFG",
-        "ca": "ABCDEFG",
-        "ok": true
-      },
-      {
-        "qi": 10,
-        "qt": "推行精益提案改善的主要意义是？（）",
-        "type": "single",
-        "ua": "B",
-        "ca": "B",
-        "ok": true
-      }
-    ],
-    "syncedAt": "2026-06-09T11:03:03.185Z",
-    "platform": "未知",
-    "restored": true
-  },
-  {
-    "seq": 39,
     "time": "2026-06-10 11:03:00",
     "name": "高宇心",
     "eid": "3556",
@@ -3664,7 +92,7 @@
     "syncedAt": "2026-06-10T03:03:01.877Z"
   },
   {
-    "seq": 40,
+    "seq": 2,
     "time": "2026-06-10 11:04:26",
     "name": "杜志春",
     "eid": "0984",
@@ -3756,7 +184,7 @@
     "syncedAt": "2026-06-10T03:04:28.407Z"
   },
   {
-    "seq": 41,
+    "seq": 3,
     "time": "2026-06-10 11:09:21",
     "name": "高波清",
     "eid": "2756",
@@ -3848,7 +276,7 @@
     "syncedAt": "2026-06-10T03:09:23.173Z"
   },
   {
-    "seq": 42,
+    "seq": 4,
     "time": "2026-06-10 11:09:49",
     "name": "龚璇",
     "eid": "1390",
@@ -3940,7 +368,7 @@
     "syncedAt": "2026-06-10T03:09:52.761Z"
   },
   {
-    "seq": 43,
+    "seq": 5,
     "time": "2026-06-10 11:11:38",
     "name": "陈凡凯",
     "eid": "4003",
@@ -4032,7 +460,7 @@
     "syncedAt": "2026-06-10T03:11:39.544Z"
   },
   {
-    "seq": 44,
+    "seq": 6,
     "time": "2026-06-10 11:11:42",
     "name": "赵明超",
     "eid": "3784",
@@ -4124,7 +552,7 @@
     "syncedAt": "2026-06-10T03:11:43.905Z"
   },
   {
-    "seq": 45,
+    "seq": 7,
     "time": "2026-06-10 11:11:54",
     "name": "黄欣",
     "eid": "0845",
@@ -4216,7 +644,7 @@
     "syncedAt": "2026-06-10T03:11:56.837Z"
   },
   {
-    "seq": 46,
+    "seq": 8,
     "time": "2026-06-10 11:12:35",
     "name": "毋燚晴",
     "eid": "2379",
@@ -4308,7 +736,7 @@
     "syncedAt": "2026-06-10T03:12:36.799Z"
   },
   {
-    "seq": 47,
+    "seq": 9,
     "time": "2026-06-10 11:18:07",
     "name": "秦伟钦",
     "eid": "1398",
@@ -4402,7 +830,7 @@
     "restored": true
   },
   {
-    "seq": 48,
+    "seq": 10,
     "time": "2026-06-10 11:18:20",
     "name": "陈文浩",
     "eid": "0406",
@@ -4494,7 +922,7 @@
     "syncedAt": "2026-06-10T03:18:21.741Z"
   },
   {
-    "seq": 49,
+    "seq": 11,
     "time": "2026-06-10 11:21:28",
     "name": "林智鸿",
     "eid": "4004",
@@ -4586,7 +1014,7 @@
     "syncedAt": "2026-06-10T03:21:30.531Z"
   },
   {
-    "seq": 50,
+    "seq": 12,
     "time": "2026-06-10 11:25:46",
     "name": "王二磊",
     "eid": "2757",
@@ -4678,7 +1106,7 @@
     "syncedAt": "2026-06-10T03:25:48.195Z"
   },
   {
-    "seq": 51,
+    "seq": 13,
     "time": "2026-06-10 11:25:54",
     "name": "唐梦伟",
     "eid": "0815",
@@ -4770,7 +1198,7 @@
     "syncedAt": "2026-06-10T03:25:55.954Z"
   },
   {
-    "seq": 52,
+    "seq": 14,
     "time": "2026-06-10 11:27:16",
     "name": "王正鑫",
     "eid": "3188",
@@ -4862,7 +1290,7 @@
     "syncedAt": "2026-06-10T03:27:17.994Z"
   },
   {
-    "seq": 53,
+    "seq": 15,
     "time": "2026-06-10 11:28:40",
     "name": "黄嘉培",
     "eid": "0234",
@@ -4954,7 +1382,7 @@
     "syncedAt": "2026-06-10T03:30:44.812Z"
   },
   {
-    "seq": 54,
+    "seq": 16,
     "time": "2026-06-10 11:28:51",
     "name": "刘玲",
     "eid": "0097",
@@ -5046,7 +1474,7 @@
     "syncedAt": "2026-06-10T03:28:53.191Z"
   },
   {
-    "seq": 55,
+    "seq": 17,
     "time": "2026-06-10 11:31:08",
     "name": "王二磊",
     "eid": "2757",
@@ -5138,7 +1566,7 @@
     "syncedAt": "2026-06-10T03:31:10.076Z"
   },
   {
-    "seq": 56,
+    "seq": 18,
     "time": "2026-06-10 11:31:15",
     "name": "陈周",
     "eid": "2472",
@@ -5232,7 +1660,7 @@
     "restored": true
   },
   {
-    "seq": 57,
+    "seq": 19,
     "time": "2026-06-10 11:32:00",
     "name": "邬安杰",
     "eid": "1086",
@@ -5326,7 +1754,7 @@
     "restored": true
   },
   {
-    "seq": 58,
+    "seq": 20,
     "time": "2026-06-10 11:32:11",
     "name": "王炜豪",
     "eid": "3721",
@@ -5420,7 +1848,7 @@
     "restored": true
   },
   {
-    "seq": 59,
+    "seq": 21,
     "time": "2026-06-10 11:33:14",
     "name": "李根强",
     "eid": "0053",
@@ -5514,7 +1942,7 @@
     "restored": true
   },
   {
-    "seq": 60,
+    "seq": 22,
     "time": "2026-06-10 11:33:27",
     "name": "翟庆龙",
     "eid": "4532",
@@ -5606,7 +2034,7 @@
     "syncedAt": "2026-06-10T03:33:28.954Z"
   },
   {
-    "seq": 61,
+    "seq": 23,
     "time": "2026-06-10 11:33:56",
     "name": "田维丽",
     "eid": "3532",
@@ -5700,7 +2128,7 @@
     "restored": true
   },
   {
-    "seq": 62,
+    "seq": 24,
     "time": "2026-06-10 11:34:31",
     "name": "黄飞燕",
     "eid": "0318",
@@ -5792,7 +2220,7 @@
     "syncedAt": "2026-06-10T03:34:33.280Z"
   },
   {
-    "seq": 63,
+    "seq": 25,
     "time": "2026-06-10 11:35:11",
     "name": "樊从举",
     "eid": "0325",
@@ -5884,7 +2312,7 @@
     "syncedAt": "2026-06-10T03:35:13.236Z"
   },
   {
-    "seq": 64,
+    "seq": 26,
     "time": "2026-06-10 11:35:43",
     "name": "黄麟雅",
     "eid": "0079",
@@ -5976,7 +2404,7 @@
     "syncedAt": "2026-06-10T03:35:46.221Z"
   },
   {
-    "seq": 65,
+    "seq": 27,
     "time": "2026-06-10 11:35:44",
     "name": "徐向丹",
     "eid": "0331",
@@ -6068,7 +2496,7 @@
     "syncedAt": "2026-06-10T03:35:50.236Z"
   },
   {
-    "seq": 66,
+    "seq": 28,
     "time": "2026-06-10 11:36:45",
     "name": "谭光娥",
     "eid": "1217",
@@ -6162,7 +2590,7 @@
     "restored": true
   },
   {
-    "seq": 67,
+    "seq": 29,
     "time": "2026-06-10 11:36:48",
     "name": "张强强",
     "eid": "2278",
@@ -6254,7 +2682,7 @@
     "syncedAt": "2026-06-10T03:36:49.879Z"
   },
   {
-    "seq": 68,
+    "seq": 30,
     "time": "2026-06-10 11:36:54",
     "name": "贺义玲",
     "eid": "0528",
@@ -6346,7 +2774,7 @@
     "syncedAt": "2026-06-10T03:36:56.233Z"
   },
   {
-    "seq": 69,
+    "seq": 31,
     "time": "2026-06-10 11:37:02",
     "name": "袁金林",
     "eid": "0916",
@@ -6438,7 +2866,7 @@
     "syncedAt": "2026-06-10T03:37:04.061Z"
   },
   {
-    "seq": 70,
+    "seq": 32,
     "time": "2026-06-10 11:37:10",
     "name": "李洪洋",
     "eid": "2741",
@@ -6530,7 +2958,7 @@
     "syncedAt": "2026-06-10T03:37:12.591Z"
   },
   {
-    "seq": 71,
+    "seq": 33,
     "time": "2026-06-10 11:39:08",
     "name": "胡妞妞",
     "eid": "0727",
@@ -6622,7 +3050,7 @@
     "syncedAt": "2026-06-10T03:39:09.847Z"
   },
   {
-    "seq": 72,
+    "seq": 34,
     "time": "2026-06-10 11:39:46",
     "name": "苏剑枫",
     "eid": "1094",
@@ -6714,7 +3142,7 @@
     "syncedAt": "2026-06-10T03:39:48.074Z"
   },
   {
-    "seq": 73,
+    "seq": 35,
     "time": "2026-06-10 11:40:28",
     "name": "刘玲",
     "eid": "0097",
@@ -6806,7 +3234,7 @@
     "syncedAt": "2026-06-10T03:40:30.079Z"
   },
   {
-    "seq": 74,
+    "seq": 36,
     "time": "2026-06-10 11:41:01",
     "name": "刘海华",
     "eid": "0127",
@@ -6898,7 +3326,7 @@
     "syncedAt": "2026-06-10T03:41:05.270Z"
   },
   {
-    "seq": 75,
+    "seq": 37,
     "time": "2026-06-10 11:41:18",
     "name": "谭朝辉",
     "eid": "1037",
@@ -6990,7 +3418,7 @@
     "syncedAt": "2026-06-10T03:41:20.207Z"
   },
   {
-    "seq": 76,
+    "seq": 38,
     "time": "2026-06-10 11:42:28",
     "name": "马玉鑫",
     "eid": "3183",
@@ -7082,7 +3510,7 @@
     "syncedAt": "2026-06-10T03:42:31.792Z"
   },
   {
-    "seq": 77,
+    "seq": 39,
     "time": "2026-06-10 11:43:45",
     "name": "张德智",
     "eid": "1058",
@@ -7174,7 +3602,7 @@
     "syncedAt": "2026-06-10T03:43:49.831Z"
   },
   {
-    "seq": 78,
+    "seq": 40,
     "time": "2026-06-10 11:43:54",
     "name": "熊学斌",
     "eid": "4155",
@@ -7266,7 +3694,7 @@
     "syncedAt": "2026-06-10T03:43:56.346Z"
   },
   {
-    "seq": 79,
+    "seq": 41,
     "time": "2026-06-10 11:44:18",
     "name": "张东伟",
     "eid": "2596",
@@ -7358,7 +3786,7 @@
     "syncedAt": "2026-06-10T03:44:20.511Z"
   },
   {
-    "seq": 80,
+    "seq": 42,
     "time": "2026-06-10 11:44:27",
     "name": "曾雷",
     "eid": "3521",
@@ -7450,7 +3878,7 @@
     "syncedAt": "2026-06-10T03:44:28.836Z"
   },
   {
-    "seq": 81,
+    "seq": 43,
     "time": "2026-06-10 11:44:37",
     "name": "刘雄",
     "eid": "1122",
@@ -7542,7 +3970,7 @@
     "syncedAt": "2026-06-10T03:44:39.526Z"
   },
   {
-    "seq": 82,
+    "seq": 44,
     "time": "2026-06-10 11:44:46",
     "name": "杨丹丹",
     "eid": "0038",
@@ -7634,7 +4062,7 @@
     "syncedAt": "2026-06-10T03:44:49.749Z"
   },
   {
-    "seq": 83,
+    "seq": 45,
     "time": "2026-06-10 11:45:24",
     "name": "李尚锋",
     "eid": "3787",
@@ -7726,7 +4154,7 @@
     "syncedAt": "2026-06-10T03:45:26.084Z"
   },
   {
-    "seq": 84,
+    "seq": 46,
     "time": "2026-06-10 11:45:27",
     "name": "秦宇心",
     "eid": "2694",
@@ -7820,7 +4248,7 @@
     "restored": true
   },
   {
-    "seq": 85,
+    "seq": 47,
     "time": "2026-06-10 11:45:36",
     "name": "吕浩",
     "eid": "4478",
@@ -7914,7 +4342,7 @@
     "restored": true
   },
   {
-    "seq": 86,
+    "seq": 48,
     "time": "2026-06-10 11:45:41",
     "name": "夏阳",
     "eid": "3555",
@@ -8008,7 +4436,7 @@
     "restored": true
   },
   {
-    "seq": 87,
+    "seq": 49,
     "time": "2026-06-10 11:45:52",
     "name": "彭鹏",
     "eid": "0070",
@@ -8100,7 +4528,7 @@
     "syncedAt": "2026-06-10T03:45:54.491Z"
   },
   {
-    "seq": 88,
+    "seq": 50,
     "time": "2026-06-10 11:46:07",
     "name": "丁浏君",
     "eid": "3464",
@@ -8192,7 +4620,7 @@
     "syncedAt": "2026-06-10T03:46:09.279Z"
   },
   {
-    "seq": 89,
+    "seq": 51,
     "time": "2026-06-10 11:46:27",
     "name": "赵凤娇",
     "eid": "2653",
@@ -8286,7 +4714,7 @@
     "restored": true
   },
   {
-    "seq": 90,
+    "seq": 52,
     "time": "2026-06-10 11:46:32",
     "name": "黄小光",
     "eid": "3237",
@@ -8380,7 +4808,7 @@
     "restored": true
   },
   {
-    "seq": 91,
+    "seq": 53,
     "time": "2026-06-10 11:46:39",
     "name": "卢清燕",
     "eid": "4008",
@@ -8472,7 +4900,7 @@
     "syncedAt": "2026-06-10T03:46:43.346Z"
   },
   {
-    "seq": 92,
+    "seq": 54,
     "time": "2026-06-10 11:47:05",
     "name": "秦英",
     "eid": "0229",
@@ -8566,7 +4994,7 @@
     "restored": true
   },
   {
-    "seq": 93,
+    "seq": 55,
     "time": "2026-06-10 11:47:07",
     "name": "孙佳伟",
     "eid": "3569",
@@ -8658,7 +5086,7 @@
     "syncedAt": "2026-06-10T03:47:09.207Z"
   },
   {
-    "seq": 94,
+    "seq": 56,
     "time": "2026-06-10 11:47:17",
     "name": "施加斌",
     "eid": "4188",
@@ -8750,7 +5178,7 @@
     "syncedAt": "2026-06-10T03:47:19.068Z"
   },
   {
-    "seq": 95,
+    "seq": 57,
     "time": "2026-06-10 11:47:24",
     "name": "陈丽丽",
     "eid": "0351",
@@ -8844,7 +5272,7 @@
     "restored": true
   },
   {
-    "seq": 96,
+    "seq": 58,
     "time": "2026-06-10 11:47:32",
     "name": "余函颖",
     "eid": "4476",
@@ -8938,7 +5366,7 @@
     "restored": true
   },
   {
-    "seq": 97,
+    "seq": 59,
     "time": "2026-06-10 11:48:04",
     "name": "何丹丹",
     "eid": "2566",
@@ -9032,7 +5460,7 @@
     "restored": true
   },
   {
-    "seq": 98,
+    "seq": 60,
     "time": "2026-06-10 11:48:18",
     "name": "赵威",
     "eid": "4218",
@@ -9124,7 +5552,7 @@
     "syncedAt": "2026-06-10T03:48:20.327Z"
   },
   {
-    "seq": 99,
+    "seq": 61,
     "time": "2026-06-10 11:48:21",
     "name": "黄景成",
     "eid": "3859",
@@ -9218,7 +5646,7 @@
     "restored": true
   },
   {
-    "seq": 100,
+    "seq": 62,
     "time": "2026-06-10 11:48:24",
     "name": "陈嘉欣",
     "eid": "3276",
@@ -9310,7 +5738,7 @@
     "syncedAt": "2026-06-10T03:48:29.471Z"
   },
   {
-    "seq": 101,
+    "seq": 63,
     "time": "2026-06-10 11:48:32",
     "name": "刘桂杰",
     "eid": "0956",
@@ -9402,7 +5830,7 @@
     "syncedAt": "2026-06-10T03:48:34.307Z"
   },
   {
-    "seq": 102,
+    "seq": 64,
     "time": "2026-06-10 11:48:45",
     "name": "侯佰达",
     "eid": "3200",
@@ -9494,7 +5922,7 @@
     "syncedAt": "2026-06-10T03:48:48.402Z"
   },
   {
-    "seq": 103,
+    "seq": 65,
     "time": "2026-06-10 11:49:05",
     "name": "梁照峰",
     "eid": "0220",
@@ -9586,7 +6014,7 @@
     "syncedAt": "2026-06-10T03:49:08.012Z"
   },
   {
-    "seq": 104,
+    "seq": 66,
     "time": "2026-06-10 11:49:16",
     "name": "闫惠庆",
     "eid": "0453",
@@ -9678,7 +6106,7 @@
     "syncedAt": "2026-06-10T03:49:18.214Z"
   },
   {
-    "seq": 105,
+    "seq": 67,
     "time": "2026-06-10 11:49:19",
     "name": "丁静",
     "eid": "3582",
@@ -9770,7 +6198,7 @@
     "syncedAt": "2026-06-10T03:49:21.897Z"
   },
   {
-    "seq": 106,
+    "seq": 68,
     "time": "2026-06-10 11:49:50",
     "name": "王立海",
     "eid": "2400",
@@ -9864,7 +6292,7 @@
     "restored": true
   },
   {
-    "seq": 107,
+    "seq": 69,
     "time": "2026-06-10 11:50:19",
     "name": "姜右清",
     "eid": "4154",
@@ -9956,7 +6384,7 @@
     "syncedAt": "2026-06-10T03:50:21.164Z"
   },
   {
-    "seq": 108,
+    "seq": 70,
     "time": "2026-06-10 11:50:31",
     "name": "邱永贤",
     "eid": "3711",
@@ -10048,7 +6476,7 @@
     "syncedAt": "2026-06-10T03:50:33.640Z"
   },
   {
-    "seq": 109,
+    "seq": 71,
     "time": "2026-06-10 11:50:37",
     "name": "薛玉燕",
     "eid": "4038",
@@ -10140,7 +6568,7 @@
     "syncedAt": "2026-06-10T03:50:39.026Z"
   },
   {
-    "seq": 110,
+    "seq": 72,
     "time": "2026-06-10 11:50:38",
     "name": "麦文豹",
     "eid": "0416",
@@ -10232,7 +6660,7 @@
     "syncedAt": "2026-06-10T03:50:40.920Z"
   },
   {
-    "seq": 111,
+    "seq": 73,
     "time": "2026-06-10 11:50:54",
     "name": "黄伟初",
     "eid": "0152",
@@ -10324,7 +6752,7 @@
     "syncedAt": "2026-06-10T03:50:55.908Z"
   },
   {
-    "seq": 112,
+    "seq": 74,
     "time": "2026-06-10 11:51:41",
     "name": "李文镱",
     "eid": "1074",
@@ -10416,7 +6844,7 @@
     "syncedAt": "2026-06-10T03:51:45.490Z"
   },
   {
-    "seq": 113,
+    "seq": 75,
     "time": "2026-06-10 11:51:56",
     "name": "徐东东",
     "eid": "1423",
@@ -10508,7 +6936,7 @@
     "syncedAt": "2026-06-10T03:51:58.733Z"
   },
   {
-    "seq": 114,
+    "seq": 76,
     "time": "2026-06-10 11:53:33",
     "name": "赖荣辉",
     "eid": "0146",
@@ -10600,7 +7028,7 @@
     "syncedAt": "2026-06-10T03:53:35.857Z"
   },
   {
-    "seq": 115,
+    "seq": 77,
     "time": "2026-06-10 11:53:38",
     "name": "罗怡镰",
     "eid": "3786",
@@ -10692,7 +7120,7 @@
     "syncedAt": "2026-06-10T03:53:40.184Z"
   },
   {
-    "seq": 116,
+    "seq": 78,
     "time": "2026-06-10 11:53:40",
     "name": "胡洋",
     "eid": "1948",
@@ -10784,7 +7212,7 @@
     "syncedAt": "2026-06-10T03:53:46.003Z"
   },
   {
-    "seq": 117,
+    "seq": 79,
     "time": "2026-06-10 11:54:16",
     "name": "吴永钊",
     "eid": "2893",
@@ -10876,7 +7304,7 @@
     "syncedAt": "2026-06-10T03:54:18.308Z"
   },
   {
-    "seq": 118,
+    "seq": 80,
     "time": "2026-06-10 11:54:29",
     "name": "江明",
     "eid": "0075",
@@ -10968,7 +7396,7 @@
     "syncedAt": "2026-06-10T03:54:48.195Z"
   },
   {
-    "seq": 119,
+    "seq": 81,
     "time": "2026-06-10 11:54:37",
     "name": "蔡剑华",
     "eid": "0143",
@@ -11062,7 +7490,7 @@
     "restored": true
   },
   {
-    "seq": 120,
+    "seq": 82,
     "time": "2026-06-10 11:55:11",
     "name": "龙小菊",
     "eid": "0573",
@@ -11156,7 +7584,7 @@
     "restored": true
   },
   {
-    "seq": 121,
+    "seq": 83,
     "time": "2026-06-10 11:55:54",
     "name": "黄长丽",
     "eid": "2038",
@@ -11248,7 +7676,7 @@
     "syncedAt": "2026-06-10T03:55:57.043Z"
   },
   {
-    "seq": 122,
+    "seq": 84,
     "time": "2026-06-10 11:56:19",
     "name": "王立海",
     "eid": "2400",
@@ -11340,7 +7768,7 @@
     "syncedAt": "2026-06-10T03:56:21.924Z"
   },
   {
-    "seq": 123,
+    "seq": 85,
     "time": "2026-06-10 11:56:19",
     "name": "陶敏",
     "eid": "1450",
@@ -11432,7 +7860,7 @@
     "syncedAt": "2026-06-10T03:56:42.073Z"
   },
   {
-    "seq": 124,
+    "seq": 86,
     "time": "2026-06-10 11:57:19",
     "name": "蒋冬梅",
     "eid": "4237",
@@ -11524,7 +7952,7 @@
     "syncedAt": "2026-06-10T03:57:21.574Z"
   },
   {
-    "seq": 125,
+    "seq": 87,
     "time": "2026-06-10 11:57:21",
     "name": "张佳",
     "eid": "0386",
@@ -11616,7 +8044,7 @@
     "syncedAt": "2026-06-10T03:57:31.642Z"
   },
   {
-    "seq": 126,
+    "seq": 88,
     "time": "2026-06-10 11:57:34",
     "name": "石亚锋",
     "eid": "2202",
@@ -11710,7 +8138,7 @@
     "restored": true
   },
   {
-    "seq": 127,
+    "seq": 89,
     "time": "2026-06-10 11:58:00",
     "name": "陈美香",
     "eid": "2318",
@@ -11802,7 +8230,7 @@
     "syncedAt": "2026-06-10T03:58:03.162Z"
   },
   {
-    "seq": 128,
+    "seq": 90,
     "time": "2026-06-10 11:58:05",
     "name": "陈燕燕",
     "eid": "1875",
@@ -11894,7 +8322,7 @@
     "syncedAt": "2026-06-10T03:58:12.606Z"
   },
   {
-    "seq": 129,
+    "seq": 91,
     "time": "2026-06-10 11:58:06",
     "name": "易海玲",
     "eid": "4460",
@@ -11986,7 +8414,7 @@
     "syncedAt": "2026-06-10T03:58:07.830Z"
   },
   {
-    "seq": 130,
+    "seq": 92,
     "time": "2026-06-10 11:58:17",
     "name": "夏小波",
     "eid": "2759",
@@ -12078,7 +8506,7 @@
     "syncedAt": "2026-06-10T03:58:19.095Z"
   },
   {
-    "seq": 131,
+    "seq": 93,
     "time": "2026-06-10 11:58:18",
     "name": "邓小琴",
     "eid": "0317",
@@ -12170,7 +8598,7 @@
     "syncedAt": "2026-06-10T03:58:24.287Z"
   },
   {
-    "seq": 132,
+    "seq": 94,
     "time": "2026-06-10 11:58:35",
     "name": "杨军辉",
     "eid": "3189",
@@ -12262,7 +8690,7 @@
     "syncedAt": "2026-06-10T03:58:37.481Z"
   },
   {
-    "seq": 133,
+    "seq": 95,
     "time": "2026-06-10 11:58:35",
     "name": "李茶",
     "eid": "0409",
@@ -12354,7 +8782,7 @@
     "syncedAt": "2026-06-10T03:58:49.832Z"
   },
   {
-    "seq": 134,
+    "seq": 96,
     "time": "2026-06-10 11:58:43",
     "name": "宋凤娟",
     "eid": "339",
@@ -12446,7 +8874,7 @@
     "syncedAt": "2026-06-10T03:58:48.522Z"
   },
   {
-    "seq": 135,
+    "seq": 97,
     "time": "2026-06-10 11:59:07",
     "name": "李大珍",
     "eid": "0297",
@@ -12538,7 +8966,7 @@
     "syncedAt": "2026-06-10T03:59:09.360Z"
   },
   {
-    "seq": 136,
+    "seq": 98,
     "time": "2026-06-10 11:59:25",
     "name": "席凤琴",
     "eid": "3454",
@@ -12630,7 +9058,7 @@
     "syncedAt": "2026-06-10T03:59:27.934Z"
   },
   {
-    "seq": 137,
+    "seq": 99,
     "time": "2026-06-10 11:59:30",
     "name": "赵凤娇",
     "eid": "2653",
@@ -12724,7 +9152,7 @@
     "restored": true
   },
   {
-    "seq": 138,
+    "seq": 100,
     "time": "2026-06-10 11:59:40",
     "name": "黄容",
     "eid": "0768",
@@ -12816,7 +9244,7 @@
     "syncedAt": "2026-06-10T03:59:41.935Z"
   },
   {
-    "seq": 139,
+    "seq": 101,
     "time": "2026-06-10 11:59:53",
     "name": "陈海燕",
     "eid": "3172",
@@ -12908,7 +9336,7 @@
     "syncedAt": "2026-06-10T03:59:55.087Z"
   },
   {
-    "seq": 140,
+    "seq": 102,
     "time": "2026-06-10 12:00:06",
     "name": "覃荣丹",
     "eid": "0647",
@@ -13000,7 +9428,7 @@
     "syncedAt": "2026-06-10T04:00:08.786Z"
   },
   {
-    "seq": 141,
+    "seq": 103,
     "time": "2026-06-10 12:00:18",
     "name": "文太兵",
     "eid": "4243",
@@ -13092,7 +9520,7 @@
     "syncedAt": "2026-06-10T04:00:21.200Z"
   },
   {
-    "seq": 142,
+    "seq": 104,
     "time": "2026-06-10 12:00:20",
     "name": "李芳",
     "eid": "1739",
@@ -13186,7 +9614,7 @@
     "restored": true
   },
   {
-    "seq": 143,
+    "seq": 105,
     "time": "2026-06-10 12:00:25",
     "name": "王俊鹏",
     "eid": "2309",
@@ -13278,7 +9706,7 @@
     "syncedAt": "2026-06-10T04:00:28.640Z"
   },
   {
-    "seq": 144,
+    "seq": 106,
     "time": "2026-06-10 12:00:42",
     "name": "程海玲",
     "eid": "1304",
@@ -13370,7 +9798,7 @@
     "syncedAt": "2026-06-10T04:00:45.125Z"
   },
   {
-    "seq": 145,
+    "seq": 107,
     "time": "2026-06-10 12:00:56",
     "name": "韦喜玲",
     "eid": "3225",
@@ -13462,7 +9890,7 @@
     "syncedAt": "2026-06-10T04:00:58.014Z"
   },
   {
-    "seq": 146,
+    "seq": 108,
     "time": "2026-06-10 12:01:10",
     "name": "刘华力",
     "eid": "1540",
@@ -13554,7 +9982,7 @@
     "syncedAt": "2026-06-10T04:01:12.651Z"
   },
   {
-    "seq": 147,
+    "seq": 109,
     "time": "2026-06-10 12:01:18",
     "name": "王春梅",
     "eid": "0360",
@@ -13646,7 +10074,7 @@
     "syncedAt": "2026-06-10T04:01:20.507Z"
   },
   {
-    "seq": 148,
+    "seq": 110,
     "time": "2026-06-10 12:01:29",
     "name": "王仁帮",
     "eid": "1890",
@@ -13740,7 +10168,7 @@
     "restored": true
   },
   {
-    "seq": 149,
+    "seq": 111,
     "time": "2026-06-10 12:01:44",
     "name": "游耀广",
     "eid": "0307",
@@ -13832,7 +10260,7 @@
     "syncedAt": "2026-06-10T04:01:47.473Z"
   },
   {
-    "seq": 150,
+    "seq": 112,
     "time": "2026-06-10 12:01:52",
     "name": "陈云云",
     "eid": "3527",
@@ -13924,7 +10352,7 @@
     "syncedAt": "2026-06-10T04:01:54.883Z"
   },
   {
-    "seq": 151,
+    "seq": 113,
     "time": "2026-06-10 12:01:56",
     "name": "王宏亮",
     "eid": "4442",
@@ -14018,7 +10446,7 @@
     "restored": true
   },
   {
-    "seq": 152,
+    "seq": 114,
     "time": "2026-06-10 12:02:01",
     "name": "谭光娥",
     "eid": "1217",
@@ -14110,7 +10538,7 @@
     "syncedAt": "2026-06-10T04:02:03.375Z"
   },
   {
-    "seq": 153,
+    "seq": 115,
     "time": "2026-06-10 12:02:14",
     "name": "吕玲敏",
     "eid": "0109",
@@ -14204,7 +10632,7 @@
     "restored": true
   },
   {
-    "seq": 154,
+    "seq": 116,
     "time": "2026-06-10 12:02:21",
     "name": "邓素云",
     "eid": "3014",
@@ -14296,7 +10724,7 @@
     "syncedAt": "2026-06-10T04:02:22.970Z"
   },
   {
-    "seq": 155,
+    "seq": 117,
     "time": "2026-06-10 12:02:33",
     "name": "黄均家",
     "eid": "3214",
@@ -14390,7 +10818,7 @@
     "restored": true
   },
   {
-    "seq": 156,
+    "seq": 118,
     "time": "2026-06-10 12:03:09",
     "name": "李玉英",
     "eid": "1795",
@@ -14482,7 +10910,7 @@
     "syncedAt": "2026-06-10T04:03:12.174Z"
   },
   {
-    "seq": 157,
+    "seq": 119,
     "time": "2026-06-10 12:03:16",
     "name": "岳莉苹",
     "eid": "1568",
@@ -14576,7 +11004,7 @@
     "restored": true
   },
   {
-    "seq": 158,
+    "seq": 120,
     "time": "2026-06-10 12:03:21",
     "name": "杨井会",
     "eid": "0955",
@@ -14668,7 +11096,7 @@
     "syncedAt": "2026-06-10T04:03:23.487Z"
   },
   {
-    "seq": 159,
+    "seq": 121,
     "time": "2026-06-10 12:03:21",
     "name": "李波",
     "eid": "1158",
@@ -14760,7 +11188,7 @@
     "syncedAt": "2026-06-10T04:03:34.873Z"
   },
   {
-    "seq": 160,
+    "seq": 122,
     "time": "2026-06-10 12:03:25",
     "name": "蔡雨朋",
     "eid": "0814",
@@ -14852,7 +11280,7 @@
     "syncedAt": "2026-06-10T04:03:28.367Z"
   },
   {
-    "seq": 161,
+    "seq": 123,
     "time": "2026-06-10 12:03:40",
     "name": "张小花",
     "eid": "1301",
@@ -14946,7 +11374,7 @@
     "restored": true
   },
   {
-    "seq": 162,
+    "seq": 124,
     "time": "2026-06-10 12:03:57",
     "name": "钟世娅",
     "eid": "4180",
@@ -15040,7 +11468,7 @@
     "restored": true
   },
   {
-    "seq": 163,
+    "seq": 125,
     "time": "2026-06-10 12:04:00",
     "name": "康镕基",
     "eid": "4500",
@@ -15132,7 +11560,7 @@
     "syncedAt": "2026-06-10T04:04:45.551Z"
   },
   {
-    "seq": 164,
+    "seq": 126,
     "time": "2026-06-10 12:04:07",
     "name": "王振鹏",
     "eid": "4425",
@@ -15224,7 +11652,7 @@
     "syncedAt": "2026-06-10T04:04:10.155Z"
   },
   {
-    "seq": 165,
+    "seq": 127,
     "time": "2026-06-10 12:04:20",
     "name": "陈文镇",
     "eid": "153",
@@ -15316,7 +11744,7 @@
     "syncedAt": "2026-06-10T04:04:24.223Z"
   },
   {
-    "seq": 166,
+    "seq": 128,
     "time": "2026-06-10 12:04:38",
     "name": "丁红军",
     "eid": "3719",
@@ -15408,7 +11836,7 @@
     "syncedAt": "2026-06-10T04:04:40.295Z"
   },
   {
-    "seq": 167,
+    "seq": 129,
     "time": "2026-06-10 12:05:02",
     "name": "易定军",
     "eid": "4461",
@@ -15500,7 +11928,7 @@
     "syncedAt": "2026-06-10T04:05:10.992Z"
   },
   {
-    "seq": 168,
+    "seq": 130,
     "time": "2026-06-10 12:05:28",
     "name": "刘选淑",
     "eid": "108",
@@ -15594,7 +12022,7 @@
     "restored": true
   },
   {
-    "seq": 169,
+    "seq": 131,
     "time": "2026-06-10 12:05:37",
     "name": "胡江北",
     "eid": "0549",
@@ -15686,7 +12114,7 @@
     "syncedAt": "2026-06-10T04:05:39.550Z"
   },
   {
-    "seq": 170,
+    "seq": 132,
     "time": "2026-06-10 12:05:41",
     "name": "陈明叶",
     "eid": "3644",
@@ -15778,7 +12206,7 @@
     "syncedAt": "2026-06-10T04:05:46.902Z"
   },
   {
-    "seq": 171,
+    "seq": 133,
     "time": "2026-06-10 12:05:52",
     "name": "陈阿璇",
     "eid": "1194",
@@ -15870,7 +12298,7 @@
     "syncedAt": "2026-06-10T04:05:54.145Z"
   },
   {
-    "seq": 172,
+    "seq": 134,
     "time": "2026-06-10 12:05:59",
     "name": "周立鹏",
     "eid": "3808",
@@ -15962,7 +12390,7 @@
     "syncedAt": "2026-06-10T04:06:01.254Z"
   },
   {
-    "seq": 173,
+    "seq": 135,
     "time": "2026-06-10 12:06:03",
     "name": "崔涛",
     "eid": "3945",
@@ -16054,7 +12482,7 @@
     "syncedAt": "2026-06-10T04:06:05.851Z"
   },
   {
-    "seq": 174,
+    "seq": 136,
     "time": "2026-06-10 12:06:06",
     "name": "陈军",
     "eid": "0270",
@@ -16148,7 +12576,7 @@
     "restored": true
   },
   {
-    "seq": 175,
+    "seq": 137,
     "time": "2026-06-10 12:06:22",
     "name": "肖胜华",
     "eid": "4135",
@@ -16242,7 +12670,7 @@
     "restored": true
   },
   {
-    "seq": 176,
+    "seq": 138,
     "time": "2026-06-10 12:06:31",
     "name": "冉龙喜",
     "eid": "0467",
@@ -16334,7 +12762,7 @@
     "syncedAt": "2026-06-10T04:07:34.318Z"
   },
   {
-    "seq": 177,
+    "seq": 139,
     "time": "2026-06-10 12:06:34",
     "name": "陈鹏",
     "eid": "3944",
@@ -16426,7 +12854,7 @@
     "syncedAt": "2026-06-10T04:06:36.925Z"
   },
   {
-    "seq": 178,
+    "seq": 140,
     "time": "2026-06-10 12:07:05",
     "name": "肖林",
     "eid": "4207",
@@ -16520,7 +12948,7 @@
     "restored": true
   },
   {
-    "seq": 179,
+    "seq": 141,
     "time": "2026-06-10 12:07:15",
     "name": "李月丽",
     "eid": "3504",
@@ -16612,7 +13040,7 @@
     "syncedAt": "2026-06-10T04:07:17.579Z"
   },
   {
-    "seq": 180,
+    "seq": 142,
     "time": "2026-06-10 12:07:22",
     "name": "罗孝州",
     "eid": "0397",
@@ -16704,7 +13132,7 @@
     "syncedAt": "2026-06-10T04:07:24.465Z"
   },
   {
-    "seq": 181,
+    "seq": 143,
     "time": "2026-06-10 12:07:47",
     "name": "张素芬",
     "eid": "1189",
@@ -16796,7 +13224,7 @@
     "syncedAt": "2026-06-10T04:07:50.225Z"
   },
   {
-    "seq": 182,
+    "seq": 144,
     "time": "2026-06-10 12:08:21",
     "name": "黄正苇",
     "eid": "4278",
@@ -16890,7 +13318,7 @@
     "restored": true
   },
   {
-    "seq": 183,
+    "seq": 145,
     "time": "2026-06-10 12:08:32",
     "name": "丁玉银",
     "eid": "1479",
@@ -16984,7 +13412,7 @@
     "restored": true
   },
   {
-    "seq": 184,
+    "seq": 146,
     "time": "2026-06-10 12:08:53",
     "name": "许明君",
     "eid": "1682",
@@ -17078,7 +13506,7 @@
     "restored": true
   },
   {
-    "seq": 185,
+    "seq": 147,
     "time": "2026-06-10 12:09:23",
     "name": "周光春",
     "eid": "4163",
@@ -17170,7 +13598,7 @@
     "syncedAt": "2026-06-10T04:09:25.482Z"
   },
   {
-    "seq": 186,
+    "seq": 148,
     "time": "2026-06-10 12:09:42",
     "name": "杨素娟",
     "eid": "3960",
@@ -17264,7 +13692,7 @@
     "restored": true
   },
   {
-    "seq": 187,
+    "seq": 149,
     "time": "2026-06-10 12:09:52",
     "name": "尚朝艳",
     "eid": "3973",
@@ -17356,7 +13784,7 @@
     "syncedAt": "2026-06-10T04:10:05.713Z"
   },
   {
-    "seq": 188,
+    "seq": 150,
     "time": "2026-06-10 12:10:08",
     "name": "郭承志",
     "eid": "3489",
@@ -17448,7 +13876,7 @@
     "syncedAt": "2026-06-10T04:11:19.661Z"
   },
   {
-    "seq": 189,
+    "seq": 151,
     "time": "2026-06-10 12:10:14",
     "name": "柯贤丽",
     "eid": "1598",
@@ -17540,7 +13968,7 @@
     "syncedAt": "2026-06-10T04:10:15.990Z"
   },
   {
-    "seq": 190,
+    "seq": 152,
     "time": "2026-06-10 12:10:32",
     "name": "肖晓龙",
     "eid": "3790",
@@ -17632,7 +14060,7 @@
     "syncedAt": "2026-06-10T04:10:33.817Z"
   },
   {
-    "seq": 191,
+    "seq": 153,
     "time": "2026-06-10 12:10:42",
     "name": "罗安明",
     "eid": "0879",
@@ -17724,7 +14152,7 @@
     "syncedAt": "2026-06-10T04:10:45.265Z"
   },
   {
-    "seq": 192,
+    "seq": 154,
     "time": "2026-06-10 12:11:05",
     "name": "段海莲",
     "eid": "1878",
@@ -17816,7 +14244,7 @@
     "syncedAt": "2026-06-10T04:11:07.451Z"
   },
   {
-    "seq": 193,
+    "seq": 155,
     "time": "2026-06-10 12:11:05",
     "name": "顾林霞",
     "eid": "4006",
@@ -17908,7 +14336,7 @@
     "syncedAt": "2026-06-10T04:13:26.403Z"
   },
   {
-    "seq": 194,
+    "seq": 156,
     "time": "2026-06-10 12:11:13",
     "name": "金珊珊",
     "eid": "0613",
@@ -18000,7 +14428,7 @@
     "syncedAt": "2026-06-10T04:11:15.669Z"
   },
   {
-    "seq": 195,
+    "seq": 157,
     "time": "2026-06-10 12:11:19",
     "name": "李飞英",
     "eid": "4376",
@@ -18092,7 +14520,7 @@
     "syncedAt": "2026-06-10T04:11:21.057Z"
   },
   {
-    "seq": 196,
+    "seq": 158,
     "time": "2026-06-10 12:11:31",
     "name": "刘玉玲",
     "eid": "3724",
@@ -18184,7 +14612,7 @@
     "syncedAt": "2026-06-10T04:12:08.760Z"
   },
   {
-    "seq": 197,
+    "seq": 159,
     "time": "2026-06-10 12:11:40",
     "name": "易星月",
     "eid": "4209",
@@ -18276,7 +14704,7 @@
     "syncedAt": "2026-06-10T04:11:42.449Z"
   },
   {
-    "seq": 198,
+    "seq": 160,
     "time": "2026-06-10 12:12:01",
     "name": "李杰玉",
     "eid": "4189",
@@ -18370,7 +14798,7 @@
     "restored": true
   },
   {
-    "seq": 199,
+    "seq": 161,
     "time": "2026-06-10 12:12:15",
     "name": "敖军华",
     "eid": "0440",
@@ -18462,7 +14890,7 @@
     "syncedAt": "2026-06-10T04:12:17.479Z"
   },
   {
-    "seq": 200,
+    "seq": 162,
     "time": "2026-06-10 12:12:24",
     "name": "李煊容",
     "eid": "4378",
@@ -18554,7 +14982,7 @@
     "syncedAt": "2026-06-10T04:12:26.768Z"
   },
   {
-    "seq": 201,
+    "seq": 163,
     "time": "2026-06-10 12:12:41",
     "name": "陈丰",
     "eid": "3495",
@@ -18648,7 +15076,7 @@
     "restored": true
   },
   {
-    "seq": 202,
+    "seq": 164,
     "time": "2026-06-10 12:12:47",
     "name": "刘芳",
     "eid": "4459",
@@ -18740,7 +15168,7 @@
     "syncedAt": "2026-06-10T04:12:49.528Z"
   },
   {
-    "seq": 203,
+    "seq": 165,
     "time": "2026-06-10 12:12:50",
     "name": "段海亮",
     "eid": "4139",
@@ -18832,7 +15260,7 @@
     "syncedAt": "2026-06-10T04:12:57.736Z"
   },
   {
-    "seq": 204,
+    "seq": 166,
     "time": "2026-06-10 12:13:55",
     "name": "黄崇斌",
     "eid": "4477",
@@ -18924,7 +15352,7 @@
     "syncedAt": "2026-06-10T04:13:56.780Z"
   },
   {
-    "seq": 205,
+    "seq": 167,
     "time": "2026-06-10 12:14:15",
     "name": "冉旭",
     "eid": "4420",
@@ -19016,7 +15444,7 @@
     "syncedAt": "2026-06-10T04:14:17.984Z"
   },
   {
-    "seq": 206,
+    "seq": 168,
     "time": "2026-06-10 12:14:35",
     "name": "刘波",
     "eid": "1283",
@@ -19108,7 +15536,7 @@
     "syncedAt": "2026-06-10T04:14:37.434Z"
   },
   {
-    "seq": 207,
+    "seq": 169,
     "time": "2026-06-10 12:15:20",
     "name": "彭妹",
     "eid": "1193",
@@ -19200,7 +15628,7 @@
     "syncedAt": "2026-06-10T04:15:30.497Z"
   },
   {
-    "seq": 208,
+    "seq": 170,
     "time": "2026-06-10 12:15:22",
     "name": "冯秀芳",
     "eid": "4457",
@@ -19294,7 +15722,7 @@
     "restored": true
   },
   {
-    "seq": 209,
+    "seq": 171,
     "time": "2026-06-10 12:15:40",
     "name": "谭达全",
     "eid": "0715",
@@ -19388,7 +15816,7 @@
     "restored": true
   },
   {
-    "seq": 210,
+    "seq": 172,
     "time": "2026-06-10 12:16:23",
     "name": "覃广",
     "eid": "1889",
@@ -19482,7 +15910,7 @@
     "restored": true
   },
   {
-    "seq": 211,
+    "seq": 173,
     "time": "2026-06-10 12:16:24",
     "name": "刘芙蓉",
     "eid": "4567",
@@ -19574,7 +16002,7 @@
     "syncedAt": "2026-06-10T04:33:27.470Z"
   },
   {
-    "seq": 212,
+    "seq": 174,
     "time": "2026-06-10 12:16:37",
     "name": "管琪琳",
     "eid": "3180",
@@ -19666,7 +16094,7 @@
     "syncedAt": "2026-06-10T04:16:39.263Z"
   },
   {
-    "seq": 213,
+    "seq": 175,
     "time": "2026-06-10 12:16:53",
     "name": "周志敏",
     "eid": "3484",
@@ -19760,7 +16188,7 @@
     "restored": true
   },
   {
-    "seq": 214,
+    "seq": 176,
     "time": "2026-06-10 12:17:05",
     "name": "姚银苹",
     "eid": "4526",
@@ -19854,7 +16282,7 @@
     "restored": true
   },
   {
-    "seq": 215,
+    "seq": 177,
     "time": "2026-06-10 12:17:12",
     "name": "柯小菊",
     "eid": "1621",
@@ -19948,7 +16376,7 @@
     "restored": true
   },
   {
-    "seq": 216,
+    "seq": 178,
     "time": "2026-06-10 12:17:26",
     "name": "容静怡",
     "eid": "1963",
@@ -20040,7 +16468,7 @@
     "syncedAt": "2026-06-10T04:17:28.588Z"
   },
   {
-    "seq": 217,
+    "seq": 179,
     "time": "2026-06-10 12:17:59",
     "name": "陈家乐",
     "eid": "4554",
@@ -20132,7 +16560,7 @@
     "syncedAt": "2026-06-10T04:18:01.613Z"
   },
   {
-    "seq": 218,
+    "seq": 180,
     "time": "2026-06-10 12:18:52",
     "name": "钟胜丹",
     "eid": "1942",
@@ -20224,7 +16652,7 @@
     "syncedAt": "2026-06-10T04:18:59.548Z"
   },
   {
-    "seq": 219,
+    "seq": 181,
     "time": "2026-06-10 12:19:08",
     "name": "林晓芬",
     "eid": "0645",
@@ -20316,7 +16744,7 @@
     "syncedAt": "2026-06-10T04:20:12.172Z"
   },
   {
-    "seq": 220,
+    "seq": 182,
     "time": "2026-06-10 12:19:31",
     "name": "何建雄",
     "eid": "4429",
@@ -20408,7 +16836,7 @@
     "syncedAt": "2026-06-10T04:19:33.442Z"
   },
   {
-    "seq": 221,
+    "seq": 183,
     "time": "2026-06-10 12:19:52",
     "name": "张小容",
     "eid": "4063",
@@ -20500,7 +16928,7 @@
     "syncedAt": "2026-06-10T04:19:55.596Z"
   },
   {
-    "seq": 222,
+    "seq": 184,
     "time": "2026-06-10 12:20:08",
     "name": "刘丽芸",
     "eid": "2711",
@@ -20594,7 +17022,7 @@
     "restored": true
   },
   {
-    "seq": 223,
+    "seq": 185,
     "time": "2026-06-10 12:21:07",
     "name": "王正荣",
     "eid": "3959",
@@ -20686,7 +17114,7 @@
     "syncedAt": "2026-06-10T04:21:09.919Z"
   },
   {
-    "seq": 224,
+    "seq": 186,
     "time": "2026-06-10 12:22:04",
     "name": "王高生",
     "eid": "3901",
@@ -20780,7 +17208,7 @@
     "restored": true
   },
   {
-    "seq": 225,
+    "seq": 187,
     "time": "2026-06-10 12:24:06",
     "name": "彭吉松",
     "eid": "4162",
@@ -20872,7 +17300,7 @@
     "syncedAt": "2026-06-10T04:24:08.751Z"
   },
   {
-    "seq": 226,
+    "seq": 188,
     "time": "2026-06-10 12:25:25",
     "name": "郭俊峰",
     "eid": "4146",
@@ -20964,7 +17392,7 @@
     "syncedAt": "2026-06-10T04:25:30.560Z"
   },
   {
-    "seq": 227,
+    "seq": 189,
     "time": "2026-06-10 12:26:14",
     "name": "侯玲飞",
     "eid": "4511",
@@ -21056,7 +17484,7 @@
     "syncedAt": "2026-06-10T04:26:35.573Z"
   },
   {
-    "seq": 228,
+    "seq": 190,
     "time": "2026-06-10 12:26:18",
     "name": "谢德勇",
     "eid": "4437",
@@ -21148,7 +17576,7 @@
     "syncedAt": "2026-06-10T04:26:20.436Z"
   },
   {
-    "seq": 229,
+    "seq": 191,
     "time": "2026-06-10 12:27:30",
     "name": "苏晶",
     "eid": "0235",
@@ -21240,7 +17668,7 @@
     "syncedAt": "2026-06-10T04:27:33.056Z"
   },
   {
-    "seq": 230,
+    "seq": 192,
     "time": "2026-06-10 12:28:32",
     "name": "杨霞",
     "eid": "2837",
@@ -21332,7 +17760,7 @@
     "syncedAt": "2026-06-10T04:28:34.197Z"
   },
   {
-    "seq": 231,
+    "seq": 193,
     "time": "2026-06-10 12:30:29",
     "name": "刘运平",
     "eid": "4405",
@@ -21426,7 +17854,7 @@
     "restored": true
   },
   {
-    "seq": 232,
+    "seq": 194,
     "time": "2026-06-10 12:30:36",
     "name": "甘巧媚",
     "eid": "3803",
@@ -21518,7 +17946,7 @@
     "syncedAt": "2026-06-10T04:31:10.180Z"
   },
   {
-    "seq": 233,
+    "seq": 195,
     "time": "2026-06-10 12:33:59",
     "name": "龚雯",
     "eid": "4520",
@@ -21610,7 +18038,7 @@
     "syncedAt": "2026-06-10T04:34:01.627Z"
   },
   {
-    "seq": 234,
+    "seq": 196,
     "time": "2026-06-10 12:34:52",
     "name": "许丽琴",
     "eid": "1173",
@@ -21702,7 +18130,7 @@
     "syncedAt": "2026-06-10T04:34:56.297Z"
   },
   {
-    "seq": 235,
+    "seq": 197,
     "time": "2026-06-10 12:35:25",
     "name": "张海伟",
     "eid": "2381",
@@ -21796,7 +18224,7 @@
     "restored": true
   },
   {
-    "seq": 236,
+    "seq": 198,
     "time": "2026-06-10 12:47:58",
     "name": "罗丹",
     "eid": "0352",
@@ -21888,7 +18316,7 @@
     "syncedAt": "2026-06-10T04:48:02.358Z"
   },
   {
-    "seq": 237,
+    "seq": 199,
     "time": "2026-06-10 12:50:04",
     "name": "程晓敏",
     "eid": "2651",
@@ -21980,7 +18408,7 @@
     "syncedAt": "2026-06-10T04:50:26.848Z"
   },
   {
-    "seq": 238,
+    "seq": 200,
     "time": "2026-06-10 12:52:26",
     "name": "张强强",
     "eid": "2278",
@@ -22072,7 +18500,7 @@
     "syncedAt": "2026-06-10T04:52:28.917Z"
   },
   {
-    "seq": 239,
+    "seq": 201,
     "time": "2026-06-10 13:14:54",
     "name": "李广",
     "eid": "15040408",
@@ -22164,7 +18592,7 @@
     "syncedAt": "2026-06-10T05:14:56.712Z"
   },
   {
-    "seq": 240,
+    "seq": 202,
     "time": "2026-06-10 13:16:45",
     "name": "唐浩云",
     "eid": "2789",
@@ -22256,7 +18684,7 @@
     "syncedAt": "2026-06-10T05:16:48.251Z"
   },
   {
-    "seq": 241,
+    "seq": 203,
     "time": "2026-06-10 13:17:03",
     "name": "张兰",
     "eid": "1130",
@@ -22348,7 +18776,7 @@
     "syncedAt": "2026-06-10T05:17:06.349Z"
   },
   {
-    "seq": 242,
+    "seq": 204,
     "time": "2026-06-10 14:01:06",
     "name": "李杨杨",
     "eid": "4093",
@@ -22440,7 +18868,7 @@
     "syncedAt": "2026-06-10T06:01:07.980Z"
   },
   {
-    "seq": 243,
+    "seq": 205,
     "time": "2026-06-10 14:01:14",
     "name": "王秀丽",
     "eid": "2568",
@@ -22532,7 +18960,7 @@
     "syncedAt": "2026-06-10T06:01:21.723Z"
   },
   {
-    "seq": 244,
+    "seq": 206,
     "time": "2026-06-10 15:02:48",
     "name": "赵亚靖",
     "eid": "2957",
@@ -22626,7 +19054,7 @@
     "restored": true
   },
   {
-    "seq": 245,
+    "seq": 207,
     "time": "2026-06-10 16:00:58",
     "name": "邹鸿圣",
     "eid": "4531",
@@ -22718,7 +19146,7 @@
     "syncedAt": "2026-06-10T08:01:03.157Z"
   },
   {
-    "seq": 246,
+    "seq": 208,
     "time": "2026-06-10 16:03:36",
     "name": "韦海涛",
     "eid": "3196",
@@ -22812,7 +19240,7 @@
     "restored": true
   },
   {
-    "seq": 247,
+    "seq": 209,
     "time": "2026-06-10 16:10:55",
     "name": "王建军",
     "eid": "0328",
@@ -22904,7 +19332,7 @@
     "syncedAt": "2026-06-10T08:10:57.692Z"
   },
   {
-    "seq": 248,
+    "seq": 210,
     "time": "2026-06-10 16:14:14",
     "name": "程晓敏",
     "eid": "2651",
@@ -22996,7 +19424,7 @@
     "syncedAt": "2026-06-10T08:14:32.575Z"
   },
   {
-    "seq": 249,
+    "seq": 211,
     "time": "2026-06-10 16:16:38",
     "name": "贺晓冬",
     "eid": "1118",
@@ -23088,7 +19516,7 @@
     "syncedAt": "2026-06-10T08:16:40.500Z"
   },
   {
-    "seq": 250,
+    "seq": 212,
     "time": "2026-06-10 16:19:00",
     "name": "李苗",
     "eid": "4257",
@@ -23180,7 +19608,7 @@
     "syncedAt": "2026-06-10T08:19:03.180Z"
   },
   {
-    "seq": 251,
+    "seq": 213,
     "time": "2026-06-10 16:27:51",
     "name": "姚知俊",
     "eid": "0629",
@@ -23272,7 +19700,7 @@
     "syncedAt": "2026-06-10T08:27:58.820Z"
   },
   {
-    "seq": 252,
+    "seq": 214,
     "time": "2026-06-10 16:30:28",
     "name": "孙兆有",
     "eid": "1282",
@@ -23364,7 +19792,7 @@
     "syncedAt": "2026-06-10T08:30:31.206Z"
   },
   {
-    "seq": 253,
+    "seq": 215,
     "time": "2026-06-10 16:42:51",
     "name": "陈周",
     "eid": "2472",
@@ -23456,7 +19884,7 @@
     "syncedAt": "2026-06-10T08:42:59.070Z"
   },
   {
-    "seq": 254,
+    "seq": 216,
     "time": "2026-06-10 16:53:06",
     "name": "陈磊",
     "eid": "1380",
@@ -23548,7 +19976,7 @@
     "syncedAt": "2026-06-10T08:53:08.688Z"
   },
   {
-    "seq": 255,
+    "seq": 217,
     "time": "2026-06-10 16:55:23",
     "name": "黄飞燕",
     "eid": "0318",
@@ -23640,7 +20068,7 @@
     "syncedAt": "2026-06-10T08:55:33.906Z"
   },
   {
-    "seq": 256,
+    "seq": 218,
     "time": "2026-06-10 16:56:46",
     "name": "钟林芳",
     "eid": "0218",
@@ -23732,7 +20160,7 @@
     "syncedAt": "2026-06-10T08:56:48.477Z"
   },
   {
-    "seq": 257,
+    "seq": 219,
     "time": "2026-06-10 16:57:05",
     "name": "罗建军",
     "eid": "0696",
@@ -23824,7 +20252,7 @@
     "syncedAt": "2026-06-10T08:57:07.890Z"
   },
   {
-    "seq": 258,
+    "seq": 220,
     "time": "2026-06-10 16:57:28",
     "name": "邬安杰",
     "eid": "1086",
@@ -23916,7 +20344,7 @@
     "syncedAt": "2026-06-10T08:57:31.167Z"
   },
   {
-    "seq": 259,
+    "seq": 221,
     "time": "2026-06-10 16:59:03",
     "name": "李德美",
     "eid": "0098",
@@ -24008,7 +20436,7 @@
     "syncedAt": "2026-06-10T08:59:05.047Z"
   },
   {
-    "seq": 260,
+    "seq": 222,
     "time": "2026-06-10 16:59:27",
     "name": "吴奇",
     "eid": "3821",
@@ -24100,7 +20528,7 @@
     "syncedAt": "2026-06-10T08:59:31.612Z"
   },
   {
-    "seq": 261,
+    "seq": 223,
     "time": "2026-06-10 17:01:15",
     "name": "陈丹",
     "eid": "4265",
@@ -24192,7 +20620,7 @@
     "syncedAt": "2026-06-10T09:01:26.234Z"
   },
   {
-    "seq": 262,
+    "seq": 224,
     "time": "2026-06-10 17:02:49",
     "name": "李文莉",
     "eid": "2204",
@@ -24284,7 +20712,7 @@
     "syncedAt": "2026-06-10T09:02:58.262Z"
   },
   {
-    "seq": 263,
+    "seq": 225,
     "time": "2026-06-10 17:03:06",
     "name": "李根强",
     "eid": "0053",
@@ -24376,7 +20804,7 @@
     "syncedAt": "2026-06-10T09:03:08.416Z"
   },
   {
-    "seq": 264,
+    "seq": 226,
     "time": "2026-06-10 17:03:36",
     "name": "石飞艳",
     "eid": "1207",
@@ -24468,7 +20896,7 @@
     "syncedAt": "2026-06-10T09:03:39.127Z"
   },
   {
-    "seq": 265,
+    "seq": 227,
     "time": "2026-06-10 17:04:07",
     "name": "闾小杨",
     "eid": "4227",
@@ -24560,7 +20988,7 @@
     "syncedAt": "2026-06-10T09:04:09.516Z"
   },
   {
-    "seq": 266,
+    "seq": 228,
     "time": "2026-06-10 17:05:20",
     "name": "范妙纯",
     "eid": "0432",
@@ -24652,7 +21080,7 @@
     "syncedAt": "2026-06-10T09:05:28.205Z"
   },
   {
-    "seq": 267,
+    "seq": 229,
     "time": "2026-06-10 17:05:45",
     "name": "胡绍有",
     "eid": "2655",
@@ -24744,7 +21172,7 @@
     "syncedAt": "2026-06-10T09:05:49.337Z"
   },
   {
-    "seq": 268,
+    "seq": 230,
     "time": "2026-06-10 17:06:04",
     "name": "范坤",
     "eid": "2353",
@@ -24836,7 +21264,7 @@
     "syncedAt": "2026-06-10T09:06:06.114Z"
   },
   {
-    "seq": 269,
+    "seq": 231,
     "time": "2026-06-10 17:06:14",
     "name": "谭在艳",
     "eid": "0209",
@@ -24928,7 +21356,7 @@
     "syncedAt": "2026-06-10T09:06:26.591Z"
   },
   {
-    "seq": 270,
+    "seq": 232,
     "time": "2026-06-10 17:06:34",
     "name": "石亚锋",
     "eid": "2202",
@@ -25020,7 +21448,7 @@
     "syncedAt": "2026-06-10T09:06:37.039Z"
   },
   {
-    "seq": 271,
+    "seq": 233,
     "time": "2026-06-10 17:06:48",
     "name": "张海伟",
     "eid": "2381",
@@ -25112,7 +21540,7 @@
     "syncedAt": "2026-06-10T09:06:50.410Z"
   },
   {
-    "seq": 272,
+    "seq": 234,
     "time": "2026-06-10 17:07:31",
     "name": "张小利",
     "eid": "3963",
@@ -25204,7 +21632,7 @@
     "syncedAt": "2026-06-10T09:07:33.695Z"
   },
   {
-    "seq": 273,
+    "seq": 235,
     "time": "2026-06-10 17:07:40",
     "name": "龚小平",
     "eid": "1782",
@@ -25296,7 +21724,7 @@
     "syncedAt": "2026-06-10T09:07:43.844Z"
   },
   {
-    "seq": 274,
+    "seq": 236,
     "time": "2026-06-10 17:07:50",
     "name": "夏阳",
     "eid": "3555",
@@ -25388,7 +21816,7 @@
     "syncedAt": "2026-06-10T09:07:52.181Z"
   },
   {
-    "seq": 275,
+    "seq": 237,
     "time": "2026-06-10 17:07:55",
     "name": "李杰玉",
     "eid": "4189",
@@ -25480,7 +21908,7 @@
     "syncedAt": "2026-06-10T09:07:58.169Z"
   },
   {
-    "seq": 276,
+    "seq": 238,
     "time": "2026-06-10 17:08:27",
     "name": "陈丰",
     "eid": "3495",
@@ -25572,7 +22000,7 @@
     "syncedAt": "2026-06-10T09:08:29.882Z"
   },
   {
-    "seq": 277,
+    "seq": 239,
     "time": "2026-06-10 17:08:33",
     "name": "郑振展",
     "eid": "4404",
@@ -25664,7 +22092,7 @@
     "syncedAt": "2026-06-10T09:08:35.706Z"
   },
   {
-    "seq": 278,
+    "seq": 240,
     "time": "2026-06-10 17:08:58",
     "name": "彭玲玲",
     "eid": "1383",
@@ -25756,7 +22184,7 @@
     "syncedAt": "2026-06-10T09:09:00.036Z"
   },
   {
-    "seq": 279,
+    "seq": 241,
     "time": "2026-06-10 17:09:01",
     "name": "周治贵",
     "eid": "3131",
@@ -25848,7 +22276,7 @@
     "syncedAt": "2026-06-10T09:09:03.886Z"
   },
   {
-    "seq": 280,
+    "seq": 242,
     "time": "2026-06-10 17:09:14",
     "name": "黄庆旋",
     "eid": "3318",
@@ -25940,7 +22368,7 @@
     "syncedAt": "2026-06-10T09:09:16.943Z"
   },
   {
-    "seq": 281,
+    "seq": 243,
     "time": "2026-06-10 17:09:23",
     "name": "蒋仁琼",
     "eid": "1197",
@@ -26032,7 +22460,7 @@
     "syncedAt": "2026-06-10T09:09:26.692Z"
   },
   {
-    "seq": 282,
+    "seq": 244,
     "time": "2026-06-10 17:09:43",
     "name": "周圣林",
     "eid": "4481",
@@ -26124,7 +22552,7 @@
     "syncedAt": "2026-06-10T09:09:46.099Z"
   },
   {
-    "seq": 283,
+    "seq": 245,
     "time": "2026-06-10 17:09:44",
     "name": "龚雯",
     "eid": "4520",
@@ -26216,7 +22644,7 @@
     "syncedAt": "2026-06-10T09:09:51.562Z"
   },
   {
-    "seq": 284,
+    "seq": 246,
     "time": "2026-06-10 17:09:50",
     "name": "赵雪梅",
     "eid": "1496",
@@ -26308,7 +22736,7 @@
     "syncedAt": "2026-06-10T09:09:57.296Z"
   },
   {
-    "seq": 285,
+    "seq": 247,
     "time": "2026-06-10 17:10:13",
     "name": "丁玉银",
     "eid": "1479",
@@ -26400,7 +22828,7 @@
     "syncedAt": "2026-06-10T09:10:15.580Z"
   },
   {
-    "seq": 286,
+    "seq": 248,
     "time": "2026-06-10 17:10:37",
     "name": "周亚琼",
     "eid": "0272",
@@ -26492,7 +22920,7 @@
     "syncedAt": "2026-06-10T09:10:39.351Z"
   },
   {
-    "seq": 287,
+    "seq": 249,
     "time": "2026-06-10 17:10:42",
     "name": "谢友斌",
     "eid": "3645",
@@ -26584,7 +23012,7 @@
     "syncedAt": "2026-06-10T09:10:44.898Z"
   },
   {
-    "seq": 288,
+    "seq": 250,
     "time": "2026-06-10 17:11:01",
     "name": "李春梅",
     "eid": "0867",
@@ -26676,7 +23104,7 @@
     "syncedAt": "2026-06-10T09:11:03.096Z"
   },
   {
-    "seq": 289,
+    "seq": 251,
     "time": "2026-06-10 17:11:02",
     "name": "董一微",
     "eid": "4418",
@@ -26768,7 +23196,7 @@
     "syncedAt": "2026-06-10T09:11:09.167Z"
   },
   {
-    "seq": 290,
+    "seq": 252,
     "time": "2026-06-10 17:11:18",
     "name": "林先琴",
     "eid": "3717",
@@ -26860,7 +23288,7 @@
     "syncedAt": "2026-06-10T09:11:22.816Z"
   },
   {
-    "seq": 291,
+    "seq": 253,
     "time": "2026-06-10 17:11:28",
     "name": "李海宝",
     "eid": "3663",
@@ -26952,7 +23380,7 @@
     "syncedAt": "2026-06-10T09:11:33.927Z"
   },
   {
-    "seq": 292,
+    "seq": 254,
     "time": "2026-06-10 17:11:43",
     "name": "赵凤娇",
     "eid": "2653",
@@ -27044,7 +23472,7 @@
     "syncedAt": "2026-06-10T09:11:44.705Z"
   },
   {
-    "seq": 293,
+    "seq": 255,
     "time": "2026-06-10 17:11:47",
     "name": "龚小平",
     "eid": "1782",
@@ -27136,7 +23564,7 @@
     "syncedAt": "2026-06-10T09:11:49.814Z"
   },
   {
-    "seq": 294,
+    "seq": 256,
     "time": "2026-06-10 17:12:15",
     "name": "孙海妮",
     "eid": "2306",
@@ -27228,7 +23656,7 @@
     "syncedAt": "2026-06-10T09:12:18.345Z"
   },
   {
-    "seq": 295,
+    "seq": 257,
     "time": "2026-06-10 17:12:29",
     "name": "刘丽芸",
     "eid": "2711",
@@ -27320,7 +23748,7 @@
     "syncedAt": "2026-06-10T09:12:31.380Z"
   },
   {
-    "seq": 296,
+    "seq": 258,
     "time": "2026-06-10 17:13:10",
     "name": "周美娜",
     "eid": "2376",
@@ -27412,7 +23840,7 @@
     "syncedAt": "2026-06-10T09:13:13.913Z"
   },
   {
-    "seq": 297,
+    "seq": 259,
     "time": "2026-06-10 17:14:15",
     "name": "柯荣兰",
     "eid": "3175",
@@ -27504,7 +23932,7 @@
     "syncedAt": "2026-06-10T09:14:53.116Z"
   },
   {
-    "seq": 298,
+    "seq": 260,
     "time": "2026-06-10 17:15:55",
     "name": "赵文芝",
     "eid": "0812",
@@ -27596,7 +24024,7 @@
     "syncedAt": "2026-06-10T09:15:57.828Z"
   },
   {
-    "seq": 299,
+    "seq": 261,
     "time": "2026-06-10 17:16:42",
     "name": "黄怀林",
     "eid": "3729",
@@ -27688,7 +24116,7 @@
     "syncedAt": "2026-06-10T09:16:44.379Z"
   },
   {
-    "seq": 300,
+    "seq": 262,
     "time": "2026-06-10 17:16:47",
     "name": "程林",
     "eid": "1792",
@@ -27780,7 +24208,7 @@
     "syncedAt": "2026-06-10T09:16:53.881Z"
   },
   {
-    "seq": 301,
+    "seq": 263,
     "time": "2026-06-10 17:16:50",
     "name": "李春梅",
     "eid": "0867",
@@ -27872,7 +24300,7 @@
     "syncedAt": "2026-06-10T09:17:59.415Z"
   },
   {
-    "seq": 302,
+    "seq": 264,
     "time": "2026-06-10 17:17:06",
     "name": "张艳艳",
     "eid": "3928",
@@ -27964,7 +24392,7 @@
     "syncedAt": "2026-06-10T09:17:09.160Z"
   },
   {
-    "seq": 303,
+    "seq": 265,
     "time": "2026-06-10 17:17:30",
     "name": "岳玉霞",
     "eid": "1804",
@@ -28056,7 +24484,7 @@
     "syncedAt": "2026-06-10T09:17:32.953Z"
   },
   {
-    "seq": 304,
+    "seq": 266,
     "time": "2026-06-10 17:17:34",
     "name": "孙海妮",
     "eid": "2306",
@@ -28148,7 +24576,7 @@
     "syncedAt": "2026-06-10T09:17:36.409Z"
   },
   {
-    "seq": 305,
+    "seq": 267,
     "time": "2026-06-10 17:18:03",
     "name": "李佳佳",
     "eid": "4511",
@@ -28240,7 +24668,7 @@
     "syncedAt": "2026-06-10T09:18:05.783Z"
   },
   {
-    "seq": 306,
+    "seq": 268,
     "time": "2026-06-10 17:21:53",
     "name": "李雷",
     "eid": "4488",
@@ -28332,7 +24760,7 @@
     "syncedAt": "2026-06-10T09:21:56.468Z"
   },
   {
-    "seq": 307,
+    "seq": 269,
     "time": "2026-06-10 17:23:03",
     "name": "吴操许",
     "eid": "1397",
@@ -28424,7 +24852,7 @@
     "syncedAt": "2026-06-10T09:23:06.339Z"
   },
   {
-    "seq": 308,
+    "seq": 270,
     "time": "2026-06-10 17:24:48",
     "name": "吴良明",
     "eid": "051020386",
@@ -28516,7 +24944,7 @@
     "syncedAt": "2026-06-10T09:24:50.861Z"
   },
   {
-    "seq": 309,
+    "seq": 271,
     "time": "2026-06-10 17:25:02",
     "name": "张贵",
     "eid": "1594",
@@ -28608,7 +25036,7 @@
     "syncedAt": "2026-06-10T09:25:04.693Z"
   },
   {
-    "seq": 310,
+    "seq": 272,
     "time": "2026-06-10 17:37:06",
     "name": "周敬香",
     "eid": "0286",
@@ -28700,7 +25128,7 @@
     "syncedAt": "2026-06-10T09:37:08.891Z"
   },
   {
-    "seq": 311,
+    "seq": 273,
     "time": "2026-06-10 17:39:15",
     "name": "刘超华",
     "eid": "0119",
@@ -28792,7 +25220,7 @@
     "syncedAt": "2026-06-10T09:39:17.539Z"
   },
   {
-    "seq": 312,
+    "seq": 274,
     "time": "2026-06-10 17:42:23",
     "name": "罗建军",
     "eid": "0696",
@@ -28884,7 +25312,7 @@
     "syncedAt": "2026-06-10T09:42:25.587Z"
   },
   {
-    "seq": 313,
+    "seq": 275,
     "time": "2026-06-10 17:42:37",
     "name": "吕楚",
     "eid": "4214",
@@ -28976,7 +25404,7 @@
     "syncedAt": "2026-06-10T09:42:39.725Z"
   },
   {
-    "seq": 314,
+    "seq": 276,
     "time": "2026-06-10 17:45:14",
     "name": "钟林芳",
     "eid": "0218",
@@ -29068,7 +25496,7 @@
     "syncedAt": "2026-06-10T09:45:26.219Z"
   },
   {
-    "seq": 315,
+    "seq": 277,
     "time": "2026-06-10 17:47:26",
     "name": "刘玉玲",
     "eid": "3724",
@@ -29160,7 +25588,7 @@
     "syncedAt": "2026-06-10T09:47:41.392Z"
   },
   {
-    "seq": 316,
+    "seq": 278,
     "time": "2026-06-10 18:00:35",
     "name": "潘容儿",
     "eid": "1162",
@@ -29252,7 +25680,7 @@
     "syncedAt": "2026-06-10T10:00:40.240Z"
   },
   {
-    "seq": 317,
+    "seq": 279,
     "time": "2026-06-10 19:01:18",
     "name": "张杰",
     "eid": "4449",
@@ -29344,7 +25772,7 @@
     "syncedAt": "2026-06-10T11:01:34.486Z"
   },
   {
-    "seq": 318,
+    "seq": 280,
     "time": "2026-06-10 19:42:54",
     "name": "邓海云",
     "eid": "2778",
@@ -29436,7 +25864,7 @@
     "syncedAt": "2026-06-10T11:42:56.837Z"
   },
   {
-    "seq": 319,
+    "seq": 281,
     "time": "2026-06-10 19:43:21",
     "name": "马少丽",
     "eid": "3174",
@@ -29528,7 +25956,7 @@
     "syncedAt": "2026-06-10T11:43:24.320Z"
   },
   {
-    "seq": 320,
+    "seq": 282,
     "time": "2026-06-10 19:48:04",
     "name": "乐坚峰",
     "eid": "4212",
@@ -29620,7 +26048,7 @@
     "syncedAt": "2026-06-10T11:48:18.988Z"
   },
   {
-    "seq": 321,
+    "seq": 283,
     "time": "2026-06-10 19:49:31",
     "name": "李朝勇",
     "eid": "1685",
@@ -29712,7 +26140,7 @@
     "syncedAt": "2026-06-10T11:49:35.582Z"
   },
   {
-    "seq": 322,
+    "seq": 284,
     "time": "2026-06-10 19:49:44",
     "name": "张安琼",
     "eid": "4439",
@@ -29804,7 +26232,7 @@
     "syncedAt": "2026-06-10T11:49:46.537Z"
   },
   {
-    "seq": 323,
+    "seq": 285,
     "time": "2026-06-10 19:50:57",
     "name": "周通",
     "eid": "1146",
@@ -29896,7 +26324,7 @@
     "syncedAt": "2026-06-10T11:51:01.007Z"
   },
   {
-    "seq": 324,
+    "seq": 286,
     "time": "2026-06-10 19:51:42",
     "name": "彭涛",
     "eid": "3467",
@@ -29988,7 +26416,7 @@
     "syncedAt": "2026-06-10T11:51:45.138Z"
   },
   {
-    "seq": 325,
+    "seq": 287,
     "time": "2026-06-10 19:51:48",
     "name": "闫丽秋",
     "eid": "3881",
@@ -30080,7 +26508,7 @@
     "syncedAt": "2026-06-10T11:52:41.090Z"
   },
   {
-    "seq": 326,
+    "seq": 288,
     "time": "2026-06-10 19:53:26",
     "name": "鲁叶密",
     "eid": "1876",
@@ -30172,7 +26600,7 @@
     "syncedAt": "2026-06-10T11:53:30.489Z"
   },
   {
-    "seq": 327,
+    "seq": 289,
     "time": "2026-06-10 19:54:47",
     "name": "谷一千",
     "eid": "2285",
@@ -30264,7 +26692,7 @@
     "syncedAt": "2026-06-10T11:54:51.342Z"
   },
   {
-    "seq": 328,
+    "seq": 290,
     "time": "2026-06-10 19:55:55",
     "name": "曹小蓉",
     "eid": "1622",
@@ -30356,7 +26784,7 @@
     "syncedAt": "2026-06-10T11:55:58.637Z"
   },
   {
-    "seq": 329,
+    "seq": 291,
     "time": "2026-06-10 19:56:28",
     "name": "管世强",
     "eid": "3916",
@@ -30448,7 +26876,7 @@
     "syncedAt": "2026-06-10T11:56:31.486Z"
   },
   {
-    "seq": 330,
+    "seq": 292,
     "time": "2026-06-10 19:57:19",
     "name": "荆素英",
     "eid": "0679",
@@ -30540,7 +26968,7 @@
     "syncedAt": "2026-06-10T11:57:21.705Z"
   },
   {
-    "seq": 331,
+    "seq": 293,
     "time": "2026-06-11 09:17:52",
     "name": "程丽君",
     "eid": "3733",
@@ -30632,7 +27060,7 @@
     "syncedAt": "2026-06-11T01:17:54.511Z"
   },
   {
-    "seq": 332,
+    "seq": 294,
     "time": "2026-06-11 09:22:16",
     "name": "吴小燕",
     "eid": "1218",
@@ -30724,7 +27152,7 @@
     "syncedAt": "2026-06-11T01:22:19.419Z"
   },
   {
-    "seq": 333,
+    "seq": 295,
     "time": "2026-06-11 09:24:40",
     "name": "邹应龙",
     "eid": "2474",
@@ -30816,7 +27244,7 @@
     "syncedAt": "2026-06-11T01:24:44.496Z"
   },
   {
-    "seq": 334,
+    "seq": 296,
     "time": "2026-06-11 09:26:55",
     "name": "徐自明",
     "eid": "0327",
@@ -30909,7 +27337,7 @@
     "syncedAt": "2026-06-11T01:26:57.320Z"
   },
   {
-    "seq": 335,
+    "seq": 297,
     "time": "2026-06-11 09:29:28",
     "name": "梁俊伟",
     "eid": "0891",
@@ -31002,7 +27430,7 @@
     "syncedAt": "2026-06-11T01:29:30.219Z"
   },
   {
-    "seq": 336,
+    "seq": 298,
     "time": "2026-06-11 09:32:59",
     "name": "陈燕",
     "eid": "2838",
@@ -31095,7 +27523,7 @@
     "syncedAt": "2026-06-11T01:33:07.185Z"
   },
   {
-    "seq": 337,
+    "seq": 299,
     "time": "2026-06-11 09:33:53",
     "name": "吴汉军",
     "eid": "1308",
@@ -31188,7 +27616,7 @@
     "syncedAt": "2026-06-11T01:34:05.063Z"
   },
   {
-    "seq": 338,
+    "seq": 300,
     "time": "2026-06-11 09:35:39",
     "name": "朱其宝",
     "eid": "3498",
@@ -31281,7 +27709,7 @@
     "syncedAt": "2026-06-11T01:35:41.199Z"
   },
   {
-    "seq": 339,
+    "seq": 301,
     "time": "2026-06-11 09:37:31",
     "name": "周么磋",
     "eid": "4366",
