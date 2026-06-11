@@ -623,7 +623,7 @@ function syncToGitHub(rec, callback, retryCount){
     var records=result.existing;
     rec.seq=(records.length?Math.max.apply(null,records.map(function(r){return r.seq||0})):0)+1;
     rec.syncedAt=new Date().toISOString();
-    var clean={seq:rec.seq,time:rec.time,name:rec.name,eid:rec.eid,dept:rec.dept,score:rec.score,passed:rec.passed,details:rec.details,syncedAt:rec.syncedAt};
+    var clean={seq:rec.seq,time:rec.time,name:rec.name,eid:rec.eid,dept:rec.dept,platform:rec.platform,score:rec.score,passed:rec.passed,details:rec.details,syncedAt:rec.syncedAt};
     records.push(clean);
 
     var content=btoa(unescape(encodeURIComponent(JSON.stringify(records,null,2))));
@@ -840,9 +840,11 @@ function submit(qs,ans,user){
     details.push({qi:i+1,qt:q.q,type:q.type,ua:u||'(未作答)',ca:q.a,ok:ok});
   });
   var passed=score>=C.PASS_SCORE;
+  var ua=navigator.userAgent||'';
+  var platform=(ua.indexOf('wxwork')!==-1)?'企业微信':(ua.indexOf('MicroMessenger')!==-1)?'微信':'浏览器';
   var rec={
     id:Date.now(),time:fmtTime(),score:score,passed:passed,
-    fp:getFp(),name:user.name,eid:user.eid,dept:user.dept,details:details
+    fp:getFp(),name:user.name,eid:user.eid,dept:user.dept,platform:platform,details:details
   };
   saveRecord(rec);markDone();
   console.log('答题记录已保存:',rec.id,'得分:',score,'记录数:',getRecords().length);
@@ -1014,7 +1016,7 @@ function syncAllRecords(recs){
   };
   // 构建同步数据
   var records=recs.map(function(r,i){
-    return {seq:i+1,time:r.time,name:r.name,eid:r.eid,dept:r.dept,score:r.score,passed:r.passed,details:r.details,syncedAt:new Date().toISOString()};
+    return {seq:i+1,time:r.time,name:r.name,eid:r.eid,dept:r.dept,platform:r.platform,score:r.score,passed:r.passed,details:r.details,syncedAt:new Date().toISOString()};
   });
   // 直接 PUT（覆盖）
   var content=btoa(unescape(encodeURIComponent(JSON.stringify(records,null,2))));
