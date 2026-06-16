@@ -28080,5 +28080,98 @@
       }
     ],
     "syncedAt": "2026-06-11T03:08:10.498Z"
+  },
+  {
+    "seq": 305,
+    "time": "2026-06-16 23:02:42",
+    "name": "柯小菊",
+    "eid": "1621",
+    "dept": "生产部",
+    "platform": "企业微信",
+    "score": 50,
+    "passed": false,
+    "details": [
+      {
+        "qi": 1,
+        "qt": "标准作业三要素不包括（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "D",
+        "ok": false
+      },
+      {
+        "qi": 2,
+        "qt": "提出有效提案改善有奖励。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 3,
+        "qt": "5Why应用要点（）",
+        "type": "multiple",
+        "ua": "BCD",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 4,
+        "qt": "精益生产就是减少人员、降低成本。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "B",
+        "ok": false
+      },
+      {
+        "qi": 5,
+        "qt": "推行精益提案改善的主要意义是？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      },
+      {
+        "qi": 6,
+        "qt": "二八定律指（）",
+        "type": "single",
+        "ua": "D",
+        "ca": "A",
+        "ok": false
+      },
+      {
+        "qi": 7,
+        "qt": "单件流好处（）",
+        "type": "multiple",
+        "ua": "BCD",
+        "ca": "ABCD",
+        "ok": false
+      },
+      {
+        "qi": 8,
+        "qt": "精益的终点是完美，持续改善没有终点。（）",
+        "type": "judge",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 9,
+        "qt": "持续改善（Kaizen）强调（）",
+        "type": "single",
+        "ua": "A",
+        "ca": "A",
+        "ok": true
+      },
+      {
+        "qi": 10,
+        "qt": "员工提出精益改善提案，第一步应当？（）",
+        "type": "single",
+        "ua": "B",
+        "ca": "B",
+        "ok": true
+      }
+    ],
+    "syncedAt": "2026-06-16T15:03:10.916Z"
   }
 ]
