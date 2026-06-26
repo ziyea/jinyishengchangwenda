@@ -63,6 +63,10 @@ router.get('/random-questions', getUserIdentifier, (req, res) => {
         });
     });
 });
+            });
+        });
+    });
+
 
 // 提交答案并评分
 router.post('/submit', getUserIdentifier, (req, res) => {
